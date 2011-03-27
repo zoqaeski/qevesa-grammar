@@ -1,0 +1,7 @@
+#awkwords version 1.2
+C:m/n/ň/p/t/q/k/ż/c/ç/č/f/v/z/d/ş/š/x/h/y/ł/l/r
+V:-
+r:CVCV(C)
+n:100
+nle
+filterdup

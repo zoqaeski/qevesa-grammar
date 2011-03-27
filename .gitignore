@@ -1,0 +1,7 @@
+# Git Ignore
+*.aux
+*.fdb_latexmk
+*.log
+*.lot
+*.out
+*.toc

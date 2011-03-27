@@ -1,0 +1,169 @@
+First Person topic
+                1sg-erg         1sg-acc         *1sg-sdt         
+Imperfective    kusit-ěm        kusit-ěş        kusit-ět        
+Stative         kuiset-ěm       kuiset-ěş       kuiset-ět       
+Durative (IPVF) kusút-ěm        kuśut-ěş        kusút-ět        
+Frequentative   kusot-ěm        kusot-ěş        kusot-ět        
+Habitual        kusuot-ěm       kusuot-ěş       kusuot-ět       
+Perfective      kisota-yem      kisota-yeş      kisota-yet      
+Inchoative      kisuto-yem      kisuto-yeş      kisuto-yet      
+Cessative       kistü-yem       kistü-yeş       kistü-yet       
+Durative (PFV)  kisatu-yem      kisatu-yeş      kisatu-yet      
+Momentane       kisuta-yem      kisuta-yeş      kisuta-yet      
+
+                1du;inc-erg     1du;inc-acc     *1du;inc-sdt 
+Imperfective    kusit-ěvam      kusit-ěvaş      kusit-ěvot  
+Stative         kuiset-ěvam     kuiset-ěvaş     kuiset-ěvot 
+Durative (IPVF) kusút-ěvam      kuśut-ěvaş      kusút-ěvot  
+Frequentative   kusot-ěvam      kusot-ěvaş      kusot-ěvot  
+Habitual        kusuot-ěvam     kusuot-ěvaş     kusuot-ěvot 
+Perfective      kisota-yevam    kisota-yevaş    kisota-yevot
+Inchoative      kisuto-yevam    kisuto-yevaş    kisuto-yevot
+Cessative       kistü-yevam     kistü-yevaş     kistü-yevot 
+Durative (PFV)  kisatu-yevam    kisatu-yevaş    kisatu-yevot
+Momentane       kisuta-yevam    kisuta-yevaş    kisuta-yevot
+
+                1du;exc-erg     1du;exc-acc     *1du;exc-sdt   
+Imperfective    kusit-ěcvam     kusit-ěcvaş     kusit-ěcvot
+Stative         kuiset-ěcvam    kuiset-ěcvaş    kuiset-ěcvot
+Durative (IPVF) kusút-ěcvam     kuśut-ěcvaş     kusút-ěcvot
+Frequentative   kusot-ěcvam     kusot-ěcvaş     kusot-ěcvot
+Habitual        kusuot-ěcvam    kusuot-ěcvaş    kusuot-ěcvot
+Perfective      kisota-yecvam   kisota-yecvaş   kisota-yecvot
+Inchoative      kisuto-yecvam   kisuto-yecvaş   kisuto-yecvot
+Cessative       kistü-yecvam    kistü-yecvaş    kistü-yecvot
+Durative (PFV)  kisatu-yecvam   kisatu-yecvaş   kisatu-yecvot
+Momentane       kisuta-yecvam   kisuta-yecvaş   kisuta-yecvot
+
+                1pl;inc-erg     1pl;inc-acc     *1pl;inc-sdt 
+Imperfective    kusit-ěsam      kusit-ěsaş      kusit-ěsot  
+Stative         kuiset-ěsam     kuiset-ěsaş     kuiset-ěsot 
+Durative (IPVF) kusút-ěsam      kuśut-ěsaş      kusút-ěsot  
+Frequentative   kusot-ěsam      kusot-ěsaş      kusot-ěsot  
+Habitual        kusuot-ěsam     kusuot-ěsaş     kusuot-ěsot 
+Perfective      kisota-yesam    kisota-yesaş    kisota-yesot
+Inchoative      kisuto-yesam    kisuto-yesaş    kisuto-yesot
+Cessative       kistü-yesam     kistü-yesaş     kistü-yesot 
+Durative (PFV)  kisatu-yesam    kisatu-yesaş    kisatu-yesot
+Momentane       kisuta-yesam    kisuta-yesaş    kisuta-yesot
+
+                1pl;exc-erg     1pl;exc-acc     *1pl;exc-sdt   
+Imperfective    kusit-ěcam      kusit-ěcaş      kusit-ěcot
+Stative         kuiset-ěcam     kuiset-ěcaş     kuiset-ěcot
+Durative (IPVF) kusút-ěcam      kuśut-ěcaş      kusút-ěcot
+Frequentative   kusot-ěcam      kusot-ěcaş      kusot-ěcot
+Habitual        kusuot-ěcam     kusuot-ěcaş     kusuot-ěcot
+Perfective      kisota-yecam    kisota-yecaş    kisota-yecot
+Inchoative      kisuto-yecam    kisuto-yecaş    kisuto-yecot
+Cessative       kistü-yecam     kistü-yecaş     kistü-yecot
+Durative (PFV)  kisatu-yecam    kisatu-yecaş    kisatu-yecot
+Momentane       kisuta-yecam    kisuta-yecaş    kisuta-yecot
+
+
+Second Person topic:
+                2sg-erg         2sg-acc         *2sg-sdt
+Imperfective    kusit-tam       kusit-taş       kusit-tot
+Stative         kuiset-tam      kuiset-taş      kuiset-tot
+Durative (IPVF) kusút-tam       kuśut-taş       kusút-tot
+Frequentative   kusot-tam       kusot-taş       kusot-tot
+Habitual        kusuot-tam      kusuot-taş      kusuot-tot
+Perfective      kisota-tam      kisota-taş      kisota-tot
+Inchoative      kisuto-tam      kisuto-taş      kisuto-tot
+Cessative       kistü-tam       kistü-taş       kistü-tot
+Durative (PFV)  kisatu-tam      kisatu-taş      kisatu-tot
+Momentane       kisuta-tam      kisuta-taş      kisuta-tot
+
+                2du-erg         2sg-acc         *2sg-sdt
+Imperfective    kusit-tavam     kusit-tavaş     kusit-tavot
+Stative         kuiset-tavam    kuiset-tavaş    kuiset-tavot
+Durative (IPVF) kusút-tavam     kuśut-tavaş     kusút-tavot
+Frequentative   kusot-tavam     kusot-tavaş     kusot-tavot
+Habitual        kusuot-tavam    kusuot-tavaş    kusuot-tavot
+Perfective      kisota-tavam    kisota-tavaş    kisota-tavot
+Inchoative      kisuto-tavam    kisuto-tavaş    kisuto-tavot
+Cessative       kistü-tavam     kistü-tavaş     kistü-tavot
+Durative (PFV)  kisatu-tavam    kisatu-tavaş    kisatu-tavot
+Momentane       kisuta-tavam    kisuta-tavaş    kisuta-tavot
+
+                2pl-erg         2sg-acc         *2sg-sdt
+Imperfective    kusit-tasam     kusit-tasaş     kusit-tasot
+Stative         kuiset-tasam    kuiset-tasaş    kuiset-tasot
+Durative (IPVF) kusút-tasam     kuśut-tasaş     kusút-tasot
+Frequentative   kusot-tasam     kusot-tasaş     kusot-tasot
+Habitual        kusuot-tasam    kusuot-tasaş    kusuot-tasot
+Perfective      kisota-tasam    kisota-tasaş    kisota-tasot
+Inchoative      kisuto-tasam    kisuto-tasaş    kisuto-tasot
+Cessative       kistü-tasam     kistü-tasaş     kistü-tasot
+Durative (PFV)  kisatu-tasam    kisatu-tasaş    kisatu-tasot
+Momentane       kisuta-tasam    kisuta-tasaş    kisuta-tasot
+
+Third Person topic:
+                3sg-erg         3sg-acc         *3sg-sdt
+Imperfective    kusit-am        kusit-aş        kusit-at
+Stative         kuiset-am       kuiset-aş       kuiset-at
+Durative (IPVF) kusút-am        kuśut-aş        kusút-at
+Frequentative   kusot-am        kusot-aş        kusot-at
+Habitual        kusuot-am       kusuot-aş       kusuot-at
+Perfective      kisota-m        kisota-ş        kisota-t
+Inchoative      kisuto-m        kisuto-ş        kisuto-t
+Cessative       kistü-m         kistü-ş         kistü-t
+Durative (PFV)  kisatu-m        kisatu-ş        kisatu-t
+Momentane       kisuta-m        kisuta-ş        kisuta-t
+
+                3du-erg         3du-acc         *3du-sdt
+Imperfective    kusit-vam       kusit-vaş       kusit-vot
+Stative         kuiset-vam      kuiset-vaş      kuiset-vot
+Durative (IPVF) kusút-vam       kuśut-vaş       kusút-vot
+Frequentative   kusot-vam       kusot-vaş       kusot-vot
+Habitual        kusuot-vam      kusuot-vaş      kusuot-vot
+Perfective      kisota-vam      kisota-vaş      kisota-vot
+Inchoative      kisuto-vam      kisuto-vaş      kisuto-vot
+Cessative       kistü-vam       kistü-vaş       kistü-vot
+Durative (PFV)  kisatu-vam      kisatu-vaş      kisatu-vot
+Momentane       kisuta-vam      kisuta-vaş      kisuta-vot
+
+                3pl-erg         3pl-acc         *3pl-sdt
+Imperfective    kusit-sam       kusit-saş       kusit-sot
+Stative         kuiset-sam      kuiset-saş      kuiset-sot
+Durative (IPVF) kusút-sam       kuśut-saş       kusút-sot
+Frequentative   kusot-sam       kusot-saş       kusot-sot
+Habitual        kusuot-sam      kusuot-saş      kusuot-sot
+Perfective      kisota-sam      kisota-saş      kisota-sot
+Inchoative      kisuto-sam      kisuto-saş      kisuto-sot
+Cessative       kistü-sam       kistü-saş       kistü-sot
+Durative (PFV)  kisatu-sam      kisatu-saş      kisatu-sot
+Momentane       kisuta-sam      kisuta-saş      kisuta-sot
+
+                3inanim-erg     3inanim-acc     *3inanim-sdt
+Imperfective    kusit-ňom       kusit-ňoş       kusit-ňot
+Stative         kuiset-ňom      kuiset-ňoş      kuiset-ňot
+Durative (IPVF) kusút-ňom       kuśut-ňoş       kusút-ňot
+Frequentative   kusot-ňom       kusot-ňoş       kusot-ňot
+Habitual        kusuot-ňom      kusuot-ňoş      kusuot-ňot
+Perfective      kisota-ňom      kisota-ňoş      kisota-ňot
+Inchoative      kisuto-ňom      kisuto-ňoş      kisuto-ňot
+Cessative       kistü-ňom       kistü-ňoş       kistü-ňot
+Durative (PFV)  kisatu-ňom      kisatu-ňoş      kisatu-ňot
+Momentane       kisuta-ňom      kisuta-ňoş      kisuta-ňot
+
+Non-core personal agreement
+                ess         ins         ine         ade         ill         all         ela         abl         comp
+Imperfective    kusit-all   kusit-att   kusit-ass   kusit-ad    kusit-ast   kusit-yav   kusit-asp   kusit-ask   kusit-ann
+Stative         kuiset-all  kuiset-att  kuiset-ass  kuiset-ad   kuiset-ast  kuiset-yav  kuiset-asp  kuiset-ask  kuiset-ann
+Durative (IPVF) kusút-all   kuśut-att   kusút-ass   kusút-ad    kuśut-ast   kusút-yav   kusút-asp   kuśut-ask   kusút-ann
+Frequentative   kusot-all   kusot-att   kusot-ass   kusot-ad    kusot-ast   kusot-yav   kusot-asp   kusot-ask   kusot-ann
+Habitual        kusuot-all  kusuot-att  kusuot-ass  kusuot-ad   kusuot-ast  kusuot-yav  kusuot-asp  kusuot-ask  kusuot-ann
+Perfective      kisota-ll   kisota-tt   kisota-ss   kisota-d    kisota-st   kisota-yav  kisota-sp   kisota-sk   kisota-nn
+Inchoative      kisuto-ll   kisuto-tt   kisuto-ss   kisuto-d    kisuto-st   kisuto-yav  kisuto-sp   kisuto-sk   kisuto-nn
+Cessative       kistü-ll    kistü-tt    kistü-ss    kistü-d     kistü-st    kistü-yav   kistü-sp    kistü-sk    kistü-nn
+Durative (PFV)  kisatu-ll   kisatu-tt   kisatu-ss   kisatu-d    kisatu-st   kisatu-yav  kisatu-sp   kisatu-sk   kisatu-nn
+Momentane       kisuta-ll   kisuta-tt   kisuta-ss   kisuta-d    kisuta-st   kisuta-yav  kisuta-sp   kisuta-sk   kisuta-nn
+
+Indicative      -u
+Admirative      -oi
+Irrealis        -il
+Alethic         -is
+Hypothetical    -ut
+Volitive        -ir
+Obligative      -ic
+Precative       -ła
