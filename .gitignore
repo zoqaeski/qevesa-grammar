@@ -5,3 +5,7 @@
 *.lot
 *.out
 *.toc
+*.pdf
+
+# Don't ignore grammar.pdf
+!grammar.pdf
