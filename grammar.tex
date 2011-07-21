@@ -25,7 +25,7 @@
 	appendixprefix=false,
 	chapterprefix=false,
 	cleardoublepage=empty,
-	DIV=13,
+	DIV=12,
 	draft=true,
 	fontsize=12pt,
 	headings=big,
@@ -93,12 +93,15 @@
   {\normalfont\normalsize\bfseries}}
 \makeatother
 
+
 \newenvironment{itemize*}
-	{\begin{itemize}
-		\setlength{\itemsep}{1.25pt}
-		\setlength{\parskip}{0.5pt}
-		\setlength{\parsep}{0.5pt}}
-	{\end{itemize}}
+{\begin{itemize}
+			\setlength{\itemindent}{0pt}
+			\setlength{\itemsep}{1.25pt}
+			\setlength{\parskip}{0.5pt}
+			\setlength{\parsep}{0.5pt}}
+		%\setlength{\leftmargin}{1.5em}
+		{\end{itemize}}
 
 \renewcommand*{\appendixmore}{
 	\renewcommand*{\chapterformat}{\appendixname~\thechapter\autodot\enskip}
@@ -120,6 +123,7 @@
 \setromanfont{Linux Libertine O}
 \setsansfont{Linux Biolinum O}
 \setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
+%\setmathfont{Linux Libertine O}
 
 %% Underline capable (but not needed here
 %\usepackage[normalem]{ulem}
@@ -138,10 +142,11 @@
 \newcolumntype{f}{>{\global\let\RowStyle\relax}}
 \newcolumntype{-}{>{\RowStyle}}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
-\renewcommand{\arraystretch}{1.125}
+\renewcommand{\arraystretch}{1.25}
+\renewcommand{\tabcolsep}{3pt}
 
 %% Other settings
-\hyphenpenalty=7500
+\hyphenpenalty=5000
 \tolerance=500
 \widowpenalty=1500
 \clubpenalty=1500
@@ -221,11 +226,13 @@
 
 	%\subfile{postpositions}
 
-	\subfile{verbal-syntax}
+	\subfile{constituent-order-typology}
+
+	%\subfile{verbal-syntax}
 
 	%\subfile{nominal-syntax}
 
-	\subfile{registers}
+	%\subfile{registers}
 
 	%\subfile{valency}
 
