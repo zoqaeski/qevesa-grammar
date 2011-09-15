@@ -22,18 +22,18 @@
 % I use KOMA-script as I find it gives much easier control than a mishmash of different packages.
 %% KOMA options
 \KOMAoptions{
-	appendixprefix=false,
-	chapterprefix=false,
-	cleardoublepage=empty,
-	DIV=13,
-	draft=false,
-	fontsize=12pt,
-	headings=big,
-	open=right,
-	paper=a4,
-	parskip=half,
-	toc=flat,
-	twoside=semi
+  appendixprefix=false,
+  chapterprefix=false,
+  cleardoublepage=empty,
+  DIV=13,
+  draft=false,
+  fontsize=12pt,
+  headings=big,
+  open=right,
+  paper=a4,
+  parskip=half,
+  toc=flat,
+  twoside=semi
 }
 %\setlength{\parindent}{1em}
 
@@ -43,13 +43,13 @@
 \date{Working Draft: \today}
 \usepackage{hyperref}
 \hypersetup{
-	pdfauthor={Robbie Smith},
-	pdftitle={Qevesa Grammar},
-	pdfkeywords={},
-	pdfsubject={Constructed Linguistics},
-	pdfcreator={XeLaTeX},
-	colorlinks=false,
-	pdfborder={0 0 0 0}}
+  pdfauthor={Robbie Smith},
+  pdftitle={Qevesa Grammar},
+  pdfkeywords={},
+  pdfsubject={Constructed Linguistics},
+  pdfcreator={XeLaTeX},
+  colorlinks=false,
+  pdfborder={0 0 0 0}}
 \usepackage[all]{hypcap}
 
 %% Language settings
@@ -96,16 +96,16 @@
 
 \newenvironment{itemize*}
 {\begin{itemize}
-			\setlength{\itemindent}{0pt}
-			\setlength{\itemsep}{1.25pt}
-			\setlength{\parskip}{0.5pt}
-			\setlength{\parsep}{0.5pt}}
-		%\setlength{\leftmargin}{1.5em}
-		{\end{itemize}}
+      \setlength{\itemindent}{0pt}
+      \setlength{\itemsep}{1.25pt}
+      \setlength{\parskip}{0.5pt}
+      \setlength{\parsep}{0.5pt}}
+    %\setlength{\leftmargin}{1.5em}
+    {\end{itemize}}
 
 \renewcommand*{\appendixmore}{
-	\renewcommand*{\chapterformat}{\appendixname~\thechapter\autodot\enskip}
-	\renewcommand*{\chaptermarkformat}{\appendixname~\thechapter\autodot\enskip}
+  \renewcommand*{\chapterformat}{\appendixname~\thechapter\autodot\enskip}
+  \renewcommand*{\chaptermarkformat}{\appendixname~\thechapter\autodot\enskip}
 }
 
 \renewcommand*{\tableformat}{\tablename~\thetable\autodot}
@@ -186,66 +186,66 @@
 
 \begin{document}
 
-	\maketitle
-	%\frontmatter
-	%\subfile{titlepage}
+  \maketitle
+  %\frontmatter
+  %\subfile{titlepage}
 
-	\setcounter{secnumdepth}{-1}% Unnumbered chapters
-	\pagenumbering{roman}
+  \setcounter{secnumdepth}{-1}% Unnumbered chapters
+  \pagenumbering{roman}
 
-	\tableofcontents
+  \tableofcontents
 
-	% Uncomment when you add some figures
-	%\listoffigures
+  % Uncomment when you add some figures
+  %\listoffigures
 
-	\listoftables
+  \listoftables
 
-	\subfile{preface}
+  \subfile{preface}
 
-	% \pagestyle{fancy}
-	%\mainmatter
-	\setcounter{secnumdepth}{4}
-	% Uncomment this when finished to place chapters on right pages.
-	%\KOMAoptions{open=right}
+  % \pagestyle{fancy}
+  %\mainmatter
+  \setcounter{secnumdepth}{4}
+  % Uncomment this when finished to place chapters on right pages.
+  %\KOMAoptions{open=right}
 
-	\subfile{background}
+  \subfile{background}
 
-	\subfile{phonology}
+  \subfile{phonology}
 
-	\subfile{morphological-typology}
+  \subfile{morphological-typology}
 
-	\subfile{derivational-morphology}
+  \subfile{derivational-morphology}
 
-	\subfile{verbal-morphology}
+  \subfile{verbal-morphology}
 
-	\subfile{nominal-morphology}
+  \subfile{nominal-morphology}
 
-	\subfile{adjectival-morphology}
-	
-	\subfile{numerals}
+  \subfile{adjectival-morphology}
 
-	%\subfile{postpositions}
+  \subfile{numerals}
 
-	\subfile{constituent-order-typology}
+  %\subfile{postpositions}
 
-	%\subfile{verbal-syntax}
+  \subfile{constituent-order-typology}
 
-	%\subfile{nominal-syntax}
+  %\subfile{verbal-syntax}
 
-	%\subfile{registers}
+  %\subfile{nominal-syntax}
 
-	%\subfile{valency}
+  %\subfile{registers}
 
-	%\subfile{verbphrases}
+  %\subfile{valency}
 
-	%\subfile{pragmatics}
+  %\subfile{verbphrases}
 
-	%\subfile{clauses}
-	
-	% APPENDICES
-	\appendix
-	%\renewcommand{\thechapter}{\Alph{chapter}}
-	\subfile{abbreviations}
-	%\backmatter
+  %\subfile{pragmatics}
+
+  %\subfile{clauses}
+
+  % APPENDICES
+  \appendix
+  %\renewcommand{\thechapter}{\Alph{chapter}}
+  \subfile{abbreviations}
+  %\backmatter
 
 \end{document}
