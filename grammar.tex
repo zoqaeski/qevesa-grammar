@@ -2,39 +2,21 @@
 % !TEX TS-program = xelatex
 % !TEX encoding = UTF-8
 
-%%%%%%%%%%%%%%%%%%%
-% Test using memoir
-%%%%%%%%%%%%%%%%%%%
-%\documentclass[a4paper,12pt,twoside,onecolumn,openright,draft,showtrims]{memoir}
-%\settrimmedsize{297mm}{210mm}{*}
-%\setlength{\trimtop}{0pt}
-%\setlength{\trimedge}{\stockwidth}
-%\addtolength{\trimedge}{-\paperwidth}
-%\settypeblocksize{634pt}{448.13pt}{*}
-%\setulmargins{4cm}{*}{*}
-%\setlrmargins{*}{*}{1.5}
-%\setmarginnotes{17pt}{51pt}{\onelineskip}
-%\setheadfoot{\onelineskip}{2\onelineskip}
-%\setheaderspaces{*}{2\onelineskip}{*}
-%\checkandfixthelayout
-
 \documentclass{scrreprt}
 % I use KOMA-script as I find it gives much easier control than a mishmash of different packages.
 %% KOMA options
-\KOMAoptions{
-  appendixprefix=false,
-  chapterprefix=false,
-  cleardoublepage=empty,
-  DIV=13,
-  draft=false,
-  fontsize=12pt,
-  headings=big,
-  open=right,
-  paper=a4,
-  parskip=half,
-  toc=flat,
-  twoside=semi
-}
+\KOMAoption{appendixprefix}{false}
+\KOMAoption{chapterprefix}{false}
+\KOMAoption{cleardoublepage}{empty}
+\KOMAoption{DIV}{13}
+\KOMAoption{draft}{false}
+\KOMAoption{fontsize}{12pt}
+\KOMAoption{headings}{big}
+\KOMAoption{open}{right}
+\KOMAoption{paper}{a4}
+\KOMAoption{parskip}{half}
+\KOMAoption{toc}{flat}
+\KOMAoption{twoside}{semi}
 %\setlength{\parindent}{1em}
 
 %% Metadata
@@ -94,14 +76,16 @@
 \makeatother
 
 
-\newenvironment{itemize*}
-{\begin{itemize}
-      \setlength{\itemindent}{0pt}
-      \setlength{\itemsep}{1.25pt}
-      \setlength{\parskip}{0.5pt}
-      \setlength{\parsep}{0.5pt}}
+\newenvironment{itemize*}{
+  \begin{itemize}
+    \setlength{\itemindent}{0pt}
+    \setlength{\itemsep}{1.25pt}
+    \setlength{\parskip}{0.5pt}
+    \setlength{\parsep}{0.5pt}}
     %\setlength{\leftmargin}{1.5em}
-    {\end{itemize}}
+{
+  \end{itemize}
+}
 
 \renewcommand*{\appendixmore}{
   \renewcommand*{\chapterformat}{\appendixname~\thechapter\autodot\enskip}
@@ -137,6 +121,7 @@
 \usepackage{tabularx}
 \usepackage{xtab}
 \usepackage[font=small,textfont=it,labelfont=up,format=hang,parskip=5pt]{caption,subfig}
+\usepackage{floatrow}
 
 \newcommand{\SetRowStyle}[1]{\gdef\RowStyle{#1}#1\ignorespaces}
 \newcolumntype{f}{>{\global\let\RowStyle\relax}}
