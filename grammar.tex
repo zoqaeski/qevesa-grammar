@@ -1,4 +1,4 @@
-%\listfiles
+\listfiles
 % !TEX TS-program = xelatex
 % !TEX encoding = UTF-8
 
@@ -19,19 +19,33 @@
 \KOMAoption{twoside}{semi}
 %\setlength{\parindent}{1em}
 
+% KOMA is complaining and apparently this fixes it =/
+\usepackage{scrhack}
+\usepackage{listings}
+
+% Split document into multiple parts
+\usepackage{subfiles}
+
 %% Metadata
 \title{Qevesa Grammar}
 \author{Robbie Smith}
 \date{Working Draft: \today}
+
+% Grab the title of the document
+\makeatletter
+\let\mytitle\@title
+\let\myauthor\@author
+\let\mydate\@date
+\makeatother
+
 \usepackage{hyperref}
 \hypersetup{
-  pdfauthor={Robbie Smith},
-  pdftitle={Qevesa Grammar},
+  pdfauthor={\myauthor},
+  pdftitle={\mytitle},
   pdfkeywords={},
   pdfsubject={Constructed Linguistics},
   pdfcreator={XeLaTeX},
-  colorlinks=false,
-  pdfborder={0 0 0 0}}
+  hidelinks=true}
 \usepackage[all]{hypcap}
 
 %% Language settings
@@ -42,14 +56,6 @@
 %\usepackage{draftwatermark}
 %\SetWatermarkText{\textsf{DRAFT}}
 \providecommand{\ToBeWritten}{\emph{To be written\dots}}
-
-
-% Grab the title of the document
-\makeatletter
-\let\mytitle\@title
-\let\myauthor\@author
-\let\mydate\@date
-\makeatother
 
 \usepackage[automark,nouppercase]{scrpage2}
 \pagestyle{scrheadings}
@@ -95,7 +101,6 @@
 \renewcommand*{\tableformat}{\tablename~\thetable\autodot}
 \renewcommand*{\captionformat}{~}
 
-\usepackage{subfiles}
 
 %% Font settings
 % If I want to use mathematics fonts I can use mathspec instead of fontspec and it will probably work.
@@ -108,6 +113,12 @@
 \setsansfont{Linux Biolinum O}
 \setmonofont[Scale=MatchLowercase]{DejaVu Sans Mono}
 %\setmathfont{Linux Libertine O}
+
+% Allow me to use proper angle brackets
+\usepackage{newunicodechar}
+\newfontfamily\anglefont{FreeSerif}
+\newunicodechar{⟨}{{\anglefont ⟨}}
+\newunicodechar{⟩}{{\anglefont ⟩}}
 
 %% Underline capable (but not needed here
 %\usepackage[normalem]{ulem}
@@ -166,6 +177,10 @@
 \providecommand{\superh}{\textsuperscript{h}}
 \providecommand{\superj}{\textsuperscript{j}}
 \providecommand{\superw}{\textsuperscript{w}}
+
+% Special forms
+\providecommand{\foreign}[1]{\textit{#1}}
+\providecommand{\qevesa}[1]{\textit{#1}}
 
 %%% END PREAMBLE
 
