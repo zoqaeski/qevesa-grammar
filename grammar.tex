@@ -26,6 +26,9 @@
 % Split document into multiple parts
 \usepackage{subfiles}
 
+% e-TeX tools
+\usepackage{etoolbox}
+
 %% Metadata
 \title{Qevesa Grammar}
 \author{Robbie Smith}
@@ -130,7 +133,7 @@
 \usepackage{multirow}
 \usepackage{multicol}
 \usepackage{tabularx}
-\usepackage{xtab}
+%\usepackage{xtab}
 \usepackage[font=small,textfont=it,labelfont=up,format=hang,parskip=5pt]{caption,subfig}
 \usepackage{floatrow}
 
@@ -140,12 +143,32 @@
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \renewcommand{\arraystretch}{1.25}
 \renewcommand{\tabcolsep}{3pt}
+\newcommand{\tnl}{\tabularnewline}
 
 %% Other settings
 \hyphenpenalty=5000
 \tolerance=500
 \widowpenalty=1500
 \clubpenalty=1500
+
+% Glossaries for abbreviations
+\usepackage[acronymlists={glossing},nomain,nonumberlist,numberedsection,toc,sanitize=none,section=chapter,smallcaps,shortcuts,xindy]{glossaries}
+
+\newglossarystyle{twocollist}{\glossarystyle{list}\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}\AfterEndEnvironment{theglossary}{\end{multicols*}}}
+
+% Custom display style to match old abbreviations.tex
+\newglossary[alg]{glossing}{acr}{acn}{List of Glossing Abbreviations}
+\glossarystyle{twocollist}
+\renewcommand{\glsnamefont}[1]{\textnormal{\scshape #1}}
+\renewcommand*{\glsgroupskip}{}
+\renewcommand{\glspostdescription}{}
+%\renewcommand{\acronymname}{List of Glossing Abbreviations}
+
+%\setglossarysection{chapter}
+
+\loadglsentries[glossing]{abbreviations-db}
+\glsunsetall
+\makeglossaries
 
 %% Linguistics
 %\usepackage{tipa}
@@ -164,23 +187,23 @@
 \let\eachwordone=\textit
 
 \renewcommand{\sup}[1]{\textsuperscript{#1}}
-\providecommand{\sub}[1]{\textsubscript{#1}}
+\newcommand{\sub}[1]{\textsubscript{#1}}
 
-\providecommand{\dec}{\textsubscript{10}}
-\providecommand{\subdec}{\textsubscript{10}}
-\providecommand{\duo}{\textsubscript{12}}
-\providecommand{\subduo}{\textsubscript{12}}
+\newcommand{\dec}{\textsubscript{10}}
+\newcommand{\subdec}{\textsubscript{10}}
+\newcommand{\duo}{\textsubscript{12}}
+\newcommand{\subduo}{\textsubscript{12}}
 
-\providecommand{\bs}{\textbackslash}
+\newcommand{\bs}{\textbackslash}
 
 % Shortcuts for IPA symbols
-\providecommand{\superh}{\textsuperscript{h}}
-\providecommand{\superj}{\textsuperscript{j}}
-\providecommand{\superw}{\textsuperscript{w}}
+\newcommand{\superh}{\textsuperscript{h}}
+\newcommand{\superj}{\textsuperscript{j}}
+\newcommand{\superw}{\textsuperscript{w}}
 
 % Special forms
-\providecommand{\foreign}[1]{\textit{#1}}
-\providecommand{\qevesa}[1]{\textit{#1}}
+\newcommand{\foreign}[1]{\textit{#1}}
+\newcommand{\qevesa}[1]{\textit{#1}}
 
 %%% END PREAMBLE
 
@@ -245,7 +268,9 @@
   % APPENDICES
   \appendix
   %\renewcommand{\thechapter}{\Alph{chapter}}
-  \subfile{abbreviations}
+  %\subfile{abbreviations}
+  \glsaddall
+  \printglossary[type=glossing]
   %\backmatter
 
 \end{document}

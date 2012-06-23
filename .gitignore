@@ -6,6 +6,10 @@
 *.out
 *.toc
 *.pdf
+*.xdy
+*.alg
+*.acn
+*.acr
 
 # Don't ignore grammar.pdf
 !grammar.pdf
