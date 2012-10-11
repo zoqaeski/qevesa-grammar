@@ -10,6 +10,7 @@
 *.alg
 *.acn
 *.acr
+*.fls
 
 # Don't ignore grammar.pdf
 !grammar.pdf
