@@ -71,9 +71,9 @@
   Some examples are given in Example~\ref{exe:nm_number}.
 
   \begin{table}[htpb]\small\capstart
-      \begin{tabular}{|>{\bfseries}fc->{\scshape}fc|-c|}
-        \hline
-        & & \bfseries Suffix \tnl
+      \begin{tabular}{>{\bfseries}fl->{\scshape}fc -c}
+        %\hline
+        %& & \bfseries Suffix \tnl
         \hline
         Natural           &          & -∅  \tnl
         %Singular         & \acs{sg} & -∅ \tnl
@@ -97,7 +97,7 @@
     \end{tabular}
   \end{exe}
 
-  In Example~\ref{exe:nm_number}, note that the word \qevesa{tolik} ‘boy’ has a singular natural number, but the word \qevesa{mari} has a dual natural number.  The suffixes can be applied for emphasis or to indicate quantity (i.e. \qevesa{kör mariv} ‘three eyes’).
+  In Example~\ref{exe:nm_number}, note that the word \qevesa{tolik} ‘boy’ has a singular natural number, but the word \qevesa{mari} has a dual natural number.  The suffixes can be applied for emphasis or to indicate quantity (i.e. \qevesa{koro mariv} ‘three eyes’).
 
   \subsection{Case}
   \label{ssec:nm_case}
@@ -107,21 +107,21 @@
   The case suffixes are listed in Table~\ref{tab:nm_case_suffixes}.  The \textsc{pc} columns list suffixes that follow a consonant, and the \textsc{pv} columns list suffixes that follow a vowel.  
 
   \begin{table}[htpb]\small\capstart
-      \begin{tabular}{|>{\bfseries}fc>{\scshape}c|-c-c|-c-c|}
+      \begin{tabular}{>{\bfseries}fl>{\scshape}l -c-c -c-c}
         \hline
-        \multicolumn{2}{|fc|}{\SetRowStyle{\bfseries}\multirow{3}{*}{Case}} & \multicolumn{2}{-c|}{Animate} & \multicolumn{2}{-c|}{Inanimate} \tnl
-        \cline{3-6}
-        \SetRowStyle{\scshape} & & \multicolumn{2}{-c|}{anim} & \multicolumn{2}{-c|}{inanim} \tnl
+        \multicolumn{2}{fl}{\SetRowStyle{\bfseries}} & \multicolumn{2}{-c}{Animate} & \multicolumn{2}{-c}{Inanimate} \tnl
+        %\cline{3-6}
+        \SetRowStyle{\scshape} & & \multicolumn{2}{-c}{anim} & \multicolumn{2}{-c}{inanim} \tnl
         \SetRowStyle{\scshape} & & pc & pv & pc & pv \tnl
         \hline
         \multirow{2}{*}{Focal}    & \acs{foc}      & -a    & -∅   & -a    & -na  \tnl
                                   & \acs{foc}\sub2 & -a    & -a   & -an   & -n   \tnl
-        Nominative                & \acs{nom}      & -am   & -m   & -om   & -mm  \tnl
-        Absolutive                & \acs{abs}      & -aš   & -š   & -oš   & -niš \tnl
-        Secundative               & \acs{sdt}      & -ot   & -t   & -ot   & -nt  \tnl
+        Nominative                & \acs{nom}      & -am   & -m   & -om   & -m  \tnl
+        Absolutive                & \acs{abs}      & -aš   & -š   & -oš   & -š \tnl
+        Secundative               & \acs{sdt}      & -ot   & -t   & -ot   & -t  \tnl
         \hline
-        Genitive                  & \acs{gen}      & -ek   & -k   & -ok   & -nk  \tnl
-        Essive                    & \acs{ess}      & -el   & -l   & -ol   & -ll  \tnl
+        Genitive                  & \acs{gen}      & -ek   & -k   & -ok   & -k  \tnl
+        Essive                    & \acs{ess}      & -el   & -l   & -ol   & -l  \tnl
         Instrumental (Comitative) & \acs{ins}      & -etti & -tti & -onta & -nta \tnl
         Inessive                  & \acs{ine}      & -essi & -ssi & -ossa & -ssa \tnl
         Adessive                  & \acs{ade}      & -edi  & -di  & -oda  & -da  \tnl
@@ -226,7 +226,7 @@
   The locative cases are logically grouped.  There are two positions (internal and external) and three directions (static, movement towards and movement away).  Combining these results in the six cases, illustrated in Table~\ref{tab:nm_locative_cases}.
 
   \begin{table}[htpb]\small\capstart
-      \begin{tabular}{|>{\bfseries}fc|-c|-c|}
+      \begin{tabular}{>{\bfseries}fc -c -c}
         \hline
         \SetRowStyle{\bfseries} & Interior & Exterior \tnl
         \hline
@@ -255,7 +255,7 @@
   The \emph{partitive} state makes the noun partitive. 
   It functions broadly similarly to the English determiner ‘some’, but may also be required by some quantifiers. 
   %It is formed by the prefix \qevesa{mëC\sub1}, that is, prefixing \qevesa{më-} and duplicating the first root consonant. 
-  Like the definite state, it also has two forms, \qevesa{më} and \qevesa{mën}.   
+  Like the definite state, it also has two forms, \qevesa{mie} and \qevesa{mies}.   
 
   The \emph{negative} state negates the noun, and is distinct from negating the verb phrase. 
   It is formed by the clitic \qevesa{nák}. 
@@ -265,9 +265,9 @@
   The \textsc{pc} column lists clitics that precede a consonant, and the \textsc{pv} column lists clitics that precede a vowel.
 
 %  \begin{table}[htpb]\small\capstart
-%    \begin{tabular}{|>{\bfseries}fc>{\scshape}c|-c|-c|}
+%    \begin{tabular}{>{\bfseries}fc>{\scshape}c -c -c}
 %      \hline
-%      \multicolumn{2}{|fc|}{\SetRowStyle{\bfseries}State} & Prefix \tnl
+%      \multicolumn{2}{fc}{\SetRowStyle{\bfseries}State} & Prefix \tnl
 %      \hline
 %      Absolute  & \acs{abst}  & ∅-        \tnl
 %      Definite  & \acs{def}   & aC\sub1-  \tnl
@@ -279,32 +279,32 @@
 %  \end{table}
 
   \begin{table}[htpb]\small\capstart
-    \begin{tabular}{|>{\bfseries}fc>{\scshape}c|-c|-c|-c|}
+    \begin{tabular}{>{\bfseries}fc>{\scshape}c -c -c -c}
       \hline
-      \multicolumn{2}{|fc|}{\SetRowStyle{\bfseries}\multirow{2}{*}{State}} & \multicolumn{2}{-c|}{Clitic} \tnl
-      \cline{3-4}
+      \multicolumn{2}{fc}{\SetRowStyle{\bfseries}\multirow{2}{*}{State}} & \multicolumn{2}{-c}{Clitic} \tnl
+      %\cline{3-4}
       \SetRowStyle{\scshape} & & pc & pv \tnl
       \hline
       Absolute  & \acs{abst} & ∅   & ∅  \tnl
       Definite  & \acs{def}  & a   & az  \tnl
-      Partitive & \acs{part} & më  & mën \tnl
+      Partitive & \acs{part} & mie & mies \tnl
       Negative  & \acs{neg}  & nák & nák \tnl
       \hline
     \end{tabular}
     \caption{Noun state clitics\label{tab:nm_state_clitic}}
   \end{table}
 
-%%   railway = iron road = zeléskölij
-%%   Qevelian Railways = Qevel??? Zeléskölijes
+%%   railway = iron road = zeléskolij
+%%   Qevelian Railways = Qevel??? Zeléskolijes
 
-%% the railway = a zeléskölij
-%% some railway(s) = më zeléskölij
-%% no railway(s) = nak zeléskölij
+%% the railway = a zeléskolij
+%% some railway(s) = mie zeléskolij
+%% no railway(s) = nák zeléskolij
 
 %% a house = panem
 %% the house = a panem
-%% some house(s) = më panem
-%% no house(s) = nak panem
+%% some house(s) = mie panem
+%% no house(s) = nák panem
 
   \section{Pronouns and Pronomial forms}
   \label{sec:nm_pronouns}
@@ -318,96 +318,68 @@
 
   The personal pronouns stand in for other nouns, indicating that noun's person, number and case.  Most personal pronouns refer only to animate referents: a separate inanimate pronoun is used for inanimate referents.  There are two first person plural pronouns, an inclusive, which includes the listener, and an exclusive, which does not. 
 
-  Personal pronouns are declined to the primary cases by suffixation; other case constructions use a stem derived from the case ending combined with the suffix form of the pronoun.  Although a genetive form of the personal pronouns exists, the suffix form is preferred to indicate posession. 
+  Personal pronouns are declined to the primary cases by suffixation; other case constructions use a stem derived from the case ending combined with the suffix form of the pronoun.  The suffix form is used to indicate posession; pronouns are not declined to the genetive case.  
 
   The base forms of the pronouns are given in Table~\ref{tab:nm_pronoun_primary_case}, and the cases with personal suffixes are given in Table~\ref{tab:nm_personal_cases}.
 
   \begin{table}[htpb]\small\capstart
-      \begin{tabular}{|>{\scshape}fc|-c|-c|-c|-c|-c|-c|-c|}
+      \begin{tabular}{>{\scshape}fc -c -c -c -c -c -c}
         \hline
-        \SetRowStyle{\bfseries} & \multicolumn{2}{-c|}{Stem} & \multicolumn{5}{-c|}{Cases}\tnl
-        \cline{2-8}
-        & Root & Suffix &\SetRowStyle{\scshape} \acs{foc} & \acs{nom} & \acs{abs} & \acs{sdt} & \acs{gen} \tnl
+        \SetRowStyle{\bfseries} & \multicolumn{2}{-c}{Stem} & \multicolumn{4}{-c}{Cases}\tnl
+        %\cline{2-7}
+        & Root & Suffix &\SetRowStyle{\scshape} \acs{foc} & \acs{nom} & \acs{abs} & \acs{sdt} \tnl
         \hline
-        \acs{1p}\acs{sg}           & ë   & -(a)j     & ë    & ëm    & ëš    & ët    & ëk \tnl
-        \acs{2p}\acs{sg}           & ta  & -ut/-ːt   & ta   & tam   & taš   & tajot & tak \tnl
-        \acs{3p}\acs{sg}           & mi  & -im       & mi   & mim   & miš   & mijot & mik \tnl
-        \acs{1p}\acs{du};\acs{inc} & ëv  & -ëva/-iva & ëva  & ëvam  & ëvaš  & ëvot  & ëvek \tnl
-        \acs{1p}\acs{du};\acs{exc} & čev & -(e)čev   & čeva & čevam & čevaš & čevot & čevek \tnl
-        \acs{2p}\acs{du}           & tav & -(a)tuv   & tava & tavam & tavaš & tavot & tavek \tnl
-        \acs{3p}\acs{du}           & miv & -(a)miv   & miva & mivam & mivaš & mivot & mivek \tnl
-        \acs{1p}\acs{du};\acs{inc} & ës  & -ësa/-isa & ësa  & ësam  & ësaš  & ësot  & ësek \tnl
-        \acs{1p}\acs{du};\acs{exc} & čes & -(e)čes   & česa & česam & česaš & česot & česek \tnl
-        \acs{2p}\acs{du}           & tas & -(a)tus   & tasa & tasam & tasaš & tasot & tasek \tnl
-        \acs{3p}\acs{du}           & mis & -(a)mis   & misa & misam & misaš & misot & misek \tnl
+        \acs{1p}\acs{sg}           & je  & -(a)j     & je   & jem   & ješ   & jeut  \tnl
+        \acs{2p}\acs{sg}           & ta  & -ut/-ːt   & ta   & tam   & taš   & tait  \tnl
+        \acs{3p}\acs{sg}           & mi  & -im       & mi   & mim   & miš   & miot  \tnl
+        \acs{1p}\acs{du};\acs{inc} & jev & -eva/-iva & jeva & jevam & jevaš & jevot \tnl
+        \acs{1p}\acs{du};\acs{exc} & čev & -(e)čev   & čeva & čevam & čevaš & čevot \tnl
+        \acs{2p}\acs{du}           & tav & -(a)tuv   & tava & tavam & tavaš & tavot \tnl
+        \acs{3p}\acs{du}           & miv & -(a)miv   & miva & mivam & mivaš & mivot \tnl
+        \acs{1p}\acs{du};\acs{inc} & jes & -esa/-isa & jesa & jesam & jesaš & jesot \tnl
+        \acs{1p}\acs{du};\acs{exc} & čes & -(e)čes   & česa & česam & česaš & česot \tnl
+        \acs{2p}\acs{du}           & tas & -(a)tus   & tasa & tasam & tasaš & tasot \tnl
+        \acs{3p}\acs{du}           & mis & -(a)mis   & misa & misam & misaš & misot \tnl
         %\hline
-        \acs{inanim};\acs{sg}      & net & -net      & neta & netom & netoš & netot & netok \tnl
-        \acs{inanim};\acs{du}      & nev & -nev      & neva & nevom & nevoš & nevot & nevok \tnl
-        \acs{inanim};\acs{pl}      & nes & -nes      & nesa & nesom & nesoš & nesot & nesok \tnl
+        \acs{inanim};\acs{sg}      & net & -net      & neta & netom & netoš & netot \tnl
+        \acs{inanim};\acs{du}      & nev & -nev      & neva & nevom & nevoš & nevot \tnl
+        \acs{inanim};\acs{pl}      & nes & -nes      & nesa & nesom & nesoš & nesot \tnl
         \hline
       \end{tabular}
       \caption{Personal pronouns\label{tab:nm_pronoun_primary_case}}
   \end{table}
 
-  \begin{table}[htpb]\small\capstart
-      \subfloat{
-        \begin{tabular}{|>{\scshape}fc|->{\itshape}c|-c|-c|-c|-c|-c|}
-          \hline
-          \multicolumn{2}{|fc|}{\SetRowStyle{\bfseries}} & \multicolumn{5}{-c|}{Cases}\tnl
-          \cline{3-7}
-          \multicolumn{2}{|fc|}{\SetRowStyle{\scshape}} & \acs{ess} & \acs{ins} & \acs{ine} & \acs{ade} & \acs{ill} \tnl
-          \cline{3-7}
-          \multicolumn{2}{|fc|}{\SetRowStyle{\itshape}} & ël- & ëtt- & ëss- & ëd- & ëst- \tnl
-          \hline
-          \acs{1p}\acs{sg}           & -(a)j     & ëlaj   & ëttaj   & ëssaj   & ëdaj   & ëstaj \tnl
-          \acs{2p}\acs{sg}           & -ut/-ːt   & ëlut   & ëttut   & ëssut   & ëdut   & ëstut \tnl
-          \acs{3p}\acs{sg}           & -im/-ːm   & ëlim   & ëttim   & ëssim   & ëdim   & ëstim \tnl
-          \acs{1p}\acs{du};\acs{inc} & -ëva/-iva & ëliva  & ëttiva  & ëssiva  & ëdiva  & ëstiva \tnl
-          \acs{1p}\acs{du};\acs{exc} & -(e)čev   & ëlečev & ëttečev & ëssečev & ëdečev & ëstečev \tnl
-          \acs{2p}\acs{du}           & -(a)tuv   & ëlatuv & ëttatuv & ëssatuv & ëdatuv & ëstatuv \tnl
-          \acs{3p}\acs{du}           & -(a)miv   & ëlamiv & ëttamiv & ëssamiv & ëdamiv & ëstamiv \tnl
-          \acs{1p}\acs{pl};\acs{inc} & -ësa/-isa & ëlisa  & ëttisa  & ëssisa  & ëdisa  & ëstisa \tnl
-          \acs{1p}\acs{pl};\acs{exc} & -(e)čes   & ëlečes & ëttečes & ëssečes & ëdečes & ëstečes \tnl
-          \acs{2p}\acs{pl}           & -(a)tus   & ëlaset & ëttatus & ëssatus & ëdatus & ëstatus \tnl
-          \acs{3p}\acs{pl}           & -(a)mis   & ëlamis & ëttamis & ëssamis & ëdamis & ëstamis \tnl
-          \hline
-          \multicolumn{2}{|fc|}{\SetRowStyle{\itshape}} & ola- & onti- & ossi- & od- & osta- \tnl
-          \hline
-          \acs{inanim};\acs{sg}     & -net   & olanet & ontinet & ossinet & odnet  & ostanet \tnl
-          \acs{inanim};\acs{du}     & -nev   & olanev & ontinev & ossinev & odnev  & ostanev \tnl
-          \acs{inanim};\acs{pl}     & -nes   & olanes & ontines & ossines & odnes  & ostanes \tnl
-          \hline
-        \end{tabular}}\\
-      \subfloat{
-        \begin{tabular}{|>{\scshape}fc|->{\itshape}c|-c|-c|-c|-c|}
-          \hline
-          \multicolumn{2}{|fc|}{\SetRowStyle{\bfseries}} & \multicolumn{4}{-c|}{Cases}\tnl
-          \cline{3-6}
-          \multicolumn{2}{|fc|}{\SetRowStyle{\scshape}} & \acs{all} & \acs{ela} & \acs{abl} & \acs{comp} \tnl
-          \cline{3-6}
-          \multicolumn{2}{|fc|}{\SetRowStyle{\itshape}} & ëft- & ësp- & ësk- & na- \tnl
-          \hline
-          \acs{1p}\acs{sg}           & -(a)j     & ëftaj   & ëspaj   & ëskaj   & náj \tnl
-          \acs{2p}\acs{sg}           & -ut/-ːt   & ëftut   & ësput   & ëskut   & nát \tnl
-          \acs{3p}\acs{sg}           & -im/-ːm   & ëftim   & ëspim   & ëskim   & naim \tnl
-          \acs{1p}\acs{du};\acs{inc} & -ëva/-iva & ëftiva  & ëspiva  & ëskiva  & naiva \tnl
-          \acs{1p}\acs{du};\acs{exc} & -(e)čev   & ëftečev & ëspečev & ëskečev & načev \tnl
-          \acs{2p}\acs{du}           & -(a)tuv   & ëftatuv & ëspatuv & ëskatuv & natuv \tnl
-          \acs{3p}\acs{du}           & -(a)miv   & ëftamiv & ëspamiv & ëskamiv & namiv \tnl
-          \acs{1p}\acs{pl};\acs{inc} & -ësa/-isa & ëftisa  & ëspisa  & ëskisa  & naisa \tnl
-          \acs{1p}\acs{pl};\acs{exc} & -(e)čes   & ëftečes & ëspečes & ëskečes & načes \tnl
-          \acs{2p}\acs{pl}           & -(a)tus   & ëftatus & ëspatus & ëskatus & natus \tnl
-          \acs{3p}\acs{pl}           & -(a)mis   & ëftamis & ëspamis & ëskamis & namis \tnl
-          \hline
-          \multicolumn{2}{|fc|}{\SetRowStyle{\itshape}} & ofta- & ospa- & oska- & no- \tnl
-          \hline
-          \acs{inanim};\acs{sg}     & -net   & oftanet & ospanet & oskanet & nonet \tnl
-          \acs{inanim};\acs{du}     & -nev   & oftanev & ospanev & oskanev & nonev \tnl
-          \acs{inanim};\acs{pl}     & -nes   & oftanes & ospanes & oskanes & nones \tnl
-          \hline
-        \end{tabular}}
-      \caption{Cases with personal suffixes\label{tab:nm_personal_cases}}
-  \end{table}
+  \begin{sidewaystable}[htpb]\small\capstart
+    \begin{tabular}{>{\scshape}fc ->{\itshape}c -c -c -c -c -c -c -c -c -c}
+      \hline
+      \multicolumn{2}{fc}{\SetRowStyle{\bfseries}} & \multicolumn{9}{-c}{Cases}\tnl
+      %\cline{3-7}
+      \multicolumn{2}{fc}{\SetRowStyle{\scshape}} & \acs{ess} & \acs{ins} & \acs{ine} & \acs{ade} & \acs{ill} & \acs{all} & \acs{ela} & \acs{abl} & \acs{comp} \tnl
+      %\cline{3-7}
+      \multicolumn{2}{fc}{\SetRowStyle{\itshape}} & el- & ett- & ess- & ed- & est- & eft- & esp- & esk- & na- \tnl
+      \hline
+      \acs{1p}\acs{sg}           & -(a)j     & elaj   & ettaj   & essaj   & edaj   & estaj & eftaj   & espaj   & eskaj   & náj \tnl
+      \acs{2p}\acs{sg}           & -ut/-ːt   & elut   & ettut   & essut   & edut   & estut & eftut   & esput   & eskut   & nát \tnl
+      \acs{3p}\acs{sg}           & -im/-ːm   & elim   & ettim   & essim   & edim   & estim & eftim   & espim   & eskim   & naim \tnl
+      \acs{1p}\acs{du};\acs{inc} & -eva/-iva & eliva  & ettiva  & essiva  & ediva  & estiva & eftiva  & espiva  & eskiva  & naiva \tnl
+      \acs{1p}\acs{du};\acs{exc} & -(e)čev   & elečev & ettečev & essečev & edečev & estečev& eftečev & espečev & eskečev & načev \tnl
+      \acs{2p}\acs{du}           & -(a)tuv   & elatuv & ettatuv & essatuv & edatuv & estatuv& eftatuv & espatuv & eskatuv & natuv \tnl
+      \acs{3p}\acs{du}           & -(a)miv   & elamiv & ettamiv & essamiv & edamiv & estamiv& eftamiv & espamiv & eskamiv & namiv \tnl
+      \acs{1p}\acs{pl};\acs{inc} & -esa/-isa & elisa  & ettisa  & essisa  & edisa  & estisa & eftisa  & espisa  & eskisa  & naisa \tnl
+      \acs{1p}\acs{pl};\acs{exc} & -(e)čes   & elečes & ettečes & essečes & edečes & estečes& eftečes & espečes & eskečes & načes \tnl
+      \acs{2p}\acs{pl}           & -(a)tus   & elaset & ettatus & essatus & edatus & estatus& eftatus & espatus & eskatus & natus \tnl
+      \acs{3p}\acs{pl}           & -(a)mis   & elamis & ettamis & essamis & edamis & estamis& eftamis & espamis & eskamis & namis \tnl
+      \hline
+      \multicolumn{2}{fc}{\SetRowStyle{\itshape}} & ola- & onti- & ossi- & od- & osta- & ofta- & ospa- & oska- & no- \tnl
+      \hline
+      \acs{inanim};\acs{sg}     & -net   & olanet & ontinet & ossinet & odnet  & ostanet & oftanet & ospanet & oskanet & nonet \tnl
+      \acs{inanim};\acs{du}     & -nev   & olanev & ontinev & ossinev & odnev  & ostanev & oftanev & ospanev & oskanev & nonev \tnl
+      \acs{inanim};\acs{pl}     & -nes   & olanes & ontines & ossines & odnes  & ostanes & oftanes & ospanes & oskanes & nones \tnl
+      \hline
+    \end{tabular}
+    \caption{Cases with personal suffixes\label{tab:nm_personal_cases}}
+  \end{sidewaystable}
+
 
   \subsubsection{Possessive Suffixes}
   \label{sssec:mn_possessive_suffixes}
@@ -419,12 +391,12 @@
   \label{ssec:nm_reflexive_pronouns}
 
   %Qevesa does not possess reflexive or reciprocal pronouns as most verb roots have forms that indicate reflexive\footnote{See  Section~\ref{ssec:dev_verb_form_v}, page~\pageref{ssec:dev_verb_form_v}} or reciprocal\footnote{See  Section~\ref{ssec:dev_verb_form_iii}, page~\pageref{ssec:dev_verb_form_iii}} actions.  The word \qevesa{máka} ‘self’, may be used as a reflexive pronoun to avoid ambiguity, but this is rare.
-   Qevesa possesses a single reflexive pronoun, \qevesa{meka} ‘self’, used to refer to something already mentioned.  It inflects with the personal suffixes to agree in person with its antecedent. 
+   Qevesa possesses a single reflexive pronoun, \qevesa{meika} ‘self’, used to refer to something already mentioned.  It inflects with the personal suffixes to agree in person with its antecedent. 
    %The resulting set of pronouns is given in Table~\ref{tab:nm_reflexive_pronouns}. 
-   A related pronoun is the reciprocal pronoun \qevesa{mökem}, which does not take personal suffixes.
+   A related pronoun is the reciprocal pronoun \qevesa{mokem}, which does not take personal suffixes.
 
 %   \begin{table}[htpb]\small\capstart
-%   		\begin{tabular}{|>{\scshape}fc|-c|}
+%   		\begin{tabular}{>{\scshape}fc -c}
 %   			\hline
 %   			\SetRowStyle{\bfseries} & Reflexive \tnl
 %   			%\cline{2-2}
@@ -441,7 +413,7 @@
 %   			\acs{1p}\acs{pl};exc   & mekačés \tnl
 %   			\acs{2p}\acs{pl}       & mekatás \tnl
 %   			\acs{3p}\acs{pl}       & mekamis \tnl
-%        recp      & mökem   \tnl
+%        recp      & mokem   \tnl
 %        %\hline
 %   			inanim;sg & mekonet \tnl
 %   			inanim;du & mekonev \tnl
@@ -473,13 +445,13 @@
 
   \begin{table}[htpb]\small\capstart
       %\subfloat[Demonstrative pronouns]{
-        \begin{tabular}{|>{\bfseries}fc->{\scshape}c|->{\itshape}c|-c|-c|-c|-c|}
+        \begin{tabular}{>{\bfseries}fc->{\scshape}c ->{\itshape}c -c -c -c -c}
           \hline
-          \multicolumn{3}{|fc|}{\SetRowStyle{\bfseries}} & Proximal & Medial & Distal & Interrogative \tnl
+          \multicolumn{3}{fc}{\SetRowStyle{\bfseries}} & Proximal & Medial & Distal & Interrogative \tnl
           %\cline{3-6}
-          \multicolumn{3}{|fc|}{\SetRowStyle{\scshape}} & \acs{prox} & \acs{med} & \acs{dist} & \acs{int} \tnl
-          \cline{4-7}
-          \multicolumn{3}{|fc|}{\SetRowStyle{\itshape}} & to- & ko- & isá- & qe- \tnl
+          \multicolumn{3}{fc}{\SetRowStyle{\scshape}} & \acs{prox} & \acs{med} & \acs{dist} & \acs{int} \tnl
+          %\cline{4-7}
+          \multicolumn{3}{fc}{\SetRowStyle{\itshape}} & to- & ko- & isá- & qe- \tnl
           \hline
           Human       & \acs{hum}  & -tka & totka & kotka & isátka & qetka \tnl
           Nonhuman    & \acs{nh}   & -ra  & tora  & kora  & isára  & qera  \tnl
@@ -492,22 +464,22 @@
           \hline
         \end{tabular}%}\\
 %      \subfloat[Correlative pronouns]{
-%        \begin{tabular}{|>{\bfseries}fc->{\scshape}c|->{\itshape}c|-c|-c|-c|-c|}
+%        \begin{tabular}{>{\bfseries}fc->{\scshape}c ->{\itshape}c -c -c -c -c}
 %          \hline
-%          \multicolumn{3}{|fc|}{\SetRowStyle{\bfseries}} & Existential & Elective & Universal & Negative \tnl
+%          \multicolumn{3}{fc}{\SetRowStyle{\bfseries}} & Existential & Elective & Universal & Negative \tnl
 %          %\cline{3-6}
-%          \multicolumn{3}{|fc|}{\SetRowStyle{\scshape}} & exist & elect & univ & neg \tnl
+%          \multicolumn{3}{fc}{\SetRowStyle{\scshape}} & exist & elect & univ & neg \tnl
 %          \cline{4-7}
-%          \multicolumn{3}{|fc|}{\SetRowStyle{\itshape}} & ane- & via- & minű- & zumo- \tnl
+%          \multicolumn{3}{fc}{\SetRowStyle{\itshape}} & ane- & via- & minú- & zumo- \tnl
 %          \hline
-%          Human				& hum  & -tka & anetka & viatka & minűtka & zumotka \tnl
-%          Nonhuman		& nh   & -ra  & anera  & viara  & minűra  & zumora  \tnl
-%          Location		& loc  & -zól & anezól & viazól & minűzól & zumozól \tnl
-%          Source			& src  & -ská & aneská & viaská & minűská & zumoská \tnl
-%          Destination & dest & -rve & anerve & viarve & minűrve & zumorve \tnl
-%          Time				& time & -lti & anelti & vialti & minűlti & zumolti \tnl
-%          Manner			& man  & -ttu & anettu & viattu & minűttu & zumottu \tnl
-%          Reason			& rsn  & -rte & anerte & viarte & minűrte & zumorte \tnl
+%          Human				& hum  & -tka & anetka & viatka & minútka & zumotka \tnl
+%          Nonhuman		& nh   & -ra  & anera  & viara  & minúra  & zumora  \tnl
+%          Location		& loc  & -zól & anezól & viazól & minúzól & zumozól \tnl
+%          Source			& src  & -ská & aneská & viaská & minúská & zumoská \tnl
+%          Destination & dest & -rve & anerve & viarve & minúrve & zumorve \tnl
+%          Time				& time & -lti & anelti & vialti & minúlti & zumolti \tnl
+%          Manner			& man  & -ttu & anettu & viattu & minúttu & zumottu \tnl
+%          Reason			& rsn  & -rte & anerte & viarte & minúrte & zumorte \tnl
 %          \hline
 %        \end{tabular}}
 %     \caption{Demonstrative and correlative pronouns\label{tab:nm_demonstrative_correlative_pronouns}}

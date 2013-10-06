@@ -1,0 +1,37 @@
+(to) write : turum
+P          & AOR         & FUT;PFV     & PRS        & IPF        & FUT;IPFV   & PRS;PERF   & PLUP       & FUT;PERF
+1sg        & tiuromaim   & tiuramaim   & tirumaim   & torumaim   & tarumaim   & terímaim   & terómaim   & terámaim
+2sg        & tiuromtum   & tiuramtum   & tirumtum   & torumtum   & tarumtum   & terímtum   & terómtum   & terámtum
+3sg;anim   & tiuromam    & tiuramam    & tirumam    & torumam    & tarumam    & terímam    & terómam    & terámam
+3sg;inanim & tiuromnom   & tiuramnom   & tirumnom   & torumnom   & tarumnom   & terímnom   & terómnom   & terámnom
+
+1du;inc    & tiuromavim  & tiuramavim  & tirumavim  & torumavim  & tarumavim  & terímavim  & terómavim  & terámavim
+1du;exc    & tiuromčevim & tiuramčevim & tirumčevim & torumčevim & tarumčevim & terímčevim & terómčevim & terámčevim
+2du        & tiuromtuvim & tiuramtuvim & tirumtuvim & torumtuvim & tarumtuvim & terímtuvim & terómtuvim & terámtuvim
+3du;anim   & tiuromvam   & tiuramvam   & tirumvam   & torumvam   & tarumvam   & terímvam   & terómvam   & terámvam
+3du;inanim & tiuromnovim & tiuramnovim & tirumnovim & torumnovim & tarumnovim & terímnovim & terómnovim & terámnovim
+
+1pl;inc    & tiuromasim  & tiuramasim  & tirumasim  & torumasim  & tarumasim  & terímasim  & terómasim  & terámasim
+1pl;exc    & tiuromčesim & tiuramčesim & tirumčesim & torumčesim & tarumčesim & terímčesim & terómčesim & terámčesim
+2pl        & tiuromtusim & tiuramtusim & tirumtusim & torumtusim & tarumtusim & terímtusim & terómtusim & terámtusim
+3pl;anim   & tiuromsam   & tiuramsam   & tirumsam   & torumsam   & tarumsam   & terímsam   & terómsam   & terámsam
+3pl;inanim & tiuromnosim & tiuramnosim & tirumnosim & torumnosim & tarumnosim & terímnosim & terómnosim & terámnosim
+
+(to) say : puhut
+P          & AOR         & FUT;PFV     & PRS        & IPF        & FUT;IPFV   & PRS;PERF   & PLUP       & FUT;PERF
+1sg        & piuhotaim   & piuhataim   & pihutaim   & pohutaim   & pahutaim   & pehítaim   & pehótaim   & pehátaim
+2sg        & piuhottum   & piuhattum   & pihuttum   & pohuttum   & pahuttum   & pehíttum   & pehóttum   & peháttum
+3sg;anim   & piuhotam    & piuhatam    & pihutam    & pohutam    & pahutam    & pehítam    & pehótam    & pehátam
+3sg;inanim & piuhotnom   & piuhatnom   & pihutnom   & pohutnom   & pahutnom   & pehítnom   & pehótnom   & pehátnom
+
+1du;inc    & piuhotavim  & piuhatavim  & pihutavim  & pohutavim  & pahutavim  & pehítavim  & pehótavim  & pehátavim
+1du;exc    & piuhotčevim & piuhatčevim & pihutčevim & pohutčevim & pahutčevim & pehítčevim & pehótčevim & pehátčevim
+2du        & piuhottuvim & piuhattuvim & pihuttuvim & pohuttuvim & pahuttuvim & pehíttuvim & pehóttuvim & peháttuvim
+3du;anim   & piuhotvam   & piuhatvam   & pihutvam   & pohutvam   & pahutvam   & pehítvam   & pehótvam   & pehátvam
+3du;inanim & piuhotnovim & piuhatnovim & pihutnovim & pohutnovim & pahutnovim & pehítnovim & pehótnovim & pehátnovim
+
+1pl;inc    & piuhotasim  & piuhatasim  & pihutasim  & pohutasim  & pahutasim  & pehítasim  & pehótasim  & pehátasim
+1pl;exc    & piuhotčesim & piuhatčesim & pihutčesim & pohutčesim & pahutčesim & pehítčesim & pehótčesim & pehátčesim
+2pl        & piuhottusim & piuhattusim & pihuttusim & pohuttusim & pahuttusim & pehíttusim & pehóttusim & peháttusim
+3pl;anim   & piuhotsam   & piuhatsam   & pihutsam   & pohutsam   & pahutsam   & pehítsam   & pehótsam   & pehátsam
+3pl;inanim & piuhotnosim & piuhatnosim & pihutnosim & pohutnosim & pahutnosim & pehítnosim & pehótnosim & pehátnosim

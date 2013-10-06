@@ -1,0 +1,9 @@
+# Replaces front vowels with back vowels
+s/ö/o/g
+s/ő/ó/g
+s/ü/u/g
+s/ű/ú/g
+s/Ö/O/g
+s/Ő/Ó/g
+s/Ü/U/g
+s/Ű/Ú/g
