@@ -134,12 +134,14 @@
 \usepackage{multirow}
 \usepackage{multicol}
 \usepackage{tabularx}
+\usepackage{booktabs}
 %\usepackage{xtab}
 \usepackage[font=small,textfont=it,labelfont=up,format=hang,parskip=5pt]{caption,subfig}
 \usepackage{floatrow}
 
 \newcommand{\SetRowStyle}[1]{\gdef\RowStyle{#1}#1\ignorespaces}
-\newcolumntype{f}{>{\global\let\RowStyle\relax}}
+\newcolumntype{F}{>{\global\let\RowStyle\relax}}
+\newcolumntype{f}{>{\RowStyle}X}
 \newcolumntype{-}{>{\RowStyle}}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \renewcommand{\arraystretch}{1.25}
@@ -203,6 +205,7 @@
 \newcommand{\superh}{\textsuperscript{h}}
 \newcommand{\superj}{\textsuperscript{j}}
 \newcommand{\superw}{\textsuperscript{w}}
+\newcommand{\tsb}[1]{\textsubbridge{#1}}
 
 % Special forms
 \newcommand{\foreign}[1]{\textit{#1}}
@@ -240,7 +243,10 @@
 
   \subfile{morphological-typology}
 
-  \subfile{derivational-morphology}
+  % TODO Split the derivational morphology chapter so that the verb forms goes
+  % in Verbal Morphology, and the derivational processes get their own section
+  % placed before syntax.
+  %\subfile{derivational-morphology}
 
   \subfile{verbal-morphology}
 

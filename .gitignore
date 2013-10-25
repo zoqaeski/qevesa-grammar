@@ -11,6 +11,8 @@
 *.acn
 *.acr
 *.fls
+images/
+notes/
 
 # Don't ignore grammar.pdf
 !grammar.pdf
