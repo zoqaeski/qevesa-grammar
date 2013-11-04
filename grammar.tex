@@ -69,7 +69,7 @@
 \renewcommand*{\headfont}{\itshape\scshape}% Will equal \scshape for most fonts
 \renewcommand*{\chaptermarkformat}{\chapapp~\thechapter\autodot\enskip}
 
-% Numbering and ... stuff
+% Numbering and lists
 \usepackage[compact]{titlesec}
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
@@ -83,7 +83,6 @@
   {0.75ex \@plus 0.125ex}%
   {\normalfont\normalsize\bfseries}}
 \makeatother
-
 
 \newenvironment{itemize*}{
   \begin{itemize}
@@ -125,17 +124,14 @@
 
 %% Underline capable (but not needed here
 %\usepackage[normalem]{ulem}
-
 \usepackage{enumitem}
 
 %% Table tricks
 \usepackage{array}
-\usepackage{rotating}
 \usepackage{multirow}
 \usepackage{multicol}
 \usepackage{tabularx}
 \usepackage{booktabs}
-%\usepackage{xtab}
 \usepackage[font=small,textfont=it,labelfont=up,format=hang,parskip=5pt]{caption,subfig}
 \usepackage{floatrow}
 
@@ -147,6 +143,9 @@
 \renewcommand{\arraystretch}{1.25}
 \renewcommand{\tabcolsep}{3pt}
 \newcommand{\tnl}{\tabularnewline}
+
+% Sideways pages
+\usepackage{pdflscape}
 
 %% Other settings
 \hyphenpenalty=5000
@@ -191,22 +190,18 @@
 
 \renewcommand{\sup}[1]{\textsuperscript{#1}}
 \newcommand{\sub}[1]{\textsubscript{#1}}
-
 \newcommand{\dec}{\textsubscript{10}}
 \newcommand{\subdec}{\textsubscript{10}}
 \newcommand{\duo}{\textsubscript{12}}
 \newcommand{\subduo}{\textsubscript{12}}
 \newcommand{\ttwo}{\textturntwo}
 \newcommand{\tthree}{\textturnthree}
-
 \newcommand{\bs}{\textbackslash}
-
 % Shortcuts for IPA symbols
 \newcommand{\superh}{\textsuperscript{h}}
 \newcommand{\superj}{\textsuperscript{j}}
 \newcommand{\superw}{\textsuperscript{w}}
 \newcommand{\tsb}[1]{\textsubbridge{#1}}
-
 % Special forms
 \newcommand{\foreign}[1]{\textit{#1}}
 \newcommand{\qevesa}[1]{\textit{#1}}
@@ -277,7 +272,7 @@
   % APPENDICES
   \appendix
   %\renewcommand{\thechapter}{\Alph{chapter}}
-  %\subfile{abbreviations}
+  \subfile{appendix-noun-suffixes}
   \glsaddall
   \printglossary[type=glossing]
   %\backmatter
