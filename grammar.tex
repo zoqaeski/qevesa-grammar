@@ -122,6 +122,9 @@
 \newunicodechar{⟨}{{\anglefont ⟨}}
 \newunicodechar{⟩}{{\anglefont ⟩}}
 
+% Qevesa native script support
+%\newfontfamily\qefamily{TherasaUnicode}
+
 %% Underline capable (but not needed here
 %\usepackage[normalem]{ulem}
 \usepackage{enumitem}
@@ -141,7 +144,8 @@
 \newcolumntype{-}{>{\RowStyle}}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
 \renewcommand{\arraystretch}{1.25}
-\renewcommand{\tabcolsep}{3pt}
+\renewcommand{\tabcolsep}{0.5em}
+\newcommand{\tc}[1]{\renewcommand{\tabcolsep}{#1}}
 \newcommand{\tnl}{\tabularnewline}
 
 % Sideways pages

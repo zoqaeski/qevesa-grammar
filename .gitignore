@@ -13,6 +13,8 @@
 *.fls
 images/
 notes/
+scripts/
+ibus/
 
 # Don't ignore grammar.pdf
 !grammar.pdf
