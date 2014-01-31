@@ -9,25 +9,36 @@
   \subsection{Vowel inventory}
   \label{ssec:vowels}
 
-  \begin{table}[htpb]\small\capstart
-        \begin{tabular}{>{\bfseries}Fl -c -c -c}
-          \toprule
-          \SetRowStyle{\bfseries} & Front & Central & Back \\
-          \midrule
-          Close & i iː &      & u uː \\% ʉ ʉː \\
-          Mid   & e eː &      & o oː \\
-          Open  &      & a aː \\
-          \bottomrule
-        \end{tabular}
-      \caption{Qevesa vowel phonemes\label{tab:vowels}}
-  \end{table}
-
+%  \begin{table}[htpb]\small\capstart
+%        \begin{tabular}{>{\bfseries}Fl -c -c -c}
+%          \toprule
+%          \SetRowStyle{\bfseries} & Front & Central & Back \\
+%          \midrule
+%          Close & i iː &      & u uː \\% ʉ ʉː \\
+%          Mid   & e eː &      & o oː \\
+%          Open  &      & a aː \\
+%          \bottomrule
+%        \end{tabular}
+%      \caption{Qevesa vowel phonemes\label{tab:vowels}}
+%  \end{table}
 
   There are ten distinct vowel phonemes in Qevesa, listed in
-  \cref{tab:vowels}.  These are divided into five long and five short
+  \cref{vowel_phonemes}.  These are divided into five long and five short
   phonemes, differing in length but not quality.  Long vowels are held
   approximately twice as long as their short counterparts.
   
+  \begin{figure}[h]\capstart
+    \begin{vowel}
+      \putvowel{i/iː}{0\vowelhunit}{0\vowelvunit}{node}
+      %\putvowel{i}{0.6\vowelhunit}{0.3\vowelvunit}{node}
+      \putvowel{u/uː}{3\vowelhunit}{0pt}{node}
+      \putvowel{e/eː}{1\vowelhunit}{1.5\vowelvunit}{node}
+      \putvowel{o/oː}{4\vowelhunit}{1.5\vowelvunit}{node}
+      \putvowel{a/aː}{3\vowelhunit}{3\vowelvunit}{node}
+    \end{vowel}
+    \caption{Vowel phonemes\label{vowel_phonemes}}
+  \end{figure}
+
   Although the vowels [e] and [o] are conventionally written using the
   close-mid \textsc{ipa} symbols, they are more accurately transcribed as mid
   vowels [\textlowering{e}] and [\textlowering{o}].  Word-initial /e/ is often
@@ -37,10 +48,9 @@
   \cref{tab:diphthongs}.  /i-/ onset diphthongs may cause palatalisation
   of the preceding consonant, and /u-/ onset glides may cause labialisation of
   the preceding consonant.  Whilst plain vowels may occur word-initially,
-  diphthongs cannot.  Long vowels could also be analysed as diphthongs
-  consisting of two identical vowels.
+  diphthongs cannot.
 
-  \begin{table}[htpb]\small\capstart
+  \begin{table}[h]\small\capstart
         \begin{tabular}{>{\bfseries}Fl -c -c -c -c}
           \toprule
           \SetRowStyle{\bfseries} & i- & -i & u- & -u \\
@@ -283,9 +293,5 @@
 
   Qevesa possesses a limited pitch-accent.
   \ToBeWritten
-
-  \section{Unicode Script Test}
-
-
 
 \end{document}
