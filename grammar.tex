@@ -45,9 +45,7 @@
 \hypersetup{
   pdfauthor={\myauthor},
   pdftitle={\mytitle},
-  pdfkeywords={},
-  pdfsubject={Constructed Linguistics},
-  pdfcreator={XeLaTeX},
+  colorlinks=false,
   hidelinks=true}
 \usepackage[all]{hypcap}
 
@@ -66,24 +64,19 @@
 \lehead[]{\mytitle}
 \rohead[]{\leftmark}
 \cfoot[\pagemark]{\pagemark}
-\renewcommand*{\headfont}{\itshape\scshape}% Will equal \scshape for most fonts
+
+\renewcommand*{\headfont}{\scshape}
 \renewcommand*{\chaptermarkformat}{\chapapp~\thechapter\autodot\enskip}
 
-% Numbering and lists
-\usepackage[compact]{titlesec}
-\setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{4}
-%\titlespacing{\section}{0pt}{1.25ex + 0.5ex - 0.25ex}{0.875ex + 0.25ex}
-%\titlespacing{\subsection}{0pt}{1.125ex + 0.375ex - 0.125ex}{0.875ex + 0.125ex}
-%\titlespacing{\subsubsection}{0pt}{1.0ex + 0.25ex - 0.125ex}{0.75ex + 0.125ex}
-%\titlespacing{\paragraph}{0pt}{1.0ex + 0.125ex - 0.125ex}{0.75ex + 0.125ex}
-\makeatletter
-\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
-  {1.0ex \@plus 0.125ex \@minus 0.125ex}%
-  {0.75ex \@plus 0.125ex}%
-  {\normalfont\normalsize\bfseries}}
-\makeatother
+\renewcommand*{\appendixmore}{
+  \renewcommand*{\chapterformat}{\appendixname~\thechapter\autodot\enskip}
+  \renewcommand*{\chaptermarkformat}{\appendixname~\thechapter\autodot\enskip}
+}
 
+\renewcommand*{\tableformat}{\tablename~\thetable\autodot}
+\renewcommand*{\captionformat}{~}
+
+\usepackage{enumitem}
 \newenvironment{itemize*}{
   \begin{itemize}
     \setlength{\itemindent}{0pt}
@@ -94,14 +87,6 @@
 {
   \end{itemize}
 }
-
-\renewcommand*{\appendixmore}{
-  \renewcommand*{\chapterformat}{\appendixname~\thechapter\autodot\enskip}
-  \renewcommand*{\chaptermarkformat}{\appendixname~\thechapter\autodot\enskip}
-}
-
-\renewcommand*{\tableformat}{\tablename~\thetable\autodot}
-\renewcommand*{\captionformat}{~}
 
 
 %% Font settings
@@ -125,10 +110,6 @@
 % Qevesa native script support
 %\newfontfamily\qefamily{TherasaUnicode}
 
-%% Underline capable (but not needed here
-%\usepackage[normalem]{ulem}
-\usepackage{enumitem}
-
 %% Table tricks
 \usepackage{array}
 \usepackage{multirow}
@@ -143,6 +124,9 @@
 \newcolumntype{f}{>{\RowStyle}X}
 \newcolumntype{-}{>{\RowStyle}}
 \newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{B}{>{\bfseries}} % Bold
+\newcolumntype{S}{>{\scshape}}  % Smallcaps
+\newcolumntype{I}{>{\itshape}}  % Italics
 \renewcommand{\arraystretch}{1.25}
 \renewcommand{\tabcolsep}{0.5em}
 \newcommand{\tc}[1]{\renewcommand{\tabcolsep}{#1}}
@@ -164,13 +148,10 @@
 
 % Custom display style to match old abbreviations.tex
 \newglossary[alg]{glossing}{acr}{acn}{List of Glossing Abbreviations}
-\glossarystyle{twocollist}
+\setglossarystyle{twocollist}
 \renewcommand{\glsnamefont}[1]{\textnormal{\scshape #1}}
 \renewcommand*{\glsgroupskip}{}
 \renewcommand{\glspostdescription}{}
-%\renewcommand{\acronymname}{List of Glossing Abbreviations}
-
-%\setglossarysection{chapter}
 
 \loadglsentries[glossing]{abbreviations-db}
 \glsunsetall
@@ -189,23 +170,19 @@
 %\let\endpex=\endex
 
 \usepackage{pst-vowel}
-\usepackage{gb4e} % gb4e might be obsolete, not sure whether to replace with ExPex
+\usepackage{gb4e} 
 \noautomath
 \let\eachwordone=\textit
 
 \renewcommand{\sup}[1]{\textsuperscript{#1}}
 \newcommand{\sub}[1]{\textsubscript{#1}}
 \newcommand{\dec}{\textsubscript{10}}
-\newcommand{\subdec}{\textsubscript{10}}
 \newcommand{\duo}{\textsubscript{12}}
-\newcommand{\subduo}{\textsubscript{12}}
-\newcommand{\ttwo}{\textturntwo}
-\newcommand{\tthree}{\textturnthree}
 \newcommand{\bs}{\textbackslash}
 % Shortcuts for IPA symbols
-\newcommand{\superh}{\textsuperscript{h}}
-\newcommand{\superj}{\textsuperscript{j}}
-\newcommand{\superw}{\textsuperscript{w}}
+\newcommand{\suph}{\textsuperscript{h}}
+\newcommand{\supj}{\textsuperscript{j}}
+\newcommand{\supw}{\textsuperscript{w}}
 \newcommand{\tsb}[1]{\textsubbridge{#1}}
 % Special forms
 \newcommand{\foreign}[1]{\textit{#1}}

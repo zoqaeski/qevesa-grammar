@@ -118,8 +118,8 @@
   
  % Some examples are given in \cref{exe:nm_number}.
 
-  \begin{table}[htpb]\small\capstart
-      \begin{tabular}{>{\bfseries}Fl->{\scshape}Fc -l}
+  \begin{table}[h!]\small\capstart
+      \begin{tabular}{BFl -Sc -l}
         \toprule
         \multicolumn{2}{Fl}{\SetRowStyle{\bfseries}Number} & Suffix \\
         \midrule
@@ -163,8 +163,8 @@
   columns list suffixes that follow a consonant, and the right columns list
   suffixes that follow a vowel.  
 
-  \begin{table}[htpb]\small\capstart
-      \begin{tabular}{>{\bfseries}Fl>{\scshape}l -l -l -l -l}
+  \begin{table}[h!]\small\capstart
+      \begin{tabular}{BFl Sl -l -l -l -l}
         \toprule
         \multicolumn{2}{Fc}{\SetRowStyle{\bfseries}Noun Case} & \multicolumn{2}{-c}{Animate} & \multicolumn{2}{-c}{Inanimate} \\
         \SetRowStyle{\scshape} & & \multicolumn{2}{-c}{anim} & \multicolumn{2}{-c}{inanim} \\
@@ -303,8 +303,8 @@
   away).  Combining these results in the six cases, illustrated in
   \cref{tab:nm_locative_cases}.
 
-  \begin{table}[htpb]\small\capstart
-      \begin{tabular}{>{\bfseries}Fl -l -l}
+  \begin{table}[h!]\small\capstart
+      \begin{tabular}{BFl -l -l}
         \toprule
         \SetRowStyle{\bfseries} & Interior & Exterior \\
         \midrule
@@ -346,8 +346,8 @@
 %  The left column lists clitics that precede a consonant, and the right column
 %  lists clitics that precede a vowel.
 %
-%  \begin{table}[htpb]\small\capstart
-%    \begin{tabular}{>{\bfseries}Fl>{\scshape}l -l -l -l}
+%  \begin{table}[h!]\small\capstart
+%    \begin{tabular}{BFlSl -l -l -l}
 %      \toprule
 %      \multicolumn{2}{Fc}{\SetRowStyle{\bfseries}State} & \multicolumn{2}{-c}{Clitic} \\
 %      \midrule
@@ -402,35 +402,35 @@
   \cref{tab:nm_pronoun_primary_case}, and the cases with personal suffixes
   are given in \cref{tab:nm_personal_cases}.
 
-  \begin{table}[htpb]\small\capstart
-      \begin{tabular}{>{\scshape}Fl -l -l -l -l -l -l -l}
+  \begin{table}[h!]\small\capstart
+      \begin{tabular}{SFl -l -l -l -l -l -l -l}
         \toprule
         \SetRowStyle{\bfseries} & \multicolumn{2}{-c}{Stem} & \multicolumn{5}{-c}{Cases}\\
         & Root & Suffix &\SetRowStyle{\scshape} \acs{foc} & \acs{nom} & \acs{abs} & \acs{sdt} & \acs{gen} \\
         \midrule
-        \acs{1p}\acs{sg}           & je   & -(a)i     & je    & jem   & ješ   & jeut  & jek  \\
-        \acs{2p}\acs{sg}           & tá   & -ut       & tá    & tám   & táš   & tait  & ták  \\
-        \acs{3p}\acs{sg}           & mi   & -(i)m     & mi    & mim   & miš   & miot  & miek  \\
-        \acs{1p}\acs{du};\acs{inc} & ju   & -iu, -iv  & íva   & jum   & juš   & ívot  & ívek \\
-        \acs{1p}\acs{du};\acs{exc} & če   & -(e)če    & čia   & čém   & čéš   & čeut  & ček \\
-        \acs{2p}\acs{du}           & tav  & -(e)tu    & táva  & távam & távaš & távot & távek \\
-        \acs{3p}\acs{du}           & miv  & -(u)mi    & miva  & mivam & mivaš & mivot & mivek \\
-        \acs{1p}\acs{pl};\acs{inc} & is   & -isa, -si & ísa   & ísam  & ísaš  & ísot  & ísek \\
-        \acs{1p}\acs{pl};\acs{exc} & čes  & -(e)če    & česa  & česam & česaš & česot & česek \\
-        \acs{2p}\acs{pl}           & tás  & -(a)tá    & tása  & tásam & tásaš & tásot & tásek \\
-        \acs{3p}\acs{pl}           & mis  & -(a)mi    & misa  & misam & misaš & misot & misek \\
-        \midrule                                                                      
-        \acs{inanim};\acs{sg}      & han  & -an, -ːn  & hanna & hanom & hanoš & hanot & hanek \\
-        \acs{inanim};\acs{du}      & vina & -ve, -ːve & vinna & vinom & vinoš & vinot & vinek \\
-        \acs{inanim};\acs{pl}      & sina & -se, -ːse & sinna & sinom & sinoš & sinot & sinek \\
+        \acs{1p}\acs{sg}           & je   & -(a)i     & je   & jem   & ješ   & jeut  & jek  \\
+        \acs{2p}\acs{sg}           & tá   & -ut       & tá   & tám   & táš   & tait  & ták  \\
+        \acs{3p}\acs{sg}           & mi   & -(i)m     & mi   & mim   & miš   & miot  & miek  \\
+        \acs{1p}\acs{du};\acs{inc} & vu   & -iu, -iv  & vu   & vum   & vuš   & vot   & vek \\
+        \acs{1p}\acs{du};\acs{exc} & če   & -(e)če    & ča   & čém   & čéš   & čeut  & ček \\
+        \acs{2p}\acs{du}           & tav  & -(e)tu    & táva & távam & távaš & távot & távek \\
+        \acs{3p}\acs{du}           & miv  & -(u)mi    & miva & mivam & mivaš & mivot & mivek \\
+        \acs{1p}\acs{pl};\acs{inc} & jis  & -isa, -si & jisa & jisam & jisaš & jisot & jisek \\
+        \acs{1p}\acs{pl};\acs{exc} & čes  & -(e)če    & česa & česam & česaš & česot & česek \\
+        \acs{2p}\acs{pl}           & tás  & -(a)tá    & tása & tásam & tásaš & tásot & tásek \\
+        \acs{3p}\acs{pl}           & mis  & -(a)mi    & misa & misam & misaš & misot & misek \\
+        \midrule
+        \acs{inanim};\acs{sg}      & han  & -an, -ːn  & hana & hanom & hanoš & hanot & hanek \\
+        \acs{inanim};\acs{du}      & vina & -ve, -ːve & vina & vinom & vinoš & vinot & vinek \\
+        \acs{inanim};\acs{pl}      & sina & -se, -ːse & sina & sinom & sinoš & sinot & sinek \\
         \bottomrule
       \end{tabular}
       \caption{Personal pronouns\label{tab:nm_pronoun_primary_case}}
   \end{table}
 
   \begin{landscape}
-  \begin{table}[htpb]\small\capstart
-    \begin{tabular}{>{\scshape}Fl ->{\itshape}l -l -l -l -l -l -l -l -l -l}
+  \begin{table}[h!]\small\capstart
+    \begin{tabular}{SFl -Il -l -l -l -l -l -l -l -l -l}
       \toprule
       \multicolumn{2}{Fc}{\SetRowStyle{\bfseries}} & \multicolumn{9}{-c}{Cases}\\
       \multicolumn{2}{Fc}{\SetRowStyle{\scshape}} & \acs{ess} & \acs{ins} & \acs{ine} & \acs{ade} & \acs{ill} & \acs{all} & \acs{ela} & \acs{abl} & \acs{comp} \\
@@ -493,8 +493,8 @@
    suffixes to agree in person with its antecedent.  A related pronoun is the
    reciprocal pronoun \qevesa{mocchem}, which does not take personal suffixes.
 
-%   \begin{table}[htpb]\small\capstart
-%   		\begin{tabular}{>{\scshape}fc -c}
+%   \begin{table}[h!]\small\capstart
+%   		\begin{tabular}{Sfc -c}
 %   			\hline
 %   			\SetRowStyle{\bfseries} & Reflexive \\
 %   			%\cline{2-2}
@@ -529,19 +529,19 @@
 
   Qevesa has three degrees of demonstrative pronouns, as well as an interrogative series.
 
-  \begin{description}[style=nextline]
-    \item[Proximal] The proximal series refers to things closer to the speaker than the listener;
-    \item[Medial] The medial series refers to things closer to the listener than the speaker; and
-    \item[Distal] The distal series refers to things that are far from both speaker and listener.
-  \end{description}
+  \begin{itemize*}
+    \item The \textbf{proximal} series refers to things closer to the speaker than the listener;
+    \item The \textbf{medial} series refers to things closer to the listener than the speaker; and
+    \item The \textbf{distal} series refers to things that are far from both speaker and listener.
+  \end{itemize*}
 
   Demonstrative pronouns must agree in number and case with their antecedent,
   unlike all other types of modifiers, such as adjectives. 
 
   The demonstrative pronouns are are listed in \cref{tab:nm_demonstrative_pronouns}.
 
-  \begin{table}[htpb]\small\capstart
-    \begin{tabularx}{0.75 \textwidth}{>{\bfseries}Fl->{\scshape}l ->{\itshape}l *{3}{f} -l}
+  \begin{table}[h!]\small\capstart
+    \begin{tabularx}{0.75 \textwidth}{BFl -Sl -Il -l -l -l -l}
       \toprule
       \SetRowStyle{\bfseries} & &  & Proximal & Medial & Distal & Interrogative \\
       \SetRowStyle{\scshape}  & & & \acs{prox} & \acs{med} & \acs{dist} & \acs{int} \\
