@@ -2,7 +2,7 @@
 % !TEX TS-program = xelatex
 % !TEX encoding = UTF-8
 
-\documentclass{scrreprt}
+\documentclass{scrbook}
 % I use KOMA-script as I find it gives much easier control than a mishmash of different packages.
 %% KOMA options
 \KOMAoption{appendixprefix}{false}
@@ -34,7 +34,6 @@
 \author{Robbie Smith}
 \date{Working Draft: \today}
 
-% Grab the title of the document
 \makeatletter
 \let\mytitle\@title
 \let\myauthor\@author
@@ -46,7 +45,7 @@
   pdfauthor={\myauthor},
   pdftitle={\mytitle},
   colorlinks=false,
-  hidelinks=true}
+  hidelinks}
 \usepackage[all]{hypcap}
 
 %% Language settings
@@ -89,8 +88,8 @@
 }
 
 
-%% Font settings
-% If I want to use mathematics fonts I can use mathspec instead of fontspec and it will probably work.
+%% Typography Settings
+\usepackage{microtype}
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{xunicode}
@@ -189,16 +188,20 @@
 \newcommand{\qevesa}[1]{\textit{#1}}
 
 \usepackage[capitalise]{cleveref}
+
+% Creative Commons licensing
+\usepackage{ccicons}
 %%% END PREAMBLE
 
 \begin{document}
 
+  \frontmatter
   \maketitle
-  %\frontmatter
   %\subfile{titlepage}
+  \subfile{copyright}
 
-  \setcounter{secnumdepth}{-1}% Unnumbered chapters
-  \pagenumbering{roman}
+  %\setcounter{secnumdepth}{-1}% Unnumbered chapters
+  %\pagenumbering{roman}
 
   \tableofcontents
 
@@ -210,7 +213,7 @@
   \subfile{preface}
 
   % \pagestyle{fancy}
-  %\mainmatter
+  \mainmatter
   \setcounter{secnumdepth}{4}
   % Uncomment this when finished to place chapters on right pages.
   %\KOMAoptions{open=right}
