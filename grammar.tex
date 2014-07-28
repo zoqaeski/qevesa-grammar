@@ -76,15 +76,14 @@
 \renewcommand*{\captionformat}{~}
 
 \usepackage{enumitem}
-\newenvironment{itemize*}{
-  \begin{itemize}
+\let\olditemize\itemize
+\renewcommand{\itemize}{
+	\olditemize
     \setlength{\itemindent}{0pt}
     \setlength{\itemsep}{1.25pt}
     \setlength{\parskip}{0.5pt}
-    \setlength{\parsep}{0.5pt}}
+    \setlength{\parsep}{0.5pt}
     %\setlength{\leftmargin}{1.5em}
-{
-  \end{itemize}
 }
 
 
@@ -224,11 +223,6 @@
 
   \subfile{morphological-typology}
 
-  % TODO Split the derivational morphology chapter so that the verb forms goes
-  % in Verbal Morphology, and the derivational processes get their own section
-  % placed before syntax.
-  %\subfile{derivational-morphology}
-
   \subfile{verbal-morphology}
 
   \subfile{nominal-morphology}
@@ -236,6 +230,8 @@
   \subfile{adjectival-morphology}
 
   \subfile{numerals}
+
+  \subfile{derivational-morphology}
 
   %\subfile{postpositions}
 
@@ -258,7 +254,7 @@
   % APPENDICES
   \appendix
   %\renewcommand{\thechapter}{\Alph{chapter}}
-  \subfile{appendix-noun-suffixes}
+  %\subfile{appendix-noun-suffixes}
   \glsaddall
   \printglossary[type=glossing]
   %\backmatter
