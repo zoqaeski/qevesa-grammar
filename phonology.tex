@@ -1,191 +1,186 @@
 \documentclass[grammar]{subfiles}
 \begin{document}
-  \chapter{Phonology}
-  \label{ch:phonology}
+\chapter{Phonology}
+\label{ch:phonology}
 
-  \section{Phonotactics}
-  \label{sec:phonotactics}
+\section{Phonotactics}
+\label{sec:phonotactics}
 
-  \subsection{Vowel inventory}
-  \label{ssec:vowels}
+\subsection{Vowel inventory}
+\label{ssec:vowels}
 
-%  \begin{table}[h!]\small\capstart
-%        \begin{tabular}{BFl -c -c -c}
-%          \toprule
-%          \SetRowStyle{\bfseries} & Front & Central & Back \\
-%          \midrule
-%          Close & i iː &      & u uː \\% ʉ ʉː \\
-%          Mid   & e eː &      & o oː \\
-%          Open  &      & a aː \\
-%          \bottomrule
-%        \end{tabular}
-%      \caption{Qevesa vowel phonemes\label{tab:vowels}}
-%  \end{table}
+There are ten distinct vowel phonemes in Qevesa, listed in \cref{tab:vowels}.
+These are divided into five long and five short phonemes, differing in length
+but not quality.  Long vowels are held approximately twice as long as their
+short counterparts.
 
-  There are ten distinct vowel phonemes in Qevesa, listed in
-  \cref{vowel_phonemes}.  These are divided into five long and five short
-  phonemes, differing in length but not quality.  Long vowels are held
-  approximately twice as long as their short counterparts.
-  
-  \begin{figure}[h]\capstart
-    \begin{vowel}
-      \putvowel{i/iː}{0\vowelhunit}{0\vowelvunit}{ni}
-      %\putvowel{i}{0.6\vowelhunit}{0.3\vowelvunit}{node}
-      \putvowel{u/uː}{3\vowelhunit}{0pt}{nu}
-      \putvowel{e/eː}{1\vowelhunit}{1.5\vowelvunit}{ne}
-      \putvowel{o/oː}{4\vowelhunit}{1.5\vowelvunit}{no}
-      \putvowel{a/aː}{3\vowelhunit}{3\vowelvunit}{na}
-    \end{vowel}
-    \caption{Vowel phonemes\label{vowel_phonemes}}
-  \end{figure}
+%  \begin{figure}[h]\capstart
+%    \begin{vowel}
+%      \putvowel{i/iː}{0\vowelhunit}{0\vowelvunit}{ni}
+%      %\putvowel{i}{0.6\vowelhunit}{0.3\vowelvunit}{node}
+%      \putvowel{u/uː}{3\vowelhunit}{0pt}{nu}
+%      \putvowel{e/eː}{1\vowelhunit}{1.5\vowelvunit}{ne}
+%      \putvowel{o/oː}{4\vowelhunit}{1.5\vowelvunit}{no}
+%      \putvowel{a/aː}{3\vowelhunit}{3\vowelvunit}{na}
+%    \end{vowel}
+%    \caption{Vowel phonemes\label{vowel_phonemes}}
+%  \end{figure}
 
-  Although the vowels [e] and [o] are conventionally written using the
-  close-mid \textsc{ipa} symbols, they are more accurately transcribed as mid
-  vowels [\textlowering{e}] and [\textlowering{o}].  Word-initial /e/ is often
-  realised as [je], and word-initial /o/ may be realised as [wo] in some dialects.
+\begin{table}[h!]\small\capstart
+  \begin{tabular}{BFl -c -c -c}
+    \toprule
+    \SetRowStyle{\bfseries} & Front & Central & Back \\
+    \midrule
+    Close & i iː &      & u uː \\%ʉ ʉː \\
+    Mid   & e eː &      & o oː \\
+    Open  &      & a aː \\
+    \bottomrule
+  \end{tabular}
+  \caption{Qevesa vowel phonemes\label{tab:vowels}}
+\end{table}
 
-  The diphthongs consist of /i-/ /-i/ /u-/ and /-u/ glides, as exemplified in
-  \cref{tab:diphthongs}.  /i-/ onset diphthongs may cause palatalisation
-  of the preceding consonant, and /u-/ onset glides may cause labialisation of
-  the preceding consonant.  Whilst plain vowels may occur word-initially,
-  diphthongs cannot.
+Although the vowels [e] and [o] are conventionally written using the close-mid
+\textsc{ipa} symbols, they are more accurately transcribed as mid vowels
+[\textlowering{e}] and [\textlowering{o}].  Word-initial /e/ is often realised
+as [je], and word-initial /o/ may be realised as [wo] in some dialects.
 
-  \begin{table}[h]\small\capstart
-        \begin{tabular}{BFl -c -c -c -c}
-          \toprule
-          \SetRowStyle{\bfseries} & i- & -i & u- & -u \\
-          \midrule
-          a & ia & ai & ua & au \\
-          e & ie & ei & ue & eu \\
-          o & io & oi & uo & ou \\
-          i & iː & iː & ui & iu \\
-          u & iu & ui & uː & uː \\
-          \bottomrule
-        \end{tabular}
-      \caption{Qevesa diphthongs\label{tab:diphthongs}}
-  \end{table}
+The diphthongs consist of /i-/ /-i/ /u-/ and /-u/ glides, as exemplified in
+\cref{tab:diphthongs}.  /i-/ onset diphthongs may cause palatalisation of the
+preceding consonant, and /u-/ onset glides may cause labialisation of the
+preceding consonant.
 
-  \subsection{Consonant inventory}
-  \label{ssec:consonants}
+\begin{table}[h]\small\capstart
+  \begin{tabular}{BFl -c -c -c -c}
+    \toprule
+    \SetRowStyle{\bfseries} & i- & -i & u- & -u \\
+    \midrule
+    a & ia & ai & ua & au \\
+    e & ie & ei & ue & eu \\
+    o & io & oi & uo & ou \\
+    i & iː & iː & ui & iu \\
+    u & iu & ui & uː & uː \\
+    \bottomrule
+  \end{tabular}
+  \caption{Qevesa diphthongs\label{tab:diphthongs}}
+\end{table}
 
-  \begin{table}[h!]\small\capstart
-      \begin{tabular}{BFl -c -c -c -c -c -c -c}
-        \toprule
-        \SetRowStyle{\bfseries} & Bilabial & Labiodental & Denti-alveolar & Postalveolar & Palatal & Velar & Glottal \\
-        \midrule
-        Nasal       & m &     & \tsb{n} &    & ɲ \\
-        Plosive     & p &     & \tsb{t} &    & c & k \\ 
-        Fricative   &   & f v & s θ ð   & ʃ  & ç & x & h \\
-        Affricate   &   &     & ts dz   & tʃ \\
-        Approximant &   &     &         &    & j \\
-        Lateral     &   &     & l       &    &   \\
-        Rhotic      &   &     & r       &    &   \\
-        \bottomrule
-      \end{tabular}
-      \caption{Consonants\label{tab:consonants}}
-  \end{table}
+\subsection{Consonant inventory}
+\label{ssec:consonants}
 
-  Qevesa possesses twenty-one consonants, realised as in
-  \cref{tab:consonants}.  Features and allophones of each row are
-  described in more detail below.  Consonants are slightly palatalised before
-  /i/ (and its associated glides).
+\begin{table}[h!]\small\capstart
+  \begin{tabular}{BFl -c -c -c -c -c -c -c}
+    \toprule
+    \SetRowStyle{\bfseries} & Bilabial & Labiodental & Denti-alveolar & Postalveolar & Palatal & Velar & Glottal \\
+    \midrule
+    Nasal       & m &     & \tsb{n} &       & ɲ \\
+    Plosive     & p &     & \tsb{t} &       & c & k \\ 
+    Fricative   &   & f v & s θ ð   & ʃ     & ç & x & h \\
+    Affricate   &   &     & ts dz   & tʃ dʒ \\
+    Approximant &   &     &         &       & j \\
+    Lateral     &   &     & l       &       &   \\
+    Rhotic      &   &     & r       &       &   \\
+    \bottomrule
+  \end{tabular}
+  \caption{Consonants\label{tab:consonants}}
+\end{table}
 
-  Consonantal length is phonemic, so [mata] and [matːa] are distinguished.  In
-  correct speech, geminate consonants should be articulated and released
-  separately, although in quick speech they will be pronounced as prolonged.
-  Geminates may also appear at in word-initial syllables, but are rare
-  word-finally.  Word-medially, syllables will be split at the geminate
-  consonant.
+Qevesa possesses twenty-one consonants, realised as in \cref{tab:consonants}.
+Features and allophones of each row are described in more detail below.
+Consonants are slightly palatalised before /i/ (and its associated glides).
 
-  \subsubsection{Nasals}
-  \label{sssec:nasals}
+Consonantal length is phonemic, so [mata] and [matːa] are distinguished.  In
+correct speech, geminate consonants should be articulated and released
+separately, although in quick speech they will be pronounced as prolonged.
+Geminates may also appear at in word-initial syllables, but are rare
+word-finally.  Word-medially, syllables will be split at the geminate
+consonant.
 
-  Qevesa has three nasal consonants: /m \tsb{n} ɲ/.  /\tsb{n}/ is a laminal
-  denti-alveolar nasal, rather than a true dental nasal.  These consonants are
-  largely consistent in their realisation, though they may assimilate to the
-  articulation point of adjacent plosives in clusters. 
+\subsubsection{Nasals}
+\label{sssec:nasals}
 
-  The velar nasal [ŋ] is an allophone of /\tsb{n} ɲ/ before /k/.
+Qevesa has three nasal consonants: /m \tsb{n} ɲ/.  /\tsb{n}/ is a laminal
+denti-alveolar nasal, rather than a true dental nasal.  These consonants are
+largely consistent in their realisation, though they may assimilate to the
+articulation point of adjacent plosives in clusters. 
 
-  \subsubsection{Plosives}
-  \label{sssec:plosives}
+The velar nasal [ŋ] is an allophone of /\tsb{n} ɲ/ before /k/.
 
-  Qevesa has four plosive consonants.  These are spread over four positions
-  (labial, denti-alveolar, palatal, velar); voice is not distinguished: /p
-  \tsb{t} c k/.  The plosives are often realised with a slight aspiration when
-  syllable-final; /c/ may become an affricate [cç].  
-  
-  %The plosive consonants may be palatalised to [p\supj{} \tsb{t\supj} cç k\supj].
+\subsubsection{Plosives}
+\label{sssec:plosives}
 
-  \subsubsection{Fricatives}
-  \label{sssec:fricatives}
+Qevesa has four plosive consonants.  These are spread over four positions
+(labial, denti-alveolar, palatal, velar); voice is not distinguished: /p
+\tsb{t} c k/.  The plosives are often realised with a slight aspiration when
+syllable-final; /c/ may become an affricate [cç].  
 
-  Qevesa has eight fricative consonants: /f v θ ð s ʃ ç x h/.  /v/ and /ð/ are
-  commonly realised as approximants.  Before /i/ or /j/, /x/ and /h/ may be
-  realised as [ç].
+%The plosive consonants may be palatalised to [p\supj{} \tsb{t\supj} cç k\supj].
+
+\subsubsection{Fricatives}
+\label{sssec:fricatives}
+
+Qevesa has eight fricative consonants: /f v θ ð s ʃ ç x h/.  /v/ and /ð/ are
+commonly realised as approximants.  Before /i/ or /j/, /x/ and /h/ may be
+realised as [ç].
 %  Palatalisation affects the fricatives in a variety of way: 
 % 
-%  \begin{itemize*}
-%    \item /f/ palatalises to [f\supj];
-%    \item /θ/ palatalises to [θ\supj];
-%    %\item /θ/ palatalises to [\tsb{s\supj}];
-%    \item /s/ palatalises to [s\supj]
-%    \item /ʃ/ palatalise to [ɕ];
-%    \item /ʋ/ and /ð/ reduce to [j]; and,
-%    \item /x/ palatalises to [ç];
-%  \end{itemize*}
+%  \begin{itemize} \item /f/ palatalises to [f\supj]; \item /θ/ palatalises to
+%  [θ\supj]; %\item /θ/ palatalises to [\tsb{s\supj}]; \item /s/ palatalises to
+%  [s\supj] \item /ʃ/ palatalise to [ɕ]; \item /ʋ/ and /ð/ reduce to [j]; and,
+%  \item /x/ palatalises to [ç]; \end{itemize}
 
-  \subsubsection{Affricates}
-  \label{sssec:affricates}
+\subsubsection{Affricates}
+\label{sssec:affricates}
 
-  Qevesa has three affricates: /ts dz tʃ/.  /ts/ and /tʃ/ are consistently
-  realised as affricates and behave as though they were a single consonant.
-  /dz/ may be realised as a plain fricative [z] when word initial or preceded
-  by another non-fricative consonant.
+Qevesa has four affricates: /ts dz tʃ dʒ/.  /ts/ and /tʃ/ are consistently
+realised as affricates and behave as though they were a single consonant.  /dz/
+and /dʒ/ may be realised as a plain fricatives [z] and [ʒ] when word initial or
+preceded by another non-fricative consonant.
 
-  %The affricates are affected by palatalisation in a similar manner to the fricatives.
+%The affricates are affected by palatalisation in a similar manner to the fricatives.
 
-  \subsubsection{Liquids and Glides}
-  \label{sssec:liquids}
+\subsubsection{Liquids and Glides}
+\label{sssec:liquids}
 
-  Qevesa has two liquid consonants (one lateral and one rhotic) and two to four glides.
+Qevesa has two liquid consonants (one lateral and one rhotic) and two to four
+glides.
 
-  The lateral consonant is the denti-alveolar /l/.  When preceding an /i-/ glide
-  or /j/, it is realised as [ʎ].  %An allophone of /l/ is [ɬ] that occurs only
-  in some clusters, such as /tl/.
+The lateral consonant is the denti-alveolar /l/.  When preceding an /i-/ glide
+or /j/, it is realised as [ʎ].  %An allophone of /l/ is [ɬ] that occurs only
+% in some clusters, such as /tl/.
 
-  The rhotic consonant is the alveolar trill /r/.  It may be realised as a tap
-  [ɾ] when intervocalic.  
-  %Palatalised /r/ is realised as [ɾj].
+The rhotic consonant is the alveolar trill /r/.  It may be realised as a tap
+[ɾ] when intervocalic.  
+%Palatalised /r/ is realised as [ɾj].
 
-  The glide is the palatal glide /j/.  This shows little allophonic variation,
-  tending to induce allophonic changes in other consonants.  The fricatives /v/
-  and /ð/ are often realised as approximants.  
+The glide is the palatal glide /j/.  This shows little allophonic variation,
+tending to induce allophonic changes in other consonants.  The fricatives /v/
+and /ð/ are often realised as approximants.  
 
-  \subsection{Phonemic Restrictions}
-  \label{ssec:phonemic_restrictions}
+\subsection{Phonemic Restrictions}
+\label{ssec:phonemic_restrictions}
 
-  The main limitations on phonemic distribution are found within the context of
-  consonant clusters.  Any single consonant may appear in onset or coda
-  position, word-initially, word-medially, or word-finally.  Likewise, any
-  vowel may occur in any of the three positions. 
+The main limitations on phonemic distribution are found within the context of
+consonant clusters.  Any single consonant may appear in onset or coda position,
+word-initially, word-medially, or word-finally.  Likewise, any vowel may occur
+in any of the three positions. 
 
-  \subsubsection{Consonant Clusters}
-  \label{sssec:consonant_clusters}
+\subsubsection{Consonant Clusters}
+\label{sssec:consonant_clusters}
 
-  Qevesa is fairly lenient when it comes to word-internal clusters.  Almost any
-  combination is permitted, including clusters containing two consonants having
-  the same point of articulation. 
+Qevesa is fairly lenient when it comes to word-internal clusters.  Almost any
+combination is permitted, including clusters containing two consonants having
+the same point of articulation. 
 
-%  \begin{itemize*}
+%  \begin{itemize}
 %    \item /x/-final clusters result in a [kx] affricate developing
 %    \item /h/-initial clusters result in lengthening of the previous vowel and a slight pre-aspiration of the following consonant
 %    \item /h/-final clusters are realised as simple clusters; some dialects insert a glottal stop between the initial consonant and the /h/
-%  \end{itemize*}
+%  \end{itemize}
 
-  Initial consonant clusters are not permitted, except for palatal and labial offglides.
+Initial consonant clusters are not permitted, except for palatal and labial
+offglides.
 
-%  \begin{itemize*}
+%  \begin{itemize}
 %    \item Any non-palatal plosive or /f v/ + /r l/: /pr tr kr fr vr pl tl kl fl vl/ 
 %    \item /θ s ʃ/ + a plosive or /m n/: /θp θt θk θm θn sp st sk sm sn ʃp ʃt ʃk ʃm ʃn/
 %    \item /θ s ʃ/ + /l/: /θl sl ʃl/
@@ -195,11 +190,11 @@
 %    \item Any non-palatal plosive or fricative + /w/: /pw tw kw fw θw sw ʃw/
 %    \item Any consonant + /i-/ or /u-/ glide.  Note that /i-/ glides and /j/ induce palatalisation of the previous phoneme, according to the allophonic rules described in Sections \ref{sssec:nasals}–\ref{sssec:liquids}, and that /u-/ glides often assimilate to /w/
 %    \item /mn mɲ/
-%  \end{itemize*}
+%  \end{itemize}
 %
 %  Syllable-final clusters are even more restricted than syllable-initial ones:
 %
-%  \begin{itemize*}
+%  \begin{itemize}
 %    %\item A nasal, a plosive, or /r l j/ + /f θ s ʃ/
 %    \item /r l w/ + a plosive or /f θ s ʃ/: /rp rt rk rf rs rʃ lp lt lk lf ls lʃ wp wt wk wf ws wʃ/
 %    \item a nasal or plosive + /f θ s ʃ/: /mf mθ ms mʃ nf nθ ns nʃ pf pθ ps pʃ tf tθ ts tʃ kf kθ ks kʃ/
@@ -207,91 +202,94 @@
 %    \item A fricative + affricate at the same point of articulation: /θtθ sts ʃtʃ/
 %    \item /n/ + /t k/: /nt nk/
 %    \item /mp/
-%  \end{itemize*}
+%  \end{itemize}
 %
 %  Though there are a large number of permissable consonant clusters, their actual occurrence is fairly infrequent. 
 %  Syllable-initial or syllable-final clusters are to be avoided word-internally: VCCV will always be split into VC.CV\@. 
 %  Clusters of three or more consonants are only permitted across syllable breaks, and will always be split to favour an initial cluster over a final one.
 
-  \subsubsection{Syllable Structure}
-  \label{sssec:syllables}
+\subsubsection{Syllable Structure}
+\label{sssec:syllables}
 
-  Qevesa syllables are strictly CV(C).
+Qevesa syllables are strictly (C)V(C).
 
-  \ToBeWritten
-  %Although a wide variety of initial consonant clusters are permitted, they should be avoided when dividing a word into syllables.  The general rule is that non-word-final consonants are always the onset of syllables unless followed by another consonant or permissable initial cluster.
+\ToBeWritten
+%Although a wide variety of initial consonant clusters are permitted, they should be avoided when dividing a word into syllables.  The general rule is that non-word-final consonants are always the onset of syllables unless followed by another consonant or permissable initial cluster.
 
-  \newpage
+\newpage
 
-  \subsection{Romanisation}
-  \label{ssec:romanisation}
+\subsection{Romanisation}
+\label{ssec:romanisation}
 
-  The usual transcription system used for the Latin alphabet is as follows:
+The usual transcription system used for the Latin alphabet is as follows:
 
-  \begin{center}
-    \begin{tabularx}{0.9 \textwidth}{FC*{8}{-C}}
-      \SetRowStyle{\bfseries} A a & Á á  & C c  & Č č   & CH ch & D d   & E e & É é  \\ 
-                              /a/ & /aː/ & /ts/ & /tʃ/  & /ç/   & /ð/   & /e/ & /eː/ \\ 
-      \SetRowStyle{\bfseries} H h & I i  & Í í  & J j   & K k   & Kh kh & L l & M m  \\
-                              /h/ & /i/  & /iː/ & /j/   & /k/   & /x/   & /l/ & /m/  \\
-      \SetRowStyle{\bfseries} N n & Ň ň  & O o  & Ó ó   & P p   & Ph ph & Q q & R r  \\
-                              /n/ & /ɲ/  & /o/  & /oː/  & /p/   & /f/   & /c/ & /r/  \\
-      \SetRowStyle{\bfseries} S s & Š š  & T t  & TH th & U u   & Ú ú   & V v & Z z \\
-                              /s/ & /ʃ/  & /t/  & /θ/   & /u/   & /uː/  & /v/ & /z dz/ \\
-    \end{tabularx}
-    %\caption[Romanisation of Qevesa]{\label{tab:transcription}}
-  \end{center}
+\begin{center}
+  \begin{tabularx}{0.9 \textwidth}{FC*{7}{-C}}
+    \SetRowStyle{\bfseries} A a   & Á á  & C c  & Č č    & CH ch & D d  & E e  \\
+                            /a/   & /aː/ & /ts/ & /tʃ/   & /ç/   & /ð/  & /e/  \\
+    \SetRowStyle{\bfseries} É é   & H h  & I i  & Í í    & J j   & K k  & Kh kh \\
+                            /eː/  & /h/  & /i/  & /iː/   & /j/   & /k/  & /x/ \\
+    \SetRowStyle{\bfseries} L l   & M m  & N n  & Ň ň    & O o   & Ó ó  & P p  \\
+                            /l/   & /m/  & /n/  & /ɲ/    & /o/   & /oː/ & /p/ \\
+    \SetRowStyle{\bfseries} Ph ph & Q q  & R r  & S s    & Š š   & T t  & TH th \\
+                              /f/ & /c/  & /r/  & /s/    & /ʃ/   & /t/  & /θ/  \\
+    \SetRowStyle{\bfseries}   U u & Ú ú  & V v  & Z z    & Ž ž  \\
+                              /u/ & /uː/ & /v/  & /z dz/ & /ʒ dʒ/ \\
+  \end{tabularx}
+  %\caption[Romanisation of Qevesa]{\label{tab:transcription}}
+\end{center}
 
-  %  a  á  c  č   ch  d   e  é  
-  %  h  i  í  j   k   kh  l  m  
-  %  n  ň  o  ó   p   ph  q  r  
-  %  s  š  t  th  u   ú   v  z
+%  a   á   c   č   ch  d   e  
+%  é   h   i   í   j   k   kh  
+%  l   m   n   ň   o   ó   p   
+%  ph  q   r   s   š   t   th
+%  u   ú   v   z   ž
 
-  %\pagebreak[2]
-  The Latin orthography is largely phonemic, and makes use of a number of
-  diacritics and digraphs.  The diacritics indicate the following features:
+%\pagebreak[2]
+The Latin orthography is largely phonemic, and makes use of a number of
+diacritics and digraphs.  The diacritics indicate the following features:
 
-  \begin{description}
-    \item[Háček/Caron] The \foreign{háček} or caron indicates a palatalised
-      consonant variant.  It is used with ⟨c⟩, ⟨n⟩ and ⟨s⟩, producing ⟨č⟩, ⟨ň⟩
-      and ⟨š⟩.  
-    \item[Acute] The acute accent is used to indicate a long vowel, and is used
-      with ⟨a⟩, ⟨e⟩, ⟨i⟩, ⟨o⟩ and ⟨u⟩ to produce ⟨á⟩, ⟨é⟩, ⟨í⟩, ⟨ó⟩ and ⟨ú⟩.  
-  \end{description}
+\begin{description}
+  \item[Háček/Caron] The \foreign{háček} or caron indicates a palatalised
+    consonant variant.  It is used with ⟨c⟩, ⟨n⟩, ⟨s⟩ and ⟨z⟩, producing ⟨č⟩,
+    ⟨ň⟩, ⟨š⟩ and ⟨ž⟩  
+  \item[Acute] The acute accent is used to indicate a long vowel, and is used
+    with ⟨a⟩, ⟨e⟩, ⟨i⟩, ⟨o⟩ and ⟨u⟩ to produce ⟨á⟩, ⟨é⟩, ⟨í⟩, ⟨ó⟩ and ⟨ú⟩.  
+\end{description}
 
-  The digraphs ⟨ch⟩, ⟨kh⟩, ⟨ph⟩ and ⟨th⟩ represent the phonemes /ç/, /x/, /f/
-  and /θ/.  These phonemes were originally pronounced as aspirated stops in
-  Common Therasa, and became fricatives in Qevesa.  The letter ⟨z⟩ represents
-  the affricate /dz/.
+The digraphs ⟨ch⟩, ⟨kh⟩, ⟨ph⟩ and ⟨th⟩ represent the phonemes /ç/, /x/, /f/ and
+/θ/.  These phonemes were originally pronounced as aspirated stops in Common
+Therasa, and became fricatives in Qevesa.  The letter ⟨z⟩ represents the
+affricate /dz/.
 
-  Geminate consonants are doubled, except for the digraphs which only double
-  the first consonant.  
+Geminate consonants are doubled, except for the digraphs which only double the
+first consonant.  
 
 %  Although the orthography is largely morphophonemic, a number of phonemes may be written in more than one way:
 
-%  \begin{itemize*}
+%  \begin{itemize}
 %    %\item Palatalisation is indicated by a following ⟨j⟩, an i-glide diphthong, or a \foreign{háček} above the vowel.  %/ji/ is represented with ⟨y⟩ or ⟨í⟩ and realised as /\supj iː/.
 %    %\item /i-/glides and /j/ soften (palatalise) preceding consonants: therefore /ɕ/ /tɕ/ /\textltailn/ may be represented by ⟨š⟩ ⟨č⟩ ⟨ń⟩ or ⟨si-⟩ ⟨ci-⟩ ⟨ni-⟩ before another vowel.  /\supj e/ ⟨ě⟩ will also cause palatalisation in this manner.
 %    %\item /v/ may be realised as an approximant in some situations, and digraphs involving ⟨v⟩ or ⟨f⟩ such as ⟨sf⟩ or ⟨zv⟩ may result in the labiodental fricative being realised as anything between [f] [v] and [ʋ].
 %    %\item /iː/ is usually written as ⟨í⟩ except when word-initial, when it is written as ⟨y⟩.
-%  \end{itemize*}
+%  \end{itemize}
 
-  \section{Prosody}
-  \label{sec:prosody}
+\section{Prosody}
+\label{sec:prosody}
 
-  Qevesa is a syllable-timed language.
-  \ToBeWritten
+Qevesa is a syllable-timed language.
+\ToBeWritten
 
-  \subsection{Stress}
-  \label{ssec:stress}
+\subsection{Stress}
+\label{ssec:stress}
 
-  Stress always falls on the penultimate syllable of a word. 
-  \ToBeWritten
+Stress always falls on the penultimate syllable of a word. 
+\ToBeWritten
 
-  \subsection{Intonation}
-  \label{ssec:intonation}
+\subsection{Intonation}
+\label{ssec:intonation}
 
-  Qevesa possesses a limited pitch-accent.
-  \ToBeWritten
+Qevesa possesses a limited pitch-accent.
+\ToBeWritten
 
 \end{document}

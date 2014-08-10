@@ -1,350 +1,284 @@
 \documentclass[grammar]{subfiles}
 \begin{document}
-  \chapter{Derivational Morphology}
-  \label{ch:derivational-morphology}
+\chapter{Derivational Morphology}
+\label{ch:derivational-morphology}
 
-  As a highly synthetic language, derivation plays a major role in the formation of words in Qevesa.  Due to its triliteral roots, the majority of words are in fact derived by productive transfixes, suffixes, and prefixes, as well as compounding operations.
+As a highly synthetic language, derivation plays a major role in the
+formation of words in Qevesa.  Due to its triliteral roots, the majority of
+words are in fact derived by productive transfixes, suffixes, and prefixes,
+as well as compounding operations.
 
-  \section{Verb Root Forms}
-  \label{sec:dev_verb_root_forms}
+\section{Nominalisation}
+\label{sec:dev_nominalisation}
 
-  Although the arrangement of consonants in a root is generally fixed, there are regular processes to derive subtle semantic variations on the meaning of the root, such as causatives and reflexives.  These root variants are called forms, or \qevesa{mettúses} (“constructions”), from the root \qevesa{mutus} (“build, construct”).  There are seven primary forms, numbered 1–7; these are listed in Table~\ref{tab:dev_root_forms}.
+\subsection{Discontinuous Patterns}
+\label{ssec:dev_discontinuous_patterns}
 
-  Note that the forms affect only the grouping and gemination of root consonants, and not the vowel patterns that are applied to create meaningful words.  In those forms where consonants are grouped into clusters, the consonant pairs are subsequently treated as a single consonant.
+A large number of nouns in Qevesa are derived from the root + vowel pattern
+framework of the verbal system.  
 
-  % Form 1  Normal                  1u2u3    1u2u
-  % Form 2  Intensive               1u22u3   u11u2
-  % Form 3  Passive                 1u23u    1u22u
-  % Form 4  Causative               i12u3u   i11u2u
-  % Form 5  Reciprocal              te1u2u3  te1u2u
-  % Form 6  Reciprocal (Causative)  ta12u3u  ta1u22u
-  % Form 7  Stative (Attributive)   1ie2u3u   ë1u2u
 
-  \begin{table}[h!]\small\capstart
-    \begin{tabular}{BFl -l}
-      \toprule
-      \SetRowStyle{\bfseries} Form & Pattern \\
-      \midrule
-      1 & C\sub1{u}C\sub2{u}C\sub3 \\
-      2 & C\sub1{u}C\sub2C\sub2{u}C\sub3 \\
-      3 & C\sub1{u}C\sub2C\sub3{u} \\
-      4 & {i}C\sub1C\sub2{u}C\sub3{u} \\
-      5 & {me}C\sub1{u}C\sub2{u}C\sub3 \\
-      6 & {ta}C\sub1C\sub2{u}C\sub3{u} \\
-      7 & C\sub1{ie}C\sub2{u}C\sub3{u} \\
-      \bottomrule
-    \end{tabular}
-    \caption{Verb root forms\label{tab:dev_root_forms}}
-  \end{table}
+The pattern \qevesa{*C\sub1aC\sub2C\sub2óC\sub3} is commonly used to form
+professions from verbal roots.  It is no longer highly productive, so most
+nouns with this pattern represent professions that have existed for a very
+long time.  
+% Examples of this pattern are given in \cref{tab:dev_profession_caccoc}. 
 
-  \subsection{Form 1}
-  \label{ssec:dev_verb_form_1}
+\begin{center}\small
+  \begin{tabular}{FIl -l -Il -l}
+    \toprule
+    \SetRowStyle{\bfseries\upshape} Root/Base & Meaning & Profession & Meaning \\
+    \midrule
+    dusat & teach           & dassót & teacher \\
+    kulan & heal            & kallón & doctor \\
+    nukar & cut [wood, etc] & nakkót & carpenter \\
+    rukat & write           & rakkót & scribe \\
+    sutar & govern          & sattór & governor, lord \\
+    zumar & guard, watch    & zammór & guard \\
+    \bottomrule
+  \end{tabular}
+  %\caption{Nouns of profession\label{tab:dev_profession_caccoc}}
+\end{center}
 
-  Form 1 is the most common consonantal root form, containing no preformative affixes or pairing of consonants as occurs in the other forms.  It is typically the closest indicator to the lexical meaning of the root, and although it has no particular semantic function associated with it, verbs in Form 1 are often transitive.
+The pattern \qevesa{*C\sub1áC\sub2C\sub3in} is the most common pattern
+used to form professions (as well as many other role-like agentives) in
+modern-day Qevesa.  
+% Some examples of this pattern are given in \Cref{tab:dev_profession_caccin}. 
 
-  \subsection{Form 2}
-  \label{ssec:dev_verb_form_2}
+\begin{center}\small
+  \begin{tabular}{FIl -l -Il -l}
+    \toprule
+    \SetRowStyle{\bfseries\upshape} Root/Base & Meaning & Profession & Meaning \\
+    \midrule
+    humas & send  & hámsin & messenger, envoy \\
+    lukaj & trick & lákín  & trickster \\
+    munaš & count & mánšin & accountant \\
+    nusat & think & nástin & philosopher \\
+    unav  & steal & ánvin  & thief \\
+    \bottomrule
+  \end{tabular}
+  %\caption{Nouns of profession\label{tab:dev_profession_caccin}}
+\end{center}
 
-  Form 2 is the \emph{intensive} stem.  It typically indicates an intensive, frequentative or causative meaning, and may also be used to form transitive verbs from intransitive roots. 
+The pattern \qevesa{*miC\sub1C\sub2eC\sub3} creates agentives from activities
+that are social in nature, that is, typically involve more than one person
+and are not done on their own.  
+% Examples are given in \Cref{tab:dev_agent_miccec}.
 
-  Triliteral roots construct this form by geminating the second consonant; a limited number of verbs replace the gemination with two root consonants.  % WHICH??
-  %Biliteral roots geminate the first consonant, and move the transfixes forward one position. 
+\begin{center}\small
+  \begin{tabular}{FIl -l -Il -l}
+    \toprule
+    \SetRowStyle{\bfseries\upshape} Root/Base & Meaning & Profession & Meaning \\
+    \midrule
+    ruvad & work  & mirved & worker, employee \\
+    turaz & come  & mitrez & guest \\
+    šuka  & love  & mišké  & lover \\
+    hucav & sit   & mícev  & resident \\
+    lumat & learn & milmet & student \\
+    \bottomrule
+  \end{tabular}
+  %\caption{Nouns of profession\label{tab:dev_agent_miccec}}
+\end{center}
 
-  \subsection{Form 3}
-  \label{ssec:dev_verb_form_3}
+The pattern \qevesa{*zeC\sub1C\sub2aC\sub3} typically forms nouns of place or
+location, such as physical features or buildings.  
+% Some examples are listed in \Cref{tab:dev_location_zeccac}.
 
-  Form 3 is commonly known as the \emph{passive} stem.
-  It is commonly used to make the Form 1 root passive, and may also be used to describe participles.
-  Another use of the Form 3 root is to form adjectives and attributes, though this is generally non-productive in modern Qevesa, this function having been assumed by Form 7.
+\begin{center}\small
+  \begin{tabular}{FIl -l -Il -l}
+    \toprule
+    \SetRowStyle{\bfseries\upshape} Root/Base & Meaning & Profession & Meaning \\
+    \midrule
+    khunas & get up, stand         & zekhnas & place, location \\
+    rusač  & bathe                 & zersač  & bath, bathtub \\
+    vulaj  & rise [sun, moon, etc] & zevlai  & east \\
+    kurav  & set [sun, moon, etc]  & zekrav  & west \\
+    lumat  & learn                 & zelmat  & school \\
+    vusak  & lie down              & zevsak  & bed \\
+    \bottomrule
+  \end{tabular}
+  %\caption{\label{tab:dev_location_zeccac}}
+\end{center}
 
-  Triliteral roots construct this form by pairing the second and third cosonants.  %; biliteral roots geminate the second consonant.
+The pattern \qevesa{*C\sub1eC\sub2C\sub3i} is also used to form nouns of
+place or location.  
 
-  \subsection{Form 4}
-  \label{ssec:dev_verb_form_4}
+\begin{center}\small
+  \begin{tabular}{FIl -l -Il -l}
+    \toprule
+    \SetRowStyle{\bfseries\upshape} Root/Base & Meaning & Profession & Meaning \\
+    \midrule
+    vulaj  & rise [sun, moon, etc] & veli    & eastern \\
+    kurav  & set [sun, moon, etc]  & kervi   & western \\
+    lumat  & learn                 & lemti   & university \\
+    khudas & be special            & khedsi  & temple \\
+    tesan  & house, shelter        & tesni   & house \\
+    \bottomrule
+  \end{tabular}
+  %\caption{\label{tab:dev_location_qececca}}
+\end{center}
 
-  Form 4 is commonly known as the \emph{causative} stem. 
-  Its most common function is causative; it may also convert transitive verbs into ditransitive ones.
-  It can also have a causative meaning on verbs whose Form 1 root is intransitive, and for some verbs, may convey an assistive or factitive meaning.
+The pattern \qevesa{*miC\sub1C\sub2oC\sub3} is used to form nouns describing
+tools or instruments used to perform an action.
 
-  Triliteral roots construct this form by pairing the first and second consonants and prefixing with \qevesa{i-}.
-  %Biliteral roots geminate the first consonant and prefix with \qevesa{i-}.
+\begin{center}\small
+  \begin{tabular}{FIl -l -Il -l}
+    \toprule
+    \SetRowStyle{\bfseries\upshape} Root/Base & Meaning & Profession & Meaning \\
+    \midrule
+    čuta   & open  & miččot  & key \\
+    kušá   & shave & mikšó   & razor \\
+    rukat  & write & mirkot  & pen \\
+    šuvac  & burn  & mišvoc  & lighter \\
+    thunap & weigh & mithnop & scale \\
+    \bottomrule
+  \end{tabular}
+  %\caption{\label{tab:dev_instrument_miccoc}}
+\end{center}
 
-  \subsection{Form 5}
-  \label{ssec:dev_verb_form_5}
+The pattern \qevesa{*C\sub1eC\sub2áC\sub3} is similarly used to form names of
+tools and other physical objects.  These nouns are typically, but not always,
+the resulting product of the action.
 
-  Form 5 is commonly known as the \emph{reciprocal} stem. 
-  It commonly conveys meanings of a reciprocal or reflexive nature, and is often used to create verbs denoting social interactions.
+\begin{center}\small
+  \begin{tabular}{FIl -l -Il -l}
+    \toprule
+    \SetRowStyle{\bfseries\upshape} Root/Base & Meaning & Profession & Meaning \\
+    \midrule
+    rukat & write     & rekát & book \\
+    vuran & wear      & verán & garment \\
+    žura  & bind, tie & žerá  & knot \\
+    \bottomrule
+  \end{tabular}
+  %\caption{\label{tab:dev_result_cicac}}
+\end{center}
 
-  This form is constructed by prefixing the Form 1 stem with \qevesa{me-}.
-
-  \subsection{Form 6}
-  \label{ssec:dev_verb_form_6}
-
-  Form 6 is the \emph{reciprocal causative} stem, so called for historical reasons as it also includes a number of other intransitive meanings. 
-  It is subject to much unpredictable metaphorical and semantic and drift, so actual meanings may vary quite a lot from the Form 1 verb.
-  True reflexives account for only a portion of the verbs in this form. 
-  Its main functions are: 
-
-  \begin{itemize*}
-    \item Forming reflexives from transitive roots
-    \item Forming verbs denoting accompaniment
-    \item Forming \emph{autoreflexive} verbs, that is, intransitive actions performed on one’s body
-  \end{itemize*}
-
-  The only functions which are still fully productive are the forming of reflexives from transitive roots and the verbs of accompaniment. 
-  The group of autoreflexives are a closed class, overlapping with similar verbs in Form VI.
-
-  Triliteral roots construct this form by pairing the first and second consonants and prefixing with \qevesa{ta-}. 
-  %Biliteral roots geminate the second consonant and prefix with \qevesa{ta-}.
-
-  \subsection{Form 7}
-  \label{ssec:dev_verb_form_7}
-
-  Form 7 is the \emph{attributive} stem, indicating attributes, physical traits, or colours, and is always intransitive. 
-  It is often used as the base form from which adjectives may be derived.
-
-  For all but a small number of irregular roots, this form is formed by inserting a \qevesa{-ie-} into P\sub{12} for triliteral roots. % and prefixing biliteral roots with \qevesa{ie-}.
-
-%  \subsection{Other Verb Forms}
-%  \label{ssec:dev_other_verb_forms}
 %
-%  There are a small number of irregular stem forms, mainly used to construct auxiliary verbs, such as those indicating evidentiality or polarity.  They are effectively a closed class, and are generally not productive.
+%  \subsection{Intensity, Repetition, Profession}
+%  \label{ssec:dev_nouns_intensity_repetition_profession}
+%
+%  A noun pattern exists to denote intensity or repeated actions; it also often denotes professions. 
+%  The patterns are given in Table~\ref{tab:dev_nominal_intensity_repetition}.
+%
+%  \begin{table}[h!]\small\capstart
+%    \subfloat[Intensity/Repetition]{
+%      \begin{tabular}{BFl -l -l}
+%        \toprule
+%        \SetRowStyle{\bfseries} Form & Pattern \\
+%        \midrule
+%        1 & C\sub1{o}C\sub2{á}C\sub3 \\
+%        2 & C\sub1{o}C\sub2C\sub2{á}C\sub3 \\
+%        3 & C\sub1{o}C\sub2C\sub3{á} \\
+%        4 & {i}C\sub1C\sub2{o}C\sub3{á} \\
+%        5 & {me}C\sub1{o}C\sub2{á}C\sub3 \\
+%        6 & {ta}C\sub1C\sub2{o}C\sub3{á} \\
+%        7 & C\sub1{ie}C\sub2{o}C\sub3{á} \\
+%        \bottomrule
+%      \end{tabular}
+%    }
+%    \subfloat[Habitual/Intermittent]{
+%      \begin{tabular}{BFl -l -l}
+%        \toprule
+%        \SetRowStyle{\bfseries} Form & Pattern \\
+%        \midrule
+%        1 & C\sub1{u}C\sub2{é}C\sub3 \\
+%        2 & C\sub1{u}C\sub2C\sub2{é}C\sub3 \\
+%        3 & C\sub1{u}C\sub2C\sub3{é} \\
+%        4 & {i}C\sub1C\sub2{u}C\sub3{é} \\
+%        5 & {mé}C\sub1{u}C\sub2{é}C\sub3 \\
+%        6 & {ta}C\sub1C\sub2{u}C\sub3{é} \\
+%        7 & C\sub1{ie}C\sub2{u}C\sub3{é} \\
+%        \bottomrule
+%      \end{tabular}
+%    }
+%    \caption{Nouns of intensity and/or repetition\label{tab:dev_nominal_intensity_repetition}}
+%  \end{table}
+%
+%  \begin{exe}
+%    \ex \emph{EXAMPLES}
+%  \end{exe}
+%
+%  The abstract noun denoting the name of a profession is often given by the
+%  patterns \qevesa{C\sub1{i}C\sub2C\sub2{á}C\sub3} and
+%  \qevesa{C\sub1{i}C\sub2C\sub2{á}}:
+%
+%  \begin{exe}
+%    \ex \emph{EXAMPLES}
+%  \end{exe}
+%
+%  \subsection{Common Nouns}
+%  \label{ssec:dev_common_nouns}
+%
+%  \ToBeWritten
+%
+%  \subsection{Generic and Specific Nouns}
+%  \label{ssec:dev_generic_nouns}
+%
+%  The generic noun is a general nominalisation which represents the concept,
+%  process, activity or ability denoted by the root. 
+%  This contrasts with the pattern that denotes a specific instance of the
+%  generic concept. 
+%  Both patterns are related, and in many cases, the specific pattern is itself
+%  a derivation of the generic pattern. 
+%  The patterns are listed in Table~\ref{tab:dev_generic_specific}.
+%
+%  \begin{table}[h!]\small\capstart
+%    \subfloat[Generic nominalisation]{
+%      \begin{tabular}{BFl -l -l}
+%        \toprule
+%        \SetRowStyle{\bfseries} Form & Pattern \\
+%        \midrule
+%        1 & C\sub1{e}C\sub2{é}C\sub3 \\
+%        2 & C\sub1{e}C\sub2C\sub2{é}C\sub3 \\
+%        3 & C\sub1{e}C\sub2C\sub3{é} \\
+%        4 & {i}C\sub1C\sub2{e}C\sub3{é} \\
+%        5 & {me}C\sub1{e}C\sub2{é}C\sub3 \\
+%        6 & {ta}C\sub1C\sub2{e}C\sub3{é} \\
+%        7 & C\sub1{ie}C\sub2{e}C\sub3{é} \\
+%        \bottomrule
+%      \end{tabular}
+%    }
+%    \subfloat[Specific nominalisation]{
+%      \begin{tabular}{BFl -l -l}
+%        \toprule
+%        \SetRowStyle{\bfseries} Form & Pattern \\
+%        \midrule
+%        1 & C\sub1{e}C\sub2{ú}C\sub3 \\
+%        2 & C\sub1{e}C\sub2C\sub2{ú}C\sub3 \\
+%        3 & C\sub1{e}C\sub2C\sub3{ú} \\
+%        4 & {i}C\sub1C\sub2{e}C\sub3{ú} \\
+%        5 & {me}C\sub1{e}C\sub2{ú}C\sub3 \\
+%        6 & {ta}C\sub1C\sub2{e}C\sub3{ú} \\
+%        7 & C\sub1{ie}C\sub2{e}C\sub3{ú} \\
+%        \bottomrule
+%      \end{tabular}
+%    }
+%    \caption{Generic and specific noun forms\label{tab:dev_generic_specific}}
+%  \end{table}
+%
+%  \begin{exe}
+%    \ex \emph{EXAMPLES}
+%  \end{exe}
 
-  \section{Nominalisation}
-  \label{sec:dev_nominalisation}
+% \subsection{Abstract Nouns}
+% \label{ssec:dev_abstract_nouns}
 
-  Most Qevesa nouns are derived from biliteral, triliteral or quadriliteral lexical roots, and all nouns derived from a particular root are listed in a dictionary under that root entry. 
-  Some nouns, however, have solid stems, unanalysable into roots and patterns, although their consonants may be adapted into roots for derivation of new terms. 
-  Derived nouns are formed through application of particular morphological patterns; the use of patterns interlocking with root phonemes allows the formation of actual words or stems. 
-  The nominal patterns themselves carry meaning, such as “place where action is performed,” “person who performs action,” “name of action,” or “instrument used to carry out action.” 
-  The most frequently occurring noun patterns are listed in the following sections.
+% \ToBeWritten
 
-  It is important to note that not all root forms have all nominalisation patterns, though all tables in this section give the derivation of all possible forms. 
+% \subsection{Collective Nouns, Mass Nouns, and Unit Nouns}
+% \label{ssec:dev_collective_mass_unit}
 
-  \subsection{Active and Passive Participles}
-  \label{ssec:dev_active_passive_participles}
+% \ToBeWritten
 
-  Participles are descriptive terms derived from verbs. 
-  The active participle describes the doer or the agent of the action, and the passive participle describes or refers to the object or patient of the action. 
-  Both participles are predictably derived according to the verbal root forms; the most common patterns are listed in Table~\ref{tab:dev_nominal_participles}.
+% \subsection{Dimunitive Nouns}
+% \label{ssec:dev_dimunitive_nouns}
 
-\begin{table}[h!]\small\capstart
-  \subfloat[Active participles]{
-    \begin{tabular}{BFl -l -l}
-      \toprule
-      \SetRowStyle{\bfseries} Form & Pattern \\
-      \midrule
-      1 & C\sub1{a}C\sub2{í}C\sub3 \\
-      2 & C\sub1{a}C\sub2C\sub2{í}C\sub3 \\
-      3 & C\sub1{a}C\sub2C\sub3{í} \\
-      4 & {i}C\sub1C\sub2{a}C\sub3{í} \\
-      5 & {me}C\sub1{a}C\sub2{í}C\sub3 \\
-      6 & {ta}C\sub1C\sub2{a}C\sub3{í} \\
-      7 & C\sub1{ie}C\sub2{a}C\sub3{í} \\
-      \bottomrule
-    \end{tabular}
-  }
-  \subfloat[Passive participles]{
-    \begin{tabular}{BFl -l -l}
-      \toprule
-      \SetRowStyle{\bfseries} Form & Pattern \\
-      \midrule
-      1 & C\sub1{o}C\sub2{í}C\sub3 \\
-      2 & C\sub1{o}C\sub2C\sub2{í}C\sub3 \\
-      3 & C\sub1{o}C\sub2C\sub3{í} \\
-      4 & {i}C\sub1C\sub2{o}C\sub3{í} \\
-      5 & {me}C\sub1{o}C\sub2{í}C\sub3 \\
-      6 & {ta}C\sub1C\sub2{o}C\sub3{í} \\
-      7 & C\sub1{ie}C\sub2{o}C\sub3{í} \\
-      \bottomrule
-    \end{tabular}
-  }
-  \caption{Nominal participles\label{tab:dev_nominal_participles}}
-\end{table}
+% \ToBeWritten
 
-  %\subsubsection{Active Participle}
+% \subsection{Proper Nouns}
+% \label{ssec:dev_proper_nouns}
 
-  %\ToBeWritten
-
-  \subsection{Location}
-  \label{ssec:dev_nouns_location}
-
-  Another noun pattern specifies the location in which an action is performed. 
-  %Only Forms 1–6 have locative patterns, and of these, not all are productive or even valid. 
-  The patterns for location are given in Table~\ref{tab:dev_nominal_location}.
-
-  \begin{table}[h!]\small\capstart
-    \begin{tabular}{BFl -l -l}
-      \toprule
-      \SetRowStyle{\bfseries} Form & Pattern \\
-      \midrule
-      1 & C\sub1{a}C\sub2{e}C\sub3 \\
-      2 & C\sub1{a}C\sub2C\sub2{e}C\sub3 \\
-      3 & C\sub1{a}C\sub2C\sub3{e} \\
-      4 & {i}C\sub1C\sub2{a}C\sub3{e} \\
-      5 & {me}C\sub1{a}C\sub2{e}C\sub3 \\
-      6 & {ta}C\sub1C\sub2{a}C\sub3{e} \\
-      7 & C\sub1{ie}C\sub2{a}C\sub3{e} \\
-      \bottomrule
-    \end{tabular}
-    \caption{Nouns of location\label{tab:dev_nominal_location}}
-  \end{table}
-
-  Some examples:
-
-  \begin{exe}
-    \ex \emph{EXAMPLES}
-  \end{exe}
-
-  \subsection{Instrument}
-  \label{ssec:dev_nouns_instrument}
-
-  A specific derivational pattern is used to indicate nouns of instrument; that is, nouns that denote items used in accomplishing a particular action. 
-  These patterns are only used with Forms I–V, and are listed in Table~\ref{tab:dev_nominal_instrument}.
-
-  \begin{table}[h!]\small\capstart
-    \begin{tabular}{BFl -l -l}
-      \toprule
-      \SetRowStyle{\bfseries} Form & Pattern \\
-      \midrule
-      1 & C\sub1{o}C\sub2{e}C\sub3 \\
-      2 & C\sub1{o}C\sub2C\sub2{e}C\sub3 \\
-      3 & C\sub1{o}C\sub2C\sub3{e} \\
-      4 & {i}C\sub1C\sub2{o}C\sub3{e} \\
-      5 & {me}C\sub1{o}C\sub2{e}C\sub3 \\
-      6 & {ta}C\sub1C\sub2{o}C\sub3{e} \\
-      7 & C\sub1{ie}C\sub2{o}C\sub3{e} \\
-      \bottomrule
-    \end{tabular}
-    \caption{Nouns of instrument\label{tab:dev_nominal_instrument}}
-  \end{table}
-
-  Some examples:
-
-  \begin{exe}
-    \ex \emph{EXAMPLES}
-  \end{exe}
-
-  \subsection{Intensity, Repetition, Profession}
-  \label{ssec:dev_nouns_intensity_repetition_profession}
-
-  A noun pattern exists to denote intensity or repeated actions; it also often denotes professions. 
-  The patterns are given in Table~\ref{tab:dev_nominal_intensity_repetition}.
-
-  \begin{table}[h!]\small\capstart
-    \subfloat[Intensity/Repetition]{
-      \begin{tabular}{BFl -l -l}
-        \toprule
-        \SetRowStyle{\bfseries} Form & Pattern \\
-        \midrule
-        1 & C\sub1{o}C\sub2{á}C\sub3 \\
-        2 & C\sub1{o}C\sub2C\sub2{á}C\sub3 \\
-        3 & C\sub1{o}C\sub2C\sub3{á} \\
-        4 & {i}C\sub1C\sub2{o}C\sub3{á} \\
-        5 & {me}C\sub1{o}C\sub2{á}C\sub3 \\
-        6 & {ta}C\sub1C\sub2{o}C\sub3{á} \\
-        7 & C\sub1{ie}C\sub2{o}C\sub3{á} \\
-        \bottomrule
-      \end{tabular}
-    }
-    \subfloat[Habitual/Intermittent]{
-      \begin{tabular}{BFl -l -l}
-        \toprule
-        \SetRowStyle{\bfseries} Form & Pattern \\
-        \midrule
-        1 & C\sub1{u}C\sub2{é}C\sub3 \\
-        2 & C\sub1{u}C\sub2C\sub2{é}C\sub3 \\
-        3 & C\sub1{u}C\sub2C\sub3{é} \\
-        4 & {i}C\sub1C\sub2{u}C\sub3{é} \\
-        5 & {mé}C\sub1{u}C\sub2{é}C\sub3 \\
-        6 & {ta}C\sub1C\sub2{u}C\sub3{é} \\
-        7 & C\sub1{ie}C\sub2{u}C\sub3{é} \\
-        \bottomrule
-      \end{tabular}
-    }
-    \caption{Nouns of intensity and/or repetition\label{tab:dev_nominal_intensity_repetition}}
-  \end{table}
-
-  \begin{exe}
-    \ex \emph{EXAMPLES}
-  \end{exe}
-
-  The abstract noun denoting the name of a profession is often given by the patterns \qevesa{C\sub1{i}C\sub2C\sub2{á}C\sub3} and \qevesa{C\sub1{i}C\sub2C\sub2{á}}:
-
-  \begin{exe}
-    \ex \emph{EXAMPLES}
-  \end{exe}
-
-  \subsection{Common Nouns}
-  \label{ssec:dev_common_nouns}
-
-  \ToBeWritten
-
-  \subsection{Generic and Specific Nouns}
-  \label{ssec:dev_generic_nouns}
-
-  The generic noun is a general nominalisation which represents the concept, process, activity or ability denoted by the root. 
-  This contrasts with the pattern that denotes a specific instance of the generic concept. 
-  Both patterns are related, and in many cases, the specific pattern is itself a derivation of the generic pattern. 
-  The patterns are listed in Table~\ref{tab:dev_generic_specific}.
-
-  \begin{table}[h!]\small\capstart
-    \subfloat[Generic nominalisation]{
-      \begin{tabular}{BFl -l -l}
-        \toprule
-        \SetRowStyle{\bfseries} Form & Pattern \\
-        \midrule
-        1 & C\sub1{e}C\sub2{é}C\sub3 \\
-        2 & C\sub1{e}C\sub2C\sub2{é}C\sub3 \\
-        3 & C\sub1{e}C\sub2C\sub3{é} \\
-        4 & {i}C\sub1C\sub2{e}C\sub3{é} \\
-        5 & {me}C\sub1{e}C\sub2{é}C\sub3 \\
-        6 & {ta}C\sub1C\sub2{e}C\sub3{é} \\
-        7 & C\sub1{ie}C\sub2{e}C\sub3{é} \\
-        \bottomrule
-      \end{tabular}
-    }
-    \subfloat[Specific nominalisation]{
-      \begin{tabular}{BFl -l -l}
-        \toprule
-        \SetRowStyle{\bfseries} Form & Pattern \\
-        \midrule
-        1 & C\sub1{e}C\sub2{ú}C\sub3 \\
-        2 & C\sub1{e}C\sub2C\sub2{ú}C\sub3 \\
-        3 & C\sub1{e}C\sub2C\sub3{ú} \\
-        4 & {i}C\sub1C\sub2{e}C\sub3{ú} \\
-        5 & {me}C\sub1{e}C\sub2{ú}C\sub3 \\
-        6 & {ta}C\sub1C\sub2{e}C\sub3{ú} \\
-        7 & C\sub1{ie}C\sub2{e}C\sub3{ú} \\
-        \bottomrule
-      \end{tabular}
-    }
-    \caption{Generic and specific noun forms\label{tab:dev_generic_specific}}
-  \end{table}
-
-  \begin{exe}
-    \ex \emph{EXAMPLES}
-  \end{exe}
-
-  % \subsection{Abstract Nouns}
-  % \label{ssec:dev_abstract_nouns}
-
-  % \ToBeWritten
-
-  % \subsection{Collective Nouns, Mass Nouns, and Unit Nouns}
-  % \label{ssec:dev_collective_mass_unit}
-
-  % \ToBeWritten
-
-  % \subsection{Dimunitive Nouns}
-  % \label{ssec:dev_dimunitive_nouns}
-
-  % \ToBeWritten
-
-  % \subsection{Proper Nouns}
-  % \label{ssec:dev_proper_nouns}
-
-  % \ToBeWritten
+% \ToBeWritten
 
 \end{document}
 
