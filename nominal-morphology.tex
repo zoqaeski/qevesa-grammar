@@ -3,6 +3,7 @@
 \chapter{Nominal Morphology}
 \label{ch:nominal_morphology}
 
+
 \section{Definitions and Features}
 \label{sec:nm_definition_features}
 
@@ -20,13 +21,14 @@ Most nouns have three numbers, a singular, dual or quantitative, and plural,
 although a small, closed set have a natural number and receive inverse
 marking. 
 
-There are fourteen cases in the standard written language: direct, ergative,
-accusative, secundative, genitive, essive, instrumental-commitative,
+There are fourteen cases in the standard written language: direct, nominative,
+absolutive, secundative, genitive, essive, instrumental-commitative,
 inessive, adessive, illative, allative, elative, ablative and comparative.
 
 Nouns can also be marked for four states, which are different types of determinateness.
 
 The citation form of all nouns is the unmarked form, that is, with no suffixes or prefixes.
+
 
 \subsection{Animacy}
 \label{ssec:nm_animacy}
@@ -71,6 +73,7 @@ as some towns and cities.
 % 	\ex \emph{EXAMPLES}
 % \end{exe}
 
+
 \section{Nominal Declension}
 \label{sec:nm_declension}
 
@@ -82,63 +85,60 @@ Qevesa noun words consist of the stem, followed by number, possessor and case ma
 
 Noun stems that end in a long vowel reduce it before suffixes that begin with a vowel. 
 
+
 \subsection{Number}
 \label{ssec:nm_number}
 
-Qevesa nouns have four numbers: singular, dual, plural and partitive.
+Qevesa nouns have four numbers, singular, dual, plural and partitive, which are
+typically indicated by the suffixes listed in \cref{tab:nm_number_suffixes}.  A
+small, closed set of nouns has suppletive plural forms; these may be so-called 
+\emph{broken plurals} or separate roots entirely. 
 
-The singular suffix also indicates definiteness; it is not used before a
-pronomial possessor. 
+The indefinite suffix is marked with an \Q{-e} after a consonant, and is
+unmarked on nouns that end with a vowel, except if the vowel is \Q{-i} in which
+case the indefinite suffix replaces it.  
 
-The dual number also functions as a quantitative number.  By itself, it
-indicates that there are exactly two of the noun.  However, if an exact
-quantity is to be specified, such as with a number word or quantifier,
-the dual form is used.
+The definite singular suffix is usually \Q{-ia}, and is not used before a
+pronomial possessor.  Definiteness may also be indicated by the prepositional
+articles \Q{a} or \Q{az}.
 
-The plural number is used for unspecified quantities. 
-
-The partitive is used to express partialness or inexact quantities. 
-% It may also be used in an atelic sense. ???
-
-The suffixes that indicate number are listed in
-\cref{tab:nm_number_suffixes}.  An epenthetic \qevesa{e} is inserted after a
-consonant for the dual, plural and partitive suffixes. The indefinite suffix
-is marked with an \qevesa{-e} after a consonant, and is unmarked after a vowel.
-
-A small closed set of nouns has plural declining forms that are
-different to their base form.
+An epenthetic \Q{-e-} is inserted after a consonant for the dual and plural
+suffixes; the partitive uses an \Q{-i-} instead. 
 
 \begin{table}[h!]\small\capstart
   \begin{tabular}{BFl -Sc -l}
     \toprule
     \multicolumn{2}{Fl}{\SetRowStyle{\bfseries}Number} & Suffix \\
     \midrule
-    Indefinite        & \acs{indef} & -∅, -e \\
-    Definite Singular & \acs{sg}    & -a     \\
+    Indefinite        & \acs{indef} & -∅, -e    \\
+    Definite Singular & \acs{sg}    & -ia, -ja  \\
     Dual/Quantitative & \acs{du}    & -(e)v  \\
     Plural            & \acs{pl}    & -(e)s  \\
-    Partitive         & \acs{part}    & -(e)n  \\
+    Partitive         & \acs{part}  & -(i)n  \\
     \bottomrule
   \end{tabular}
   \caption{Grammatical number suffixes\label{tab:nm_number_suffixes}}
 \end{table}
 
-% WRONG WRONG WRONG
-%  \begin{exe}
-%    \ex\label{exe:nm_number}
-%    \begin{tabular}[t]{Fl -l -l -l}\small
-%      \SetRowStyle{\bfseries}Indefinite  & Singular  & Dual         & Plural  & Partitive    \\
-%      \SetRowStyle{\itshape}   tolike    & tolika    & tolikev      & tolikes & toliket      \\
-%                               ‘(a) boy’ & ‘the boy’ & ‘(two) boys’ & ‘boys’  & ‘(some) boys’  \\
-%      \SetRowStyle{\itshape}    mari     & maria     & mariv        & maris   & marit        \\
-%                        ‘(an) eye’       & ‘the eye’ & ‘(two) eyes’ & ‘eyes’  & ‘(some) eyes’  \\
-%    \end{tabular}
-%  \end{exe}
-%
-%  In Example~\ref{exe:nm_number}, note that the word \qevesa{tolik} ‘boy’ has a
-%  singular natural number, but the word \qevesa{mari} has a dual natural
-%  number.  The suffixes can be applied for emphasis or to indicate quantity
-%  (i.e. \qevesa{koro marív} ‘three eyes’).
+Number marking in Qevesa functions in a somewhat unusual manner in that every
+noun has an inherent “natural” number, which is its default, unmarked form.
+The suffixes are appended to indicate that the quantity (and definiteness)
+differs from what is expected.  Most nouns default to the implicit singular;
+some nouns, such as body parts and items of clothing that come in pairs are
+implicitly dual (\Q{méri} “eyes”); and other nouns may be implicitly plural or
+partial (particularly uncountable nouns). 
+
+The dual number functions to indicate exact quantities.  By itself, it
+indicates exactly two of the noun; however, it is also used when the noun is
+preceded by a modifier that indicates an exact quantity, such as a number word.
+
+In contrast to the dual, the plural number is used for unspecified quantities
+greater than the singular.  The plural suffix may also encode definiteness,
+especially for those nouns whose unmarked form has an implicit number. 
+
+The partitive is used to express partialness or inexact quantities. 
+% It may also be used in an atelic sense. ???
+
 
 \subsection{Case}
 \label{ssec:nm_case}
@@ -159,143 +159,133 @@ suffixes that follow a consonant.
     %\SetRowStyle{\scshape} & & sg & du & pl & indef & part \\
     \midrule
     Direct       & \acs{dir}  & \multicolumn{2}{-l}{-a, -n, -∅}  \\
-    Ergative     & \acs{nom}  & -m         & -am    \\
-    Accusative   & \acs{abs}  & -š         & -aš    \\
-    Secundative  & \acs{sdt}  & -t         & -at    \\
+    Nominative   & \acs{nom}  & -m   & -am    \\
+    Absolutive   & \acs{abs}  & -š   & -aš    \\
+    Secundative  & \acs{sdt}  & -t   & -at    \\
     \midrule
-    Genitive     & \acs{gen}  & -k         & -ak    \\
-    Essive       & \acs{ess}  & -l         & -al    \\
-    Instrumental & \acs{ins}  & -ri        & -ari   \\
-    Inessive     & \acs{ine}  & -ssi       & -assi  \\
-    Adessive     & \acs{ade}  & -zi        & -azi   \\
-    Illative     & \acs{ill}  & -sti       & -asti  \\
-    Allative     & \acs{all}  & -nti       & -anti  \\
-    Elative      & \acs{ela}  & -spi       & -aspi  \\
-    Ablative     & \acs{abl}  & -mpi       & -ampi  \\
-    Comparative  & \acs{cmpr} & -d         & -ad    \\
+    Genitive     & \acs{gen}  & -k   & -ak    \\
+    Comparative  & \acs{cmpr} & -d   & -ad    \\
+    Essive       & \acs{ess}  & -l   & -alli  \\
+    Instrumental & \acs{ins}  & -či  & -ači   \\
+    Inessive     & \acs{ine}  & -ssi & -assi  \\
+    Adessive     & \acs{ade}  & -zi  & -azi   \\
+    Illative     & \acs{ill}  & -sti & -asti  \\
+    Allative     & \acs{all}  & -nti & -anti  \\
+    Elative      & \acs{ela}  & -spi & -aspi  \\
+    Ablative     & \acs{abl}  & -mpi & -ampi  \\
     \bottomrule
   \end{tabular}
   \caption{Case suffixes\label{tab:nm_case_suffixes}}
 \end{table}
 
-%  \subsubsection{The Primary Cases}
-%  \label{sssec:nm_primary_cases}
-%
-%  The primary cases indicate the morphosyntactic role of the noun with respect to the verb.
-
-\subsubsection{Direct}
-\label{nm_direct_case}
+\subsection{Direct}
+\label{ssec:ns_direct_case}
 
 The direct case marks the topic of the verb phrase.  This may be the
-experiencer (both voluntary and involuntary) of an intransitive verb, the
-agent or patient of a transitive verb, or (less commonly) some other argument
-of the verb.  Typically, animate nouns in the direct case are the voluntary
-experiencers or agents of verbs, and inanimate nouns in the direct case are
-experiencers or patients.
+experiencer (both voluntary and involuntary) of an intransitive verb, the agent
+or patient of a transitive verb, or (less commonly) some other argument of the
+verb.  In this latter case, the direct suffix is stacked onto the other case
+suffix. 
 
-The suffix \qevesa{-a} only occurs after a consonant, or a consonant followed
-by \qevesa{u}; the suffix \qevesa{-n} occurs after a diphthong ending in
-\qevesa{u}; in other cases, the direct case is unmarked.
+Typically, animate nouns in the direct case are the voluntary experiencers or
+agents of verbs, and inanimate nouns in the direct case are experiencers or
+patients. 
 
-\subsubsection{Ergative}
-\label{nm_ergative_case}
+The direct case suffix takes several forms: \Q{-a} only occurs after a
+consonant, or a consonant followed by \Q{u}; \Q{-n} occurs after a diphthong
+ending in \Q{u}, or when the direct case is stacked onto a secondary case;
+elsewhere, the direct case is unmarked.
 
-The ergative case marks the agent of a verb.
 
-\subsubsection{Accusative}
-\label{nm_accusative_case}
+\subsection{Nominative}
+\label{ssec:ns_nominative_case}
 
-The accusative case marks the patient of a transitive verb or the recipient of ditransitive verb.
+The nominative case marks the voluntary experiencer of an intransitive verb, or
+the agent of a transitive verb.  Inanimate nouns cannot be marked with the
+nominative case, because an inanimate entity is considered incapable of acting
+of its own accord. 
 
-\subsubsection{Secundative}
-\label{nm_secundative_case}
 
-The secundative case marks the theme of a ditransitive verb.
+\subsection{Absolutive}
+\label{ssec:ns_absolutive_case}
 
-%  \subsubsection{The Secondary Cases}
-%  \label{sssec:nm_secondary_cases}
-%
-%  The secondary cases are mainly adpositional and locative cases.
+The absolutive case marks the involuntary experiencer of an intransitive verb,
+the patient of a transitive verb or the recipient of ditransitive verb.
 
-\subsubsection{Genitive}
-\label{nm_genitive_case}
+
+\subsection{Secundative}
+\label{ssec:ns_secundative_case}
+
+Qevesa is a secundative language, that is, the recipient of a ditransitive verb
+is treated the same as the patient of a monotransitive verb. The secundative
+case marks the theme of a ditransitive verb.
+
+
+\subsection{Genitive}
+\label{ssec:ns_genitive_case}
 
 The genitive case indicates the possessor of another noun.  Animate pronomial
-possessors are indicated by means of a suffix on the possessed noun.
+possessors are usually indicated by means of a suffix on the possessed noun.
 
-\subsubsection{Essive}
-\label{nm_essive_case}
+
+\subsection{Essive}
+\label{ssec:ns_essive_case}
 
 The essive case is used to indicate duration and time, as well as temporary
 states of being or existence.  
 
-\subsubsection{Instrumental}
-\label{nm_instrumental_case}
+
+\subsection{Instrumental}
+\label{ssec:ns_instrumental_case}
 
 The instrumental case indicates the means by which the action is
-performed.    
+performed.  Inanimate agents of verbs are also marked with the instrumental case.  
 
-\subsubsection{Inessive}
-\label{nm_inessive_case}
+
+\subsection{Inessive}
+\label{ssec:ns_inessive_case}
 
 The inessive case indicates internal location.  
 
-\subsubsection{Adessive}
-\label{nm_adessive_case}
+
+\subsection{Adessive}
+\label{ssec:ns_adessive_case}
 
 The adessive case indicates external location.
 
-\subsubsection{Illative}
-\label{nm_illative_case}
+
+\subsection{Illative}
+\label{ssec:ns_illative_case}
 
 The illative case indicates motion from the exterior to the interior.
 
-\subsubsection{Allative}
-\label{nm_allative_case}
+
+\subsection{Allative}
+\label{ssec:ns_allative_case}
 
 The allative case indicates motion towards the noun. 
 
-\subsubsection{Elative}
-\label{nm_elative_case}
+
+\subsection{Elative}
+\label{ssec:ns_elative_case}
 
 The elative case indicates motion from the interior to the exterior.
 
-\subsubsection{Ablative}
-\label{nm_ablative_case}
+
+\subsection{Ablative}
+\label{ssec:ns_ablative_case}
 
 The ablative case indicates motion away from the noun.  It can also be used
 in expressions of time and emotion to indicate the beginning of the event or
 state. 
 
-\subsubsection{Comparative}
-\label{nm_comparative_case}
+
+\subsection{Comparative}
+\label{ssec:ns_comparative_case}
 
 The comparative case indicates a likeness to something, or the
 standard to which something is compared.
 
-\subsubsection{Use of the Locative Cases}
-\label{sssec:nm_locative_cases}
-
-The locative cases are logically grouped.  There are two positions (internal
-and external) and three directions (static, movement towards and movement
-away).  Combining these results in the six cases, illustrated in
-\cref{tab:nm_locative_cases}.
-
-\begin{table}[h!]\small\capstart
-  \begin{tabular}{BFl -l -l}
-    \toprule
-    \SetRowStyle{\bfseries} & Interior & Exterior \\
-    \midrule
-    Static           & Inessive & Adessive \\
-    Movement towards & Illative & Allative \\
-    Movement away    & Elative  & Ablative \\
-    \bottomrule
-  \end{tabular}
-  \caption{Locative cases\label{tab:nm_locative_cases}}
-\end{table}
-
-Finer distinctions in location are given with postpositions, which are
-described in \cref{sec:nm_postpositions}.
 
 
 \section{Pronouns and Pronomial forms}
@@ -310,6 +300,7 @@ demonstrative pronouns and interrogative pronouns.
 %The class of determiners is a special case, in that they can also act as
 %articles for other nouns or noun phrases.
 
+
 \subsection{Personal Pronouns}
 \label{ssec:nm_personal_pronouns}
 
@@ -319,12 +310,11 @@ referents: a separate inanimate pronoun is used for inanimate referents.
 There are two first person plural pronouns, an inclusive, which includes the
 listener, and an exclusive, which does not. 
 
-%Personal pronouns are declined to the some of the cases by suffixation; other
-%case constructions use a stem derived from the case ending combined with the
-%suffix form of the pronoun.  
-The suffix form is generally preferred over the genetive case to indicate
-posession, but inanimate pronouns lack a suffix form so always use the
-genetive pronoun. 
+Personal pronouns are declined to the some of the cases by suffixation; other
+case constructions use a stem derived from the case ending combined with the
+suffix form of the pronoun.  The suffix form is generally preferred over the
+genetive case to indicate posession, but inanimate pronouns lack a suffix form
+so always use the genetive pronoun. 
 
 The base forms of the pronouns are given in
 \cref{tab:nm_pronoun_primary_case}, and the cases with personal suffixes
@@ -336,10 +326,10 @@ are given in \cref{tab:nm_personal_cases}.
     \SetRowStyle{\bfseries} & \multicolumn{2}{-c}{Stem} & \multicolumn{6}{-c}{Cases}\\
     & Root & Suffix &\SetRowStyle{\scshape} \acs{dir} & \acs{nom} & \acs{abs} & \acs{sdt} & \acs{gen} & \acs{cmpr} \\
     \midrule
-    \acs{1p}\acs{sg}           & je   & -(a)i      & je   & jem   & ješ   & jeut  & jek   & jed   \\
-    \acs{2p}\acs{sg}           & tá   & -ut, -ta   & tá   & tám   & táš   & tait  & ták   & tád   \\
+    \acs{1p}\acs{sg}           & je   & -(a)i, -e  & je   & jem   & ješ   & jeut  & jek   & jed   \\
+    \acs{2p}\acs{sg}           & tá   & -ut        & tá   & tám   & táš   & tait  & ták   & tád   \\
     \acs{3p}\acs{sg}           & mi   & -(i)m      & mi   & mim   & miš   & miot  & miek  & mied  \\
-    \acs{1p}\acs{du};\acs{inc} & vu   & -iu, -ju   & vu   & vum   & vuš   & vot   & vek   & vud   \\
+    \acs{1p}\acs{du};\acs{inc} & vu   & -iu, -vu   & vu   & vum   & vuš   & vot   & vek   & vud   \\
     \acs{1p}\acs{du};\acs{exc} & če   & -(e)če     & ča   & čém   & čéš   & čeut  & ček   & čed   \\
     \acs{2p}\acs{du}           & tav  & -(e)tu     & táva & távam & távaš & távet & távek & táved \\
     \acs{3p}\acs{du}           & miv  & -(u)mi     & miva & mivam & mivaš & mivet & mivek & mived \\
@@ -364,59 +354,31 @@ are given in \cref{tab:nm_personal_cases}.
       \toprule
       \multicolumn{2}{Fc}{\SetRowStyle{\bfseries}} & \multicolumn{8}{-c}{Cases}\\
       \multicolumn{2}{Fc}{\SetRowStyle{\scshape}} & \acs{ess} & \acs{ins} & \acs{ine} & \acs{ade} & \acs{ill} & \acs{all} & \acs{ela} & \acs{abl} \\
-      \multicolumn{2}{Fc}{\SetRowStyle{\itshape}} & el- & ed- & ess- & ez- & est- & ent- & esp- & emp- \\
+      \multicolumn{2}{Fc}{\SetRowStyle{\itshape}} & el-, l- & eč-, č-, če- & ess- & ez- & est- & ent- & esp- & emp- \\
       \midrule
-      \acs{1p}\acs{sg}           & je-  & jeli   & jeri   & jessi   & jezi   & jesti   & jenti   & jespi   & jempi    \\
-      \acs{2p}\acs{sg}           & tá-  & táli   & tári   & tássi   & tázi   & tásti   & tánti   & táspi   & támpi    \\
-      \acs{3p}\acs{sg}           & mi-  & mili   & miri   & missi   & mizi   & misti   & minti   & mispi   & mimpi    \\
-      \acs{1p}\acs{du};\acs{inc} & vu-  & vuli   & vuri   & vussi   & vuzi   & vusti   & vunti   & vuspi   & vumpi    \\
-      \acs{1p}\acs{du};\acs{exc} & če-  & čeli   & čeri   & čessi   & čezi   & česti   & čenti   & čespi   & čempi    \\
-      \acs{2p}\acs{du}           & tav- & taveli & taveri & tavessi & tavezi & tavesti & taventi & tavespi & tavempi  \\
-      \acs{3p}\acs{du}           & miv- & miveli & miveri & mivessi & mivezi & mivesti & miventi & mivespi & mivempi  \\
-      \acs{1p}\acs{pl};\acs{inc} & jis- & jiseli & jiseri & jisessi & jisezi & jisesti & jisenti & jisespi & jisempi  \\
-      \acs{1p}\acs{pl};\acs{exc} & čes- & česeli & česeri & česessi & česezi & česesti & česenti & česespi & česempi  \\
-      \acs{2p}\acs{pl}           & tás- & táseli & táseri & tásessi & tásezi & tásesti & tásenti & tásespi & tásempi  \\
-      \acs{3p}\acs{pl}           & mis- & miseli & miseri & misessi & misezi & misesti & misenti & misespi & misempi  \\
+      \acs{1p}\acs{sg}                            & -ai         & elai    & ečai   & essai   & ezai   & estai   & entai   & espai   & empai    \\
+      \acs{2p}\acs{sg}                            & -ut         & alut    & ačut   & assut   & azut   & astut   & antut   & asput   & amput    \\
+      \acs{3p}\acs{sg}                            & -mi         & elim    & ečim   & essim   & ezim   & estim   & entim   & espim   & empim    \\
+      \acs{1p}\acs{du};\acs{inc}                  & -ivi        & elivi   & ečivi  & essivi  & ezivi  & estivi  & entivi  & espivi  & empivi    \\
+      \acs{1p}\acs{du};\acs{exc}                  & -eči        & eleči   & ečeči  & esseči  & ezeči  & esteči  & enteči  & espeči  & empeči    \\
+      \acs{2p}\acs{du}                            & -etu        & eletu   & ečetu  & essetu  & ezetu  & estetu  & entetu  & espetu  & empetu   \\
+      \acs{3p}\acs{du}                            & -umi        & lumi    & čumi   & essumi  & ezumi  & estumi  & entumi  & espumi  & empumi    \\
+      \acs{1p}\acs{pl};\acs{inc}                  & -ísa, -isa  & lísa    & čeisa  & essísa  & ezísa  & estísa  & entísa  & espísa  & empísa    \\
+      \acs{1p}\acs{pl};\acs{exc}                  & -ičes       & ličes   & čičes  & essičes & ezičes & estičes & entičes & espičes & empičes   \\
+      \acs{2p}\acs{pl}                            & -atás       & latás   & čatás  & essatás & ezatás & estatás & entatás & espatás & empatás   \\
+      \acs{3p}\acs{pl}                            & -mis, -emis & lemis   & čemis  & essemis & ezemis & estemis & entemis & espemis & empemis   \\
       \midrule
-      \multicolumn{2}{Fc}{\SetRowStyle{\itshape}}   & -l & -ri & -ssi & -zi & -sti & -nti & -spi & -mpi \\
+      \multicolumn{2}{Fc}{\SetRowStyle{\itshape}}               & -lla    & -či    & -ssi    & -zi    & -sti    & -nti    & -spi    & -mpi    \\
       \midrule
-      \acs{inanim};\acs{sg}      & ha-     & hal    & hari   & hassi   & hazi   & hasti   & hanti   & haspi   & hampi   \\
-      \acs{inanim};\acs{du}      & hav-    & haval  & havari & havassi & havazi & havasti & havanti & havaspi & havampi \\
-      \acs{inanim};\acs{pl}      & has-    & hasal  & hasari & hasassi & hasazi & hasasti & hasanti & hasaspi & hasampi \\
+      \acs{inanim};\acs{sg}                       & ha-         & halla   & hači   & hassi   & hazi   & hasti   & hanti   & haspi   & hampi   \\
+      \acs{inanim};\acs{du}                       & hav-        & havalla & havači & havassi & havazi & havasti & havanti & havaspi & havampi \\
+      \acs{inanim};\acs{pl}                       & has-        & hasalla & hasači & hasassi & hasazi & hasasti & hasanti & hasaspi & hasampi \\
       \bottomrule
     \end{tabular}
     \caption{Cases with personal suffixes\label{tab:nm_personal_cases}}
   \end{table}
-
-  %  \begin{table}[h!]\small\capstart
-  %    \begin{tabular}{SFl -Il -l -l -l -l -l -l -l -l}
-  %      \toprule
-  %      \multicolumn{2}{Fc}{\SetRowStyle{\bfseries}} & \multicolumn{8}{-c}{Cases}\\
-  %      \multicolumn{2}{Fc}{\SetRowStyle{\scshape}} & \acs{ess} & \acs{ins} & \acs{ine} & \acs{ade} & \acs{ill} & \acs{all} & \acs{ela} & \acs{abl} \\
-  %      \multicolumn{2}{Fc}{\SetRowStyle{\itshape}} & el- & ed- & ess- & ez- & est- & ent- & esp- & emp- \\
-  %      \midrule
-  %      \acs{1p}\acs{sg}           & -(a)i   & elai   & erai   & essai   & ezai   & estai   & entai   & espai   & empai   \\
-  %      \acs{2p}\acs{sg}           & -ut     & elut   & erut   & essut   & ezut   & estut   & entut   & esput   & emput   \\
-  %      \acs{3p}\acs{sg}           & -im     & elim   & erim   & essim   & ezim   & estim   & entim   & espim   & empim   \\
-  %      \acs{1p}\acs{du};\acs{inc} & -ivu    & elivu  & erivu  & essivu  & ezivu  & estivu  & entivu  & espivu  & empivu  \\
-  %      \acs{1p}\acs{du};\acs{exc} & -(e)če  & eleče  & ereče  & esseče  & ezeče  & esteče  & enteče  & espeče  & empeče  \\
-  %      \acs{2p}\acs{du}           & -(a)tu  & elatu  & eratu  & essatu  & ezatu  & estatu  & entatu  & espatu  & empatu  \\
-  %      \acs{3p}\acs{du}           & -(u)mi  & elumi  & erumi  & essumi  & ezumi  & estumi  & entumi  & espumi  & empumi  \\
-  %      \acs{1p}\acs{pl};\acs{inc} & -(i)sá  & elisá  & erisá  & essisá  & ezisá  & estisá  & entisá  & espisá  & empisá  \\
-  %      \acs{1p}\acs{pl};\acs{exc} & -(e)če  & eleče  & ereče  & esseče  & ezeče  & esteče  & enteče  & espeče  & empeče  \\
-  %      \acs{2p}\acs{pl}           & -(a)tá  & elatá  & eratá  & essatá  & ezatá  & estatá  & entatá  & espatá  & empatá  \\
-  %      \acs{3p}\acs{pl}           & -(a)mi  & elami  & erami  & essami  & ezami  & estami  & entami  & espami  & empami  \\
-  %      \midrule
-  %      \multicolumn{2}{Fc}{\SetRowStyle{\itshape}}   & -l & -ri & -ssi & -zi & -sti & -nti & -spi & -mpi \\
-  %      \midrule
-  %      \acs{inanim};\acs{sg}      & ha-     & hal    & hari   & hassi   & hazi   & hasti   & hanti   & haspi   & hampi   \\
-  %      \acs{inanim};\acs{du}      & hav-    & haval  & havari & havassi & havazi & havasti & havanti & havaspi & havampi \\
-  %      \acs{inanim};\acs{pl}      & has-    & hasal  & hasari & hasassi & hasazi & hasasti & hasanti & hasaspi & hasampi \\
-  %	  \bottomrule
-  %    \end{tabular}
-  %    \caption{Cases with personal suffixes\label{tab:nm_personal_cases}}
-  %  \end{table}
 \end{landscape}
+
 
 \subsubsection{Possessive Suffixes}
 \label{sssec:mn_possessive_suffixes}
@@ -426,13 +388,14 @@ instead, nouns are marked with suffixes that indicate the possessor.  These
 suffixes also influence whether the vowel or consonant form of the following
 case suffix is used.
 
-\subsection{Reflexive and Reciprocal Pronouns}
-\label{ssec:nm_reflexive_pronouns}
 
-Qevesa possesses a single reflexive pronoun, \qevesa{mech} ‘self’, used to
-refer to something already mentioned.  It inflects with the personal
-suffixes to agree in person with its antecedent.  A related pronoun is the
-reciprocal pronoun \qevesa{mocchem}, which does not take personal suffixes.
+% \subsection{Reflexive and Reciprocal Pronouns}
+% \label{ssec:nm_reflexive_pronouns}
+% 
+% Qevesa possesses a single reflexive pronoun, \Q{mech} ‘self’, used to
+% refer to something already mentioned.  It inflects with the personal
+% suffixes to agree in person with its antecedent.  A related pronoun is the
+% reciprocal pronoun \Q{mocchem}, which does not take personal suffixes.
 
 %   \begin{table}[h!]\small\capstart
 %   		\begin{tabular}{Sfc -c}
@@ -465,6 +428,7 @@ reciprocal pronoun \qevesa{mocchem}, which does not take personal suffixes.
 % This might fix referencing issues
 %\newpage
 
+
 \subsection{Demonstrative and Correlative Pronouns}
 \label{ssec:nm_demonstrative_pronouns}
 
@@ -493,13 +457,15 @@ The demonstrative pronouns are are listed in \cref{tab:nm_demonstrative_pronouns
     Inanimate               & -ku    & toku       & koku      & šaku       & veku          \\
     Location                & -ze    & toze       & koze      & šaze       & veze          \\
     Direction               & -chira & tochira    & kochira   & šachira    & vechira       \\
-    Manner                  & -du    & tódu       & kódu      & šádu       & védu          \\
+    Manner                  & -ːdu    & tódu       & kódu      & šádu       & védu          \\
     \bottomrule
   \end{tabularx}
   \caption{Demonstrative pronouns\label{tab:nm_demonstrative_pronouns}}
 \end{table}
 
-%  The prefixes for each series of demonstratives can also be combined with case suffixes, to produce pronouns of specific direction or location, for example:
+%  The prefixes for each series of demonstratives can also be combined with
+%  case suffixes, to produce pronouns of specific direction or location, for
+%  example:
 %
 %  \begin{exe}
 %    \ex\label{tab:nm_demonstrative_prefixes}
@@ -510,6 +476,7 @@ The demonstrative pronouns are are listed in \cref{tab:nm_demonstrative_pronouns
 %      in(side) here & towards where?
 %    \end{tabular}
 %  \end{exe}
+
 
 \section{Postpositions}
 \label{sec:nm_postpositions}
