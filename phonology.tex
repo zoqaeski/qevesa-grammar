@@ -11,31 +11,19 @@
 \subsection{Vowel inventory}
 \label{ssec:vowels}
 
-There are ten distinct vowel phonemes in Qevesa, listed in \cref{tab:vowels}.
-These are divided into five long and five short phonemes, differing in length
+There are twelve distinct vowel phonemes in Qevesa, listed in \cref{tab:vowels}.
+These are divided into six long and six short phonemes, differing in length
 but not quality.  Long vowels are held approximately twice as long as their
 short counterparts.
-
-%  \begin{figure}[h]\capstart
-%    \begin{vowel}
-%      \putvowel{i/iː}{0\vowelhunit}{0\vowelvunit}{ni}
-%      %\putvowel{i}{0.6\vowelhunit}{0.3\vowelvunit}{node}
-%      \putvowel{u/uː}{3\vowelhunit}{0pt}{nu}
-%      \putvowel{e/eː}{1\vowelhunit}{1.5\vowelvunit}{ne}
-%      \putvowel{o/oː}{4\vowelhunit}{1.5\vowelvunit}{no}
-%      \putvowel{a/aː}{3\vowelhunit}{3\vowelvunit}{na}
-%    \end{vowel}
-%    \caption{Vowel phonemes\label{vowel_phonemes}}
-%  \end{figure}
 
 \begin{table}[h!]\small\capstart
   \begin{tabular}{BFl -c -c -c}
     \toprule
     \SetRowStyle{\bfseries} & Front & Central & Back \\
     \midrule
-    Close & i iː &      & u uː \\%ʉ ʉː \\
-    Mid   & e eː &      & o oː \\
-    Open  &      & a aː \\
+    Close & i iː y yː &         & u uː \\
+    Mid   & e eː      &         & o oː \\
+    Open  &           & a aː \\
     \bottomrule
   \end{tabular}
   \caption{Qevesa vowel phonemes\label{tab:vowels}}
@@ -43,14 +31,10 @@ short counterparts.
 
 Although the vowels [e] and [o] are conventionally written using the close-mid
 \textsc{ipa} symbols, they are more accurately transcribed as mid vowels
-[\textlowering{e}] and [\textlowering{o}].  Word-initial /e/ is often realised
-as [je], and word-initial /o/ may be realised as [wo] in some dialects.
-
-% The diphthongs consist of /i-/ /-i/ /u-/ and /-u/ glides, as exemplified in
-% \cref{tab:diphthongs}.  /i-/ onset diphthongs may cause palatalisation of the
-% preceding consonant, and /u-/ onset glides may cause labialisation of the
-% preceding consonant.
-% 
+[\textlowering{e}] and [\textlowering{o}].  Syllable-initial /e/ is often
+realised as [je], and syllable-initial /o/ may be realised as [wo] in some
+dialects.  There are eight diphthongs, /ai ei oi au ua uo ue ui/.
+ 
 % \begin{table}[h]\small\capstart
 %   \begin{tabular}{BFl -c -c -c -c}
 %     \toprule
@@ -75,13 +59,13 @@ as [je], and word-initial /o/ may be realised as [wo] in some dialects.
     \toprule
     \SetRowStyle{\bfseries} & Bilabial & Labiodental & Dental/alveolar & Postalveolar & Palatal & Velar & Glottal \\
     \midrule
-    Nasal       & m &     & \tsb{n}    &       & ɲ     \\
-    Plosive     & p &     & \tsb{t}    &       & c     & k \\ 
-    Fricative   &   & f v & θ ð s (z)  & ʃ (ʒ) & ɕ (ç) & x & h (ɦ) \\
-    Affricate   &   &     & ts dz      & tʃ dʒ & (ʑ)   \\
-    Approximant &   &     &            &       & j     \\
-    Lateral     &   &     & l          &       &       \\
-    Rhotic      &   &     & r          &   \\
+    Nasal       & m   &     & \tsb{n} &       & ɲ          \\
+    Plosive     & p   &     & \tsb{t} &       & c          & k \\ 
+    Fricative   &     & f v & θ ð s z & ʃ ʒ   & (ɕ ç)      & x & h (ɦ) \\
+    Affricate   &     &     & ts dz   & tʃ dʒ & (ʝ\tlde ʑ) \\
+    Approximant & (w) & (ʋ) & (ð̞ ɹ)   &       & j          \\
+    Lateral     &     &     & l       \\
+    Rhotic      &     &     & r       \\
     \bottomrule
   \end{tabular}
   \caption{Consonants\label{tab:consonants}}
@@ -120,9 +104,10 @@ The plosives may be realised with a slight aspiration when syllable-final.
 \subsubsection{Fricatives}
 \label{sssec:fricatives}
 
-Qevesa has nine fricative consonants: /f v θ ð s ʃ ɕ x h/.  /v/ and /ð/ are
-commonly realised as approximants.  Before /i/ or /j/, /x/ and /h/ may be
-realised as [ç]; intervocalic and geminate /h/ may be realised as /ɦ/. 
+Qevesa has nine fricative consonants: /f v θ ð s ʃ x h/.  /v/ and /ð/ are
+commonly realised as approximants.  /ɕ/ is an allophone of /ʃ/ that occurs
+after palatalised consonants.  Before /i/ or /j/, /x/ and /h/ may be realised
+as [ç]; intervocalic and geminate /h/ may be realised as /ɦ/. 
 
 
 \subsubsection{Affricates}
@@ -145,16 +130,17 @@ The lateral consonant is the denti-alveolar /l/.  When preceding an /i-/ glide
 or /j/, it is realised as [ʎ].  
 
 The rhotic consonant is the alveolar trill /r/, which is often realised as the
-tap [ɾ] between vowels.  When following /ʃ ɕ ʒ/ it will assimilate to the
-preceding fricative (causing it to geminate), and in a word-final position it
-may be realised as /ʒ/. 
+tap [ɾ] between vowels.  Immediately adjacent to /s ʃ ʒ/, /r/ is usually
+realised as an approximant [ɹ], and after /n ɲ/ it may be realised as [ʒ].
+Adjacent to a lateral, the rhotic assimilates such that /rl rl/ are pronounced
+[lː].
 
 The glide is the palatal glide /j/, which alternates between [j\tlde ʝ\tlde ʑ].
 Initially and intervocalically it is usually pronounced as an approximant, but
 when final it may be pronounced as a fricative, especially before a stop or
 nasal consonant.  
 
-The fricatives /v/ and /ð/ are also often realised as approximants.  
+The fricatives /v/ and /ð/ are also often realised as approximants [ʋ] and [ð̞].  
 
 
 \subsection{Phonemic Restrictions}
@@ -183,12 +169,12 @@ offglides.  Final clusters may only consist of geminates and the following
 clusters: 
 
 \begin{itemize}
-  \item /l/ + /p t k s/: /lp lt lk ls/
-  \item /m n p t c k/ + /s ʃ/: [ms mʃ ns nʃ ɲs ɲɕ ps pʃ ts tʃ cç\tlde tɕ ks kʃ]
-  \item /s ʃ/ + /p t k/: [sp st sk ʃp ʃt ʃk]
-  \item A fricative + affricate at the same point of articulation: [sts ʃtʃ]
-  \item /n/ + /t c k/: [nt ɲc nk]
-  \item /m/ + /p/ : [mp]
+  \item /l/ + /p t k s ʃ/: /lp lt lk ls lʃ/
+  \item /m n p t c k/ + /s ʃ/: /ms mʃ ns nʃ ɲɕ ps pʃ ts tʃ cç\tlde tɕ ks kʃ/
+  \item /s ʃ/ + /p t k/: /sp st sk ʃp ʃt ʃk/
+  \item A fricative + affricate at the same point of articulation: /sts ʃtʃ/
+  \item /n/ + /t c k/: /nt ɲc nk/
+  \item /m/ + /p/ : /mp/
 \end{itemize}
 
 Though there are a large number of permissable consonant clusters, their actual
@@ -205,29 +191,30 @@ The usual transcription system used for the Latin alphabet is as follows:
 
 \begin{center}
   \begin{tabularx}{0.9 \textwidth}{FC*{7}{-C}}
-    \SetRowStyle{\bfseries} A a   & Á á  & C c  & Č č    & Ch ch  & D d  & E e   \\
-                            /a/   & /aː/ & /ts/ & /tʃ/   & /ɕ/    & /ð/  & /e/   \\
-    \SetRowStyle{\bfseries} É é   & H h  & I i  & Í í    & J j    & K k  & Kh kh  \\
-                            /eː/  & /h/  & /i/  & /iː/   & /j/    & /k/  & /x/    \\
-    \SetRowStyle{\bfseries} L l   & M m  & N n  & Ň ň    & O o    & Ó ó  & P p    \\
-                            /l/   & /m/  & /n/  & /ɲ/    & /o/    & /oː/ & /p/    \\
-    \SetRowStyle{\bfseries} Ph ph & Q q  & R r  & S s    & Š š    & T t  & Th th \\
-                            /f/   & /c/  & /r/  & /s/    & /ʃ/    & /t/  & /θ/   \\
-    \SetRowStyle{\bfseries} U u   & Ú ú  & V v  & Z z    & Ž ž    \\
-                            /u/   & /uː/ & /v/  & /z dz/ & /ʒ dʒ/ \\
+    \SetRowStyle{\bfseries} A a  & Á á  & C c  & Č č  & D d    & E e    & É é   \\
+                            /a/  & /aː/ & /ts/ & /tʃ/ & /ð/    & /e/    & /eː/  \\
+    \SetRowStyle{\bfseries} H h  & I i  & Í í  & J j  & K k    & Kh kh  & L l   \\
+                            /h/  & /i/  & /iː/ & /j/  & /k/    & /x/    & /l/   \\
+    \SetRowStyle{\bfseries} M m  & N n  & Ň ň  & O o  & Ó ó    & P p    & Ph ph \\
+                            /m/  & /n/  & /ɲ/  & /o/  & /oː/   & /p/    & /f/   \\
+    \SetRowStyle{\bfseries} Q q  & R r  & S s  & Š š  & T t    & Th th  & U u   \\
+                            /c/  & /r/  & /s/  & /ʃ/  & /t/    & /θ/    & /u/   \\
+    \SetRowStyle{\bfseries} Ú ú  & V v  & Y y  & Ý ý  & Z z    & Ž ž    \\
+                            /uː/ & /v/  & /y/  & /yː/ & /z dz/ & /ʒ dʒ/ \\
   \end{tabularx}
   %\caption[Romanisation of Qevesa]{\label{tab:transcription}}
 \end{center}
 
-%  a   á   c   č   ch  d   e  
-%  é   h   i   í   j   k   kh  
-%  l   m   n   ň   o   ó   p   
-%  ph  q   r   s   š   t   th
-%  u   ú   v   z   ž
+%  a   á   c   č   d   e   é
+%  h   i   í   j   k   kh  l
+%  m   n   ň   o   ó   p   ph
+%  q   r   s   š   t   th  u
+%  ú   v   y   ý   z   ž
 
 %\pagebreak[2]
-The Latin orthography is largely phonemic, and makes use of a number of
-diacritics and digraphs.  The diacritics indicate the following features:
+The Latin orthography is largely phonemic, albeit not a one-to-one
+transliteration of the native script, and makes use of a number of diacritics
+and digraphs.  The diacritics indicate the following features:
 
 \begin{description}
   \item[Háček/Caron] The \foreign{háček} or caron indicates a palatalised
@@ -239,10 +226,11 @@ diacritics and digraphs.  The diacritics indicate the following features:
     like a macron with an almost horizontal line. 
 \end{description}
 
-The digraphs \Q{ch}, \Q{kh}, \Q{ph} and \Q{th} represent the phonemes /ɕ/, /x/, /f/ and
-/θ/.  These phonemes were originally pronounced as aspirated stops in Common
-Therasa, and became fricatives in Qevesa.  The letter \Q{z} represents the
-affricate /dz/.
+The digraphs \Q{kh}, \Q{ph} and \Q{th} represent the phonemes /x/, /f/ and /θ/.
+These phonemes were originally pronounced as aspirated stops in Common Therasa,
+and became fricatives in Qevesa (the corresponding aspirated palatal stop
+became the affricate /tʃ/, represented as \Q{č}).  The letter \Q{z} represents
+the affricate /dz/.
 
 Geminate consonants are doubled, except for the digraphs which only double the
 first consonant.  
@@ -250,10 +238,19 @@ first consonant.
 %  Although the orthography is largely morphophonemic, a number of phonemes may be written in more than one way:
 
 %  \begin{itemize}
-%    %\item Palatalisation is indicated by a following \Q{j}, an i-glide diphthong, or a \foreign{háček} above the vowel.  %/ji/ is represented with \Q{y} or \Q{í} and realised as /\supj iː/.
-%    %\item /i-/glides and /j/ soften (palatalise) preceding consonants: therefore /ɕ/ /tɕ/ /\textltailn/ may be represented by \Q{š} \Q{č} \Q{ń} or \Q{si-} \Q{ci-} \Q{ni-} before another vowel.  /\supj e/ \Q{ě} will also cause palatalisation in this manner.
-%    %\item /v/ may be realised as an approximant in some situations, and digraphs involving \Q{v} or \Q{f} such as \Q{sf} or \Q{zv} may result in the labiodental fricative being realised as anything between [f] [v] and [ʋ].
-%    %\item /iː/ is usually written as \Q{í} except when word-initial, when it is written as \Q{y}.
+%    %\item Palatalisation is indicated by a following \Q{j}, an i-glide
+%    diphthong, or a \foreign{háček} above the vowel.  %/ji/ is represented
+%    with \Q{y} or \Q{í} and realised as /\supj iː/.
+%    %\item /i-/glides and /j/ soften (palatalise) preceding consonants:
+%    therefore /ɕ/ /tɕ/ /\textltailn/ may be represented by \Q{š} \Q{č} \Q{ń}
+%    or \Q{si-} \Q{ci-} \Q{ni-} before another vowel.  /\supj e/ \Q{ě} will
+%    also cause palatalisation in this manner.
+%    %\item /v/ may be realised as an approximant in some situations, and
+%    digraphs involving \Q{v} or \Q{f} such as \Q{sf} or \Q{zv} may result in
+%    the labiodental fricative being realised as anything between [f] [v] and
+%    [ʋ].
+%    %\item /iː/ is usually written as \Q{í} except when word-initial, when it
+%    is written as \Q{y}.
 %  \end{itemize}
 
 
