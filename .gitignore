@@ -11,7 +11,7 @@
 *.acn
 *.acr
 *.fls
-*.syntex.gz
+*.synctex.gz
 images/
 notes/
 scripts/

@@ -35,13 +35,16 @@
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}
 \usepackage{xunicode}
-\usepackage{xltxtra}
+% \usepackage{xltxtra}
+% \setmainfont{TeX Gyre Pagella}
+% \setsansfont{TeX Gyre Adventor}
 \setmainfont{Linux Libertine O}
-\setromanfont{Linux Libertine O}
 \setsansfont{Linux Biolinum O}
-\setmonofont[Scale=MatchLowercase]{Source Code Pro}
+% \setmonofont{Source Code Pro}[Scale=MatchLowercase]
 %\setmathfont{Linux Libertine O}
-\newfontfamily\headingfont{Source Sans Pro}
+% \newfontfamily\headingfont{Source Sans Pro}
+
+\newfontfamily\georgianfont{DejaVu Serif}[Scale=MatchLowercase]
 
 % Qevesa native script support
 %\newfontfamily\Qfamily{TherasaUnicode}
@@ -75,29 +78,45 @@
 \providecommand{\Tbw}{\emph{To be written\dots}}
 \providecommand{\tbw}{\emph{to be written\dots}}
 
-\usepackage[automark,nouppercase]{scrpage2}
+% \setkomafont{pagehead}{\rmitfont\color{rmitred}\selectfont}
+% \setkomafont{pagenumber}{\rmitfont\color{black}\selectfont}
+
+\RequirePackage[automark,nouppercase]{scrpage2}
 \pagestyle{scrheadings}
 \clearscrheadfoot
-\cehead[]{\thetitle}
-\cohead[]{\leftmark}
-\ohead[]{\pagemark}
-\setheadsepline{0.5pt}
+\lehead{\thetitle}
+\rohead{\leftmark}
+\cfoot{\pagemark}
+% \setheadsepline{0.5pt}
 
-\setkomafont{pagehead}{\scshape}
-\renewcommand*{\chaptermarkformat}{\chapapp~\thechapter:\enskip}
 
-\makeatletter
-\setkomafont{chapter}{\let\@hangfrom\chapterhang\let\raggedsection\raggedleft\Huge}
-\makeatother
+\setkomafont{title}{\Huge}
+\setkomafont{titlehead}{\Large}
+\setkomafont{author}{\small\itshape}
+\setkomafont{publishers}{\usefontofkomafont{author}}
+\setkomafont{date}{\small}
+\setkomafont{chapter}{\fontsize{30}{30}\bfseries\itshape}
+\setkomafont{chapterentry}{\bfseries}
+\setkomafont{section}{\Large\bfseries}
+
+%% Reduce space above the chapter head
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-\topskip}}
+
+%% Switching the order of elements is easy now. Note that this needs to be uncommented to use the examples below
+\renewcommand\chapterformat{%
+  {\fontsize{96}{96}\upshape\selectfont\thechapter}}
+  % {\fontsize{90}{90}\rmitfont\textcolor{rmitred}{\thechapter}}}
+ 
 \newbox\chapternumberbox
-\newbox\chapternamebox
-\newcommand{\chapterhang}[2]{%
-  \savebox\chapternumberbox{\fontsize{100}{100}\headingfont \thechapter}
-  %\savebox\chapternamebox{\raggedleft\itshape #2}
-  %\usebox\chapternamebox\quad
-  \parbox[t]{\dimexpr\linewidth-\wd\chapternumberbox-1em}{\raggedright \itshape #2 }
-  \raisebox{1.25\baselineskip}{\usebox\chapternumberbox}\par
-}   
+\renewcommand\chapterlinesformat[3]{%
+ \ifstr{#2}{}{
+     \parbox[b]{\textwidth}{\raggedright#3}%
+   }{%
+   \savebox\chapternumberbox{\makebox[0pt][r]{\raisebox{36pt}{\makebox[0pt][r]{\rotatebox{90}{\large\scshape\chapapp}}#2\enskip}}}%
+     \parbox[b]{\dimexpr\textwidth-\wd\chapternumberbox\relax}{\raggedright#3}%
+     \usebox\chapternumberbox%
+ }\par\nobreak
+}
 
 %\renewcommand*{\appendixmore}{
 %  \renewcommand*{\chapterformat}{\appendixname~\thechapter\autodot\enskip}
@@ -106,9 +125,6 @@
 
 \renewcommand*{\tableformat}{\tablename~\thetable\autodot}
 \renewcommand*{\captionformat}{~}
-
-%\addtokomafont{caption}{\small}
-%\setkomafont{captionlabel}{\sffamily\bfseries}
 
 \usepackage{caption}
 \captionsetup[subfigure]{font={md,small},labelfont={sf,small}}
@@ -132,18 +148,18 @@
 \usepackage{array}
 \usepackage{multirow}
 \usepackage{multicol}
-\usepackage{tabularx}
+\usepackage{tabulary}
 \usepackage{booktabs}
 \usepackage{floatrow}
 
 \newcommand{\SetRowStyle}[1]{\gdef\RowStyle{#1}#1\ignorespaces}
 \newcolumntype{F}{>{\global\let\RowStyle\relax}}
-\newcolumntype{f}{>{\RowStyle}X}
 \newcolumntype{-}{>{\RowStyle}}
-\newcolumntype{C}{>{\centering\arraybackslash}X}
 \newcolumntype{B}{>{\bfseries}} % Bold
 \newcolumntype{S}{>{\scshape}}  % Smallcaps
 \newcolumntype{I}{>{\itshape}}  % Italics
+\newcolumntype{G}{>{\georgianfont}} % Georgian font
+\newcolumntype{w}{<{\hspace{0.75em}}}  % Wide column
 \renewcommand{\arraystretch}{1.25}
 \renewcommand{\tabcolsep}{0.5em}
 \newcommand{\tc}[1]{\renewcommand{\tabcolsep}{#1}}
@@ -159,18 +175,23 @@
 \clubpenalty=1500
 
 % Glossaries for abbreviations
-\usepackage[acronymlists={glossing},nomain,nonumberlist,numberedsection,toc,sanitize=none,section=chapter,smallcaps,shortcuts,xindy]{glossaries}
+\usepackage[nomain,numberedsection,toc,sanitizesort,section=chapter,smallcaps,shortcuts,xindy]{glossaries}
+\usepackage{glossary-mcols}
+\DeclareAcronymList{glossing}
+%\DeclareAcronymList{other}
 
-\newglossarystyle{twocollist}{\glossarystyle{list}\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}\AfterEndEnvironment{theglossary}{\end{multicols*}}}
+%\newglossarystyle{twocollist}{\glossarystyle{list}\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}\AfterEndEnvironment{theglossary}{\end{multicols*}}}
 
 % Custom display style to match old abbreviations.tex
 \newglossary[alg]{glossing}{acr}{acn}{List of Glossing Abbreviations}
-\setglossarystyle{twocollist}
+%\newglossary[alg]{other}{acr}{acn}{List of Other Abbreviations}
+\setglossarystyle{long3col}
 \renewcommand{\glsnamefont}[1]{\textnormal{\scshape #1}}
 \renewcommand*{\glsgroupskip}{}
 \renewcommand{\glspostdescription}{}
 
-\loadglsentries[glossing]{abbreviations}
+\loadglsentries[glossing]{glosses}
+%\loadglsentries[other]{abbreviations}
 \glsunsetall
 \makeglossaries
 
@@ -186,7 +207,7 @@
 %\def\endex{\xe}
 %\let\endpex=\endex
 
-\usepackage{pst-vowel}
+%\usepackage{pst-vowel}
 \usepackage{gb4e} 
 \noautomath
 \let\eachwordone=\textit
@@ -276,7 +297,9 @@
   %\renewcommand{\thechapter}{\Alph{chapter}}
   %\subfile{appendix-noun-suffixes}
   \glsaddall
-  \printglossary[type=glossing]
+%  \printglossary[type=glossing]
+%  \printglossary[type=other]
+  \printglossaries
   %\backmatter
 
 \end{document}
