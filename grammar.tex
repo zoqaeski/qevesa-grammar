@@ -2,13 +2,18 @@
 % !TEX TS-program = xelatex
 % !TEX encoding = UTF-8
 
+% arara: lualatex
+% arara: lualatex
+% arara: makeglossaries
+% arara: lualatex 
+
 \documentclass{scrbook}
 % I use KOMA-script as I find it gives much easier control than a mishmash of different packages.
 %% KOMA options
 \KOMAoption{appendixprefix}{false}
 \KOMAoption{chapterprefix}{false}
 \KOMAoption{cleardoublepage}{empty}
-\KOMAoption{DIV}{12}
+\KOMAoption{DIV}{10}
 \KOMAoption{draft}{false}
 \KOMAoption{fontsize}{12pt}
 \KOMAoption{headings}{big}
@@ -31,23 +36,54 @@
 \usepackage{etoolbox}
 
 %% Typography Settings
-\usepackage{microtype}
+% Load fonts for XeTeX, including support for Unicode etc.
+% Mathspec makes it possible to redefine *all* the fonts used for math stuff,
+% however, it contains a stupid bug in dependency checking, see
+% <http://tex.stackexchange.com/a/85700/60686>.
+% \usepackage{mathspec}
+% \makeatletter % undo the wrong changes made by mathspec
+% \let\RequirePackage\original@RequirePackage
+% \let\usepackage\RequirePackage
+% \makeatother
+
 \usepackage{fontspec}
 \defaultfontfeatures{Mapping=tex-text}
+
+\usepackage{microtype}
 \usepackage{xunicode}
 % \usepackage{xltxtra}
 % \setmainfont{TeX Gyre Pagella}
 % \setsansfont{TeX Gyre Adventor}
-\setmainfont{Linux Libertine O}
-\setsansfont{Linux Biolinum O}
+% \setmainfont{Linux Libertine O}
+% \setsansfont{Linux Biolinum O}
 % \setmonofont{Source Code Pro}[Scale=MatchLowercase]
 %\setmathfont{Linux Libertine O}
 % \newfontfamily\headingfont{Source Sans Pro}
 
-\newfontfamily\georgianfont{DejaVu Serif}[Scale=MatchLowercase]
+\setmainfont{Linux Libertine O}[
+	% Ligatures=TeX,
+	Numbers=Uppercase,
+]
 
-% Qevesa native script support
-%\newfontfamily\Qfamily{TherasaUnicode}
+\setsansfont{Fira Sans}[
+	% Ligatures=TeX,
+	Numbers=Uppercase,
+	Scale=MatchLowercase,
+	BoldFont={* SemiBold},
+]
+
+\setmonofont{Fira Mono}[
+	Ligatures=TeX,
+	Scale=MatchLowercase,
+]
+
+% \setmathsfont(Digits,Latin,Greek)[
+% 	Ligatures=TeX,
+% 	Numbers=Lowercase,
+% ]{Junicode}
+
+% Fontawesome icons
+\usepackage{fontawesome}
 
 %% Metadata
 \title{Qevesa Grammar}
@@ -73,8 +109,8 @@
 \setdefaultlanguage[variant=australian]{english}
 
 %% This is meant to be a DRAFT
-\usepackage{draftwatermark}
-\SetWatermarkText{\textsf{DRAFT}}
+% \usepackage{draftwatermark}
+% \SetWatermarkText{\textsf{DRAFT}}
 \providecommand{\Tbw}{\emph{To be written\dots}}
 \providecommand{\tbw}{\emph{to be written\dots}}
 
@@ -98,6 +134,8 @@
 \setkomafont{chapter}{\fontsize{30}{30}\bfseries\itshape}
 \setkomafont{chapterentry}{\bfseries}
 \setkomafont{section}{\Large\bfseries}
+\setkomafont{subsection}{\large\bfseries}
+\setkomafont{subsubsection}{\bfseries}
 
 %% Reduce space above the chapter head
 \renewcommand*{\chapterheadstartvskip}{\vspace*{-\topskip}}
@@ -112,7 +150,7 @@
  \ifstr{#2}{}{
      \parbox[b]{\textwidth}{\raggedright#3}%
    }{%
-   \savebox\chapternumberbox{\makebox[0pt][r]{\raisebox{36pt}{\makebox[0pt][r]{\rotatebox{90}{\large\scshape\chapapp}}#2\enskip}}}%
+   \savebox\chapternumberbox{\makebox[0pt][r]{\raisebox{36pt}{\makebox[0pt][r]{\rotatebox{90}{\large\scshape\chapapp}}\hspace{0.25ex}#2}}}%
      \parbox[b]{\dimexpr\textwidth-\wd\chapternumberbox\relax}{\raggedright#3}%
      \usebox\chapternumberbox%
  }\par\nobreak
@@ -133,33 +171,13 @@
 \usepackage{subfig}
 
 \usepackage{enumitem}
-\let\olditemize\itemize
-\renewcommand{\itemize}{
-	\olditemize
-    \setlength{\itemindent}{0pt}
-    \setlength{\itemsep}{1.25pt}
-    \setlength{\parskip}{0.5pt}
-    \setlength{\parsep}{0.5pt}
-    %\setlength{\leftmargin}{1.5em}
-}
+\setlist{itemsep=1.5pt, parsep=1.5pt}
 
 
 %% Table tricks
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{multicol}
-\usepackage{tabulary}
-\usepackage{booktabs}
+\usepackage{tableformat}
 \usepackage{floatrow}
 
-\newcommand{\SetRowStyle}[1]{\gdef\RowStyle{#1}#1\ignorespaces}
-\newcolumntype{F}{>{\global\let\RowStyle\relax}}
-\newcolumntype{-}{>{\RowStyle}}
-\newcolumntype{B}{>{\bfseries}} % Bold
-\newcolumntype{S}{>{\scshape}}  % Smallcaps
-\newcolumntype{I}{>{\itshape}}  % Italics
-\newcolumntype{G}{>{\georgianfont}} % Georgian font
-\newcolumntype{w}{<{\hspace{0.75em}}}  % Wide column
 \renewcommand{\arraystretch}{1.25}
 \renewcommand{\tabcolsep}{0.5em}
 \newcommand{\tc}[1]{\renewcommand{\tabcolsep}{#1}}
@@ -175,7 +193,7 @@
 \clubpenalty=1500
 
 % Glossaries for abbreviations
-\usepackage[nomain,numberedsection,toc,sanitizesort,section=chapter,smallcaps,shortcuts,xindy]{glossaries}
+\usepackage[acronym,nomain,shortcuts,toc,section,xindy]{glossaries}
 \usepackage{glossary-mcols}
 \DeclareAcronymList{glossing}
 %\DeclareAcronymList{other}
@@ -183,9 +201,10 @@
 %\newglossarystyle{twocollist}{\glossarystyle{list}\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}\AfterEndEnvironment{theglossary}{\end{multicols*}}}
 
 % Custom display style to match old abbreviations.tex
+\setacronymstyle{sc-short-long}
 \newglossary[alg]{glossing}{acr}{acn}{List of Glossing Abbreviations}
 %\newglossary[alg]{other}{acr}{acn}{List of Other Abbreviations}
-\setglossarystyle{long3col}
+\setglossarystyle{mcolindex}
 \renewcommand{\glsnamefont}[1]{\textnormal{\scshape #1}}
 \renewcommand*{\glsgroupskip}{}
 \renewcommand{\glspostdescription}{}
@@ -196,21 +215,9 @@
 \makeglossaries
 
 %% Linguistics
-%\usepackage{tipa}
-%\usepackage{expex}
-%\lingset{
-%	exnosplitpenalty=300,
-%	everygla=\it
-%	%glstyle=wrap
-%}
-%% LaTeX fixes?
-%\def\endex{\xe}
-%\let\endpex=\endex
-
-%\usepackage{pst-vowel}
-\usepackage{gb4e} 
-\noautomath
+\usepackage{gb5e}  %% gb5e is my improved version of gb4e
 \let\eachwordone=\textit
+\noautomath
 
 \renewcommand{\sup}[1]{\textsuperscript{#1}}
 \newcommand{\sub}[1]{\textsubscript{#1}}
@@ -226,6 +233,7 @@
 % Special forms
 \newcommand{\foreign}[1]{\textit{#1}}
 \newcommand{\Q}[1]{\textit{#1}}
+\newcommand{\Qt}[2]{\textit{#1} “#2”}
 
 \usepackage[capitalise]{cleveref}
 
@@ -296,10 +304,10 @@
   \appendix
   %\renewcommand{\thechapter}{\Alph{chapter}}
   %\subfile{appendix-noun-suffixes}
-  \glsaddall
+  % \glsaddall
 %  \printglossary[type=glossing]
 %  \printglossary[type=other]
-  \printglossaries
+  % \printglossaries
   %\backmatter
 
 \end{document}
