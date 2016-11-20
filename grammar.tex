@@ -50,20 +50,19 @@
 \defaultfontfeatures{Mapping=tex-text}
 
 \usepackage{microtype}
-\usepackage{xunicode}
-% \usepackage{xltxtra}
-% \setmainfont{TeX Gyre Pagella}
-% \setsansfont{TeX Gyre Adventor}
-% \setmainfont{Linux Libertine O}
-% \setsansfont{Linux Biolinum O}
-% \setmonofont{Source Code Pro}[Scale=MatchLowercase]
-%\setmathfont{Linux Libertine O}
-% \newfontfamily\headingfont{Source Sans Pro}
 
 \setmainfont{Linux Libertine O}[
-	% Ligatures=TeX,
 	Numbers=Uppercase,
 ]
+
+% \setmainfont{Brill}[
+%   Numbers=Uppercase,
+% ]
+
+% \setsansfont{Linux Biolinum O}[
+% 	Numbers=Uppercase,
+% 	Scale=MatchLowercase,
+% ]
 
 \setsansfont{Fira Sans}[
 	% Ligatures=TeX,
@@ -133,9 +132,9 @@
 \setkomafont{date}{\small}
 \setkomafont{chapter}{\fontsize{30}{30}\bfseries\itshape}
 \setkomafont{chapterentry}{\bfseries}
-\setkomafont{section}{\Large\bfseries}
-\setkomafont{subsection}{\large\bfseries}
-\setkomafont{subsubsection}{\bfseries}
+\setkomafont{section}{\LARGE\bfseries}
+\setkomafont{subsection}{\Large\mdseries}
+\setkomafont{subsubsection}{\large\mdseries\itshape}
 
 %% Reduce space above the chapter head
 \renewcommand*{\chapterheadstartvskip}{\vspace*{-\topskip}}
@@ -302,6 +301,9 @@
 
   % APPENDICES
   \appendix
+
+  \subfile{appendix-history}
+
   %\renewcommand{\thechapter}{\Alph{chapter}}
   %\subfile{appendix-noun-suffixes}
   % \glsaddall
