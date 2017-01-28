@@ -13,13 +13,13 @@ but not quality.  Long vowels are held approximately twice as long as their
 short counterparts.
 
 \begin{table}[h!]\small\capstart
-  \begin{tabular}{BFl -c -c -c}
+  \begin{tabular}{BFl -c -c -c -c -c}
     \toprule
-    \SetRowStyle{\bfseries} & Front & Central & Back \\
+    \rowstyle{\bfseries} & \multicolumn{2}{-c}{Front} & \multicolumn{2}{-c}{Central} & Back \\
     \midrule
-    Close & i iː y yː &         & u uː \\
-    Mid   & e eː      &         & o oː \\
-    Open  &           & a aː \\
+    Close & i iː & \multicolumn{2}{c}{y yː} & & u uː \\
+    Mid   & \multicolumn{2}{c}{e eː} & & & o oː \\
+    Open  & & & a aː \\
     \bottomrule
   \end{tabular}
   \caption{Qevesa vowel phonemes\label{tab:vowels}}
@@ -58,7 +58,7 @@ stress in a word they are always pronounced clearly.
 % \begin{table}[h]\small\capstart
 %   \begin{tabular}{BFl -c -c -c -c}
 %     \toprule
-%     \SetRowStyle{\bfseries} & i- & -i & u- & -u \\
+%     \rowstyle{\bfseries} & i- & -i & u- & -u \\
 %     \midrule
 %     a & ia & ai & ua & au \\
 %     e & ie & ei & ue & eu \\
@@ -77,13 +77,13 @@ stress in a word they are always pronounced clearly.
 \begin{table}[h!]\small\capstart
   \begin{tabular}{BFl -c -c -c -c -c -c}
     \toprule
-    \SetRowStyle{\bfseries} & Labial & Dental/alveolar & Postalveolar & Palatal & Velar & Glottal \\
+    \rowstyle{\bfseries} & Labial & Dental/alveolar & Postalveolar & Palatal & Velar & Glottal \\
     \midrule
-    Nasal       & m       & \tsb{n} &      & ɲ    \\
-    Plosive     & p       & \tsb{t} &      & c    & k \\
-    Fricative   & f v     & θ ð s z & ʂ ʐ  & ɕ [ʝ\tlde ʑ] & x & h [ɦ] \\
-    Affricate   &         & ts [dz] & [dʐ] & tɕ   \\
-    Approximant & [w] [ʋ] & [ð̞ ɹ]   &      & j    \\
+    Nasal       & m       & \tsb{n} &         & ɲ  \\
+    Plosive     & p       & \tsb{t} &         & c            & k \\
+    Fricative   & f v     & θ ð s z & ʂ ʐ     & ɕ [ʝ\tlde ʑ] & x & h [ɦ] \\
+    Affricate   &         & ts [dz] & tʂ [dʐ] & [tɕ] \\
+    Approximant & [w] [ʋ] & [ð̞ ɹ]   &         & j  \\
     Lateral     &         & l       \\
     Rhotic      &         & r       \\
     \bottomrule
@@ -127,8 +127,9 @@ syllable-final: [c\sup{ç}].  In some regional dialects [c] and the former
 phoneme [cʰ] have completely merged into [tɕ] (in the standard dialect they
 remain separate phonemes), and in regions where Qevesa is widely spoken as a
 second language a palatalised velar [kʲ] is generally regarded as an acceptable
-variant, although [ts] may also be heard, particularly by Cavasko speakers
-on the north coast plains near the border with Cavaskia.
+variant. 
+%although [t] may also be heard, particularly by Cavasko speakers
+%on the north coast plains near the border with Cavaskia.
 
 It is very common for back vowels preceding [c] to acquire a slight offglide:
 /ac/ → [a(ɪ̯)c].
@@ -137,14 +138,16 @@ It is very common for back vowels preceding [c] to acquire a slight offglide:
 \subsection{Fricatives and affricates}
 \label{ssec:fricatives}
 
-Qevesa has eleven fricative consonants: /f v θ ð s z ʂ ʐ ɕ x h/.  /v/ and /ð/ are
-commonly realised as approximants.  Before front vowels /x/ and /h/ may be realised
-as [ç]; intervocalic and geminate /h/ may be realised as /ɦ/. 
+Qevesa has eleven fricative consonants: /f v θ ð s z ʂ ʐ ɕ x h/.  /v/ and /ð/
+are commonly realised as approximants.  Before front vowels /x/ and /h/ may be
+realised as [ç], and an intervocalic /h/ may be realised as /ɦ/. Unique amongst
+the consonantal sounds, /h/ cannot be geminated—a long /h/ induces lengthening
+of the previous vowel and is realised as /ɦ/.
 
 The postalveolar fricatives /ʂ/ and /ʐ/ are realised as laminal retroflex
 fricatives, and are transcribed as such.
 
-There are four affricate consonants, /ts tɕ dz dʐ/, the latter three of which
+There are four affricate consonants, /ts tʂ tɕ dz dʐ/, the latter three of which
 are in free variation of the phonemes /ɕ z ʐ/.  They primarily occur in
 geminates and (occasionally) when intervocalic.  The phoneme /ts/ only occurs
 in loan words.
@@ -187,9 +190,11 @@ this position.  The coda may consist of any single consonant, a geminate
 consonant, or one of the following clusters:
 
 \begin{itemize}
-  \item /r l/ + /s ʂ/: /rs rʂ ls lʂ/
-  \item /m n ɲ p t c k/ + /s ʂ/: /ms mʂ ns nʂ ɲɕ ps pʂ ts tʂ cç\tlde tɕ ks kʂ/
-  \item A fricative + affricate at the same point of articulation: /sts ʂtʂ/
+  \item /r l/ + /s ʂ t/: [rs rʂ ls lʂ rt lt]
+  \item /m n ɲ p t c k/ + /s ʂ/: [ms mʂ ns nʂ ɲɕ ps pʂ ts tʂ cç\tlde tɕ ks kʂ]
+  \item /s ʂ/ + /p t c k/ : [sp ʂp st ʂt ɕc sk ʂk]
+  \item /mp nt ɲc nk/
+  % \item A fricative + affricate at the same point of articulation: /sts ʂtʂ/
 \end{itemize}
 
 Though there are a large number of permissable consonant clusters, their actual
@@ -241,16 +246,16 @@ The usual transcription system used for the Latin alphabet is as follows:
 
 \begin{center}
   \begin{tabulary}{0.9 \textwidth}{Fc*{7}{-c}}
-    \SetRowStyle{\bfseries} A a  & Á á    & C c  & Ch ch  & D d    & E e    & É é    \\
-                            /a/  & /aː/   & /ts/ & /ɕ tɕ/ & /ð/    & /e/    & /eː/   \\
-    \SetRowStyle{\bfseries} H h  & I i    & Í í  & J j    & K k    & Kh kh  & L l    \\
-                            /h/  & /i/    & /iː/ & /j/    & /k/    & /x/    & /l/    \\
-    \SetRowStyle{\bfseries} M m  & N n    & Ň ň  & O o    & Ó ó    & P p    & Ph ph  \\
-                            /m/  & /n/    & /ɲ/  & /o/    & /oː/   & /p/    & /f/    \\
-    \SetRowStyle{\bfseries} Q q  & Qh qh  & R r  & S s    & Š š    & T t    & Th th  \\
-                            /c/  & /ɕ tɕ/ & /r/  & /s/    & /ʂ/    & /t/    & /θ/    \\
-    \SetRowStyle{\bfseries} U u  & Ú ú    & V v  & Y y    & Ý ý    & Z z    & Ž ž    \\
-                            /u/  & /uː/   & /v/  & /y/    & /yː/   & /z dz/ & /ʐ dʐ/ \\
+    \rowstyle{\bfseries} A a   & Á á  & C c      & Č č  & Ch ch  & D d    & E e     \\
+                         /a/   & /aː/ & /c/ [ts] & /tʂ/ & /ɕ tɕ/ & /ð/    & /e/     \\
+    \rowstyle{\bfseries} É é   & F f  & H h      & I i  & Í í    & J j    & K k     \\
+                         /eː/  & /f/  & /h/      & /i/  & /iː/   & /j/    & /k/     \\
+    \rowstyle{\bfseries} Kh kh & L l  & M m      & N n  & Ň ň    & O o    & Ó ó     \\
+                         /x/   & /l/  & /m/      & /n/  & /ɲ/    & /o/    & /oː/    \\
+    \rowstyle{\bfseries} P p   & Q q  & R r      & S s  & Š š    & T t    & Th th   \\
+                         /p/   & /c/  & /r/      & /s/  & /ʂ/    & /t/    & /θ/     \\
+    \rowstyle{\bfseries} U u   & Ú ú  & V v      & Y y  & Ý ý    & Z z    & Ž ž     \\
+                         /u/   & /uː/ & /v/      & /y/  & /yː/   & /z dz/ & /ʐ dʐ/  \\
   \end{tabulary}
   %\caption[Romanisation of Qevesa]{\label{tab:transcription}}
 \end{center}
@@ -261,6 +266,8 @@ The usual transcription system used for the Latin alphabet is as follows:
 %  q   qh  r   s   š   t   th
 %  u   ú   v   y   ý   z   ž
 
+% Cevesa
+
 %\pagebreak[2]
 The Latin orthography is largely phonemic, although not a one-to-one
 transliteration of the native script, and makes use of a number of diacritics
@@ -268,22 +275,25 @@ and digraphs.  The diacritics indicate the following features:
 
 \begin{description}
   \item[Háček/Caron] The \foreign{háček} or caron indicates a palatalised
-    variant.  It is used with \Q{n}, \Q{s} and \Q{z}, producing \Q{ň}, \Q{š}
-    and \Q{ž}.
+    variant.  It is used with \conlang{c}, \conlang{n}, \conlang{s} and
+    \conlang{z}, producing \conlang{č}, \conlang{ň}, \conlang{š} and
+    \conlang{ž}.
   \item[Acute] The acute accent is used to indicate a long vowel, and is used
-    with \Q{a}, \Q{e}, \Q{i}, \Q{o}, \Q{u} and \Q{y} to produce \Q{á}, \Q{é}, \Q{í},
-    \Q{ó}, \Q{ú} and \Q{ý}.  In handwriting, the acute accent is usually written more
-    like a macron with an almost horizontal line. 
+    with \conlang{a}, \conlang{e}, \conlang{i}, \conlang{o}, \conlang{u} and
+    \conlang{y} to produce \conlang{á}, \conlang{é}, \conlang{í}, \conlang{ó},
+    \conlang{ú} and \conlang{ý}.  In handwriting, the acute accent is usually
+    written more like a macron with an almost horizontal line. 
 \end{description}
 
-The digraphs \Q{ch} and \Q{qh}, \Q{kh}, \Q{ph}, and \Q{th} represent the
-phonemes /tɕ/, /x/, /f/ and /θ/.  These phonemes were originally pronounced as
+The digraphs \conlang{ch}, \conlang{kh}, and \conlang{th} represent the
+phonemes /ɕ/, /x/, and /θ/.  These phonemes were originally pronounced as
 aspirated stops in Common Therasa, and became fricatives or affricates in
-Qevesa.  Originally ‹c› was used before back vowels representing /ts/ as
-distinguished from /c/ (written as ‹q›) before front vowels, and the modern
-pronunciation results from a historical hypercorrection to /c/.  The
-neighbouring language \Q{Cavasko} went the other way, that is /c/ → /ts/ in all
-positions.
+Qevesa.  The grapheme \conlang{q} is a stylistic variation on \conlang{c}, and
+is pronounced identically.
+% Originally ‹c› was used before back vowels representing /ts/ as distinguished
+% from /c/ (written as ‹q›) before front vowels, and the modern pronunciation
+% results from a historical hypercorrection to /c/.  The neighbouring language
+% \conlang{Cavasko} went the other way, that is /c/ → /ts/ in all positions.
 
 Geminate consonants are doubled, except for the digraphs which only double the
 first consonant.  
