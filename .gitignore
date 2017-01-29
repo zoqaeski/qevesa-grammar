@@ -1,17 +1,24 @@
 # Git Ignore
-*.aux
-*.fdb_latexmk
-*.log
-*.lot
-*.out
-*.toc
-*.pdf
-*.xdy
-*.alg
 *.acn
 *.acr
+*.alg
+*.aux
+*.fdb_latexmk
 *.fls
+*.glg
+*.idx
+*.ilg
+*.ind
+*.log
+*.lot
+*.lzo
+*.lzs
+*.out
+*.pdf
 *.synctex.gz
+*.toc
+*.xdy
+# I will add these at some point to the master branch
 images/
 notes/
 scripts/
