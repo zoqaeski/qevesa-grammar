@@ -172,6 +172,8 @@
 \usepackage{enumitem}
 \setlist{itemsep=1.5pt, parsep=1.5pt}
 
+\newlist{glossdefs}{itemize}{1}
+\setlist[glossdefs]{nosep, leftmargin=4em, labelwidth=3.5em, align=left}
 
 %% Table tricks
 \usepackage{tableformat}
@@ -192,26 +194,139 @@
 \clubpenalty=1500
 
 % Glossaries for abbreviations
-\usepackage[acronym,nomain,shortcuts,toc,section,xindy]{glossaries}
-\usepackage{glossary-mcols}
-\DeclareAcronymList{glossing}
-%\DeclareAcronymList{other}
+\usepackage[acronym,nomain,nopostdot,shortcuts,toc,section,xindy]{glossaries}
+% \usepackage{glossary-mcols}
+\usepackage{glossary-inline}%
 
-%\newglossarystyle{twocollist}{\glossarystyle{list}\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}\AfterEndEnvironment{theglossary}{\end{multicols*}}}
+\newglossarystyle{glossdef}{%
+	\glossarystyle{super}% based on super
+	\renewenvironment{theglossary}{%
+		\begin{glossdefs}%
+	}{%
+		\end{glossdefs}%
+	}%
+	\renewcommand*{\glossaryheader}{}%
+	\renewcommand*{\glsgroupheading}[1]{}%
+	\renewcommand*{\glossaryentryfield}[5]{%
+		\item[\glsentryitem{##1}\glstarget{##1}{##2}]
+		\makefirstuc{##3}\glspostdescription{}
+	}%
+	\renewcommand*{\glsgroupskip}{}%
+}%
+% \DeclareAcronymList{glossing}
+% %\DeclareAcronymList{other}
+%
+% %\newglossarystyle{twocollist}{\glossarystyle{list}\BeforeBeginEnvironment{theglossary}{\begin{multicols*}{2}}\AfterEndEnvironment{theglossary}{\end{multicols*}}}
+%
+% % Custom display style to match old abbreviations.tex
+% \setacronymstyle{sc-short-long}
+% \newglossary[alg]{glossing}{acr}{acn}{List of Glossing Abbreviations}
+% %\newglossary[alg]{other}{acr}{acn}{List of Other Abbreviations}
+% \setglossarystyle{mcolindex}
+% \renewcommand{\glsnamefont}[1]{\textnormal{\scshape #1}}
+% \renewcommand*{\glsgroupskip}{}
+% \renewcommand{\glspostdescription}{}
+%
+% \loadglsentries[glossing]{glosses}
+% %\loadglsentries[other]{abbreviations}
+% \glsunsetall
 
-% Custom display style to match old abbreviations.tex
-\setacronymstyle{sc-short-long}
-\newglossary[alg]{glossing}{acr}{acn}{List of Glossing Abbreviations}
-%\newglossary[alg]{other}{acr}{acn}{List of Other Abbreviations}
-\setglossarystyle{mcolindex}
-\renewcommand{\glsnamefont}[1]{\textnormal{\scshape #1}}
-\renewcommand*{\glsgroupskip}{}
-\renewcommand{\glspostdescription}{}
+\usepackage{leipzig}
 
-\loadglsentries[glossing]{glosses}
-%\loadglsentries[other]{abbreviations}
-\glsunsetall
+\newleipzig{Test}{test}{test to regenerate}
+
+\newleipzig{AgtT}{at}{agent topic}
+\newleipzig{PatT}{pt}{patient topic}
+\newleipzig{OblT}{oblt}{oblique topic}
+% \newleipzig{DatT}{datt}{dative topic}
+% \newleipzig{GenT}{gent}{genitive topic}
+% \newleipzig{LocT}{loct}{locative topic}
+% \newleipzig{InsT}{inst}{instrumental topic}
+% \newleipzig{CauT}{caut}{causative topic}
+
+% \newleipzig{Anim}{anim}{animate} % Already defined
+\newleipzig{Inan}{inan}{inanimate}
+\newleipzig{Hab}{hab}{habitual}
+\newleipzig{Perf}{perf}{perfective}
+\newleipzig{Ipfv}{ipfv}{imperfective}
+\newleipzig{Exp}{exp}{experiential}
+\newleipzig{Momt}{momt}{momentane}
+% \newleipzig{NPst}{npst}{near past}
+% \newleipzig{RPst}{rpst}{remote past}
+% \newleipzig{NFut}{nfut}{near future}
+% \newleipzig{RFut}{rfut}{remote future}
+% \newleipzig{Agtz}{agtz}{agentizer}
+\newleipzig{Dim}{dim}{diminutive}
+\newleipzig{Comp}{comp}{comparative}
+\newleipzig{Supl}{supl}{superlative}
+
+\newleipzig{Dyn}{dyn}{dynamic}
+\newleipzig{Hort}{hort}{hortative}
+\newleipzig{Iter}{iter}{iterative}
+\newleipzig{Aff}{aff}{affirmative}
+\newleipzig{Int}{int}{intensifier}
+\newleipzig{Mir}{mir}{mirative}
+\newleipzig{Opt}{opt}{optative}
+
+\newleipzig{Adj}{adj}{adjective}
+\newleipzig{Adp}{adp}{adposition}
+\newleipzig{Lnk}{lnk}{linker}
+\newleipzig{Nn}{nn}{noun}
+\newleipzig{Post}{post}{postposition}
+\newleipzig{Prep}{prep}{preposition}
+\newleipzig{Sat}{sat}{satellite}
+\newleipzig{Vb}{vb}{verb}
+
+\newleipzig{Dir}{dir}{direct case}
+\newleipzig{Ess}{ess}{essive case}
+\newleipzig{Part}{part}{partitive}
+
+\newleipzig{Sgv}{sgv}{singulative}
+
+\newleipzig{Med}{med}{medial}
+
+\newleipzig{AF}{af}{argument function}
+\newleipzig{DF}{df}{discourse function}
+\newleipzig{Adjc}{adj}{adjunct}
+\newleipzig{Anim}{anim}{animacy}
+\newleipzig{Case}{case}{case}
+\newleipzig{Compar}{compar}{comparison}
+\newleipzig{Compl}{comp}{complement}
+\newleipzig{Fin}{fin}{finiteness}
+\newleipzig{Gend}{gend}{gender}
+\newleipzig{Index}{index}{index}
+\newleipzig{Num}{num}{number}
+\newleipzig{Obj}{obj}{object}
+% \newleipzig{SObj}{obj\fakesubscript{\normalfont\itshape θ}}{secondary object}
+\newleipzig{Pers}{pers}{person}
+\newleipzig{Pred}{pred}{predicator}
+\newleipzig{Spec}{spec}{specificity}
+\newleipzig{Sbj}{subj}{subject}
+\newleipzig{Tense}{tense}{tense}
+\newleipzig{XCompl}{xcomp}{open complement}
+
 \makeglossaries
+
+\newcommand{\AargI}{{\Aarg}.{\Inan}}
+\newcommand{\PargI}{{\Parg}.{\Inan}}
+\newcommand{\AgtTI}{{\AgtT}.{\Inan}}
+\newcommand{\PatTI}{{\PatT}.{\Inan}}
+
+\newcommand{\TsgM}{{\Tsg}.{\M}}
+\newcommand{\TsgF}{{\Tsg}.{\F}}
+\newcommand{\TsgN}{{\Tsg}.{\N}}
+\newcommand{\TsgI}{{\Tsg}.{\Inan}}
+\newcommand{\TplM}{{\Tpl}.{\M}}
+\newcommand{\TplF}{{\Tpl}.{\F}}
+\newcommand{\TplN}{{\Tpl}.{\N}}
+\newcommand{\TplI}{{\Tpl}.{\Inan}}
+
+\newcommand{\Oblq}[1]{\Oblique\fakesubscript{\normalfont\itshape #1}}
+\newcommand{\OblqT}{\Oblique\fakesubscript{\normalfont\itshape θ}}
+
+% Keyword index
+\usepackage{makeidx}
+\makeindex
 
 %% Linguistics
 \usepackage{gb5e}  %% gb5e is my improved version of gb4e
@@ -233,8 +348,6 @@
 \newcommand{\foreign}[1]{\textit{#1}}
 \newcommand{\conlang}[1]{\textit{#1}}
 \newcommand{\conlangt}[2]{\textit{#1} “#2”}
-\newcommand{\Q}[1]{\textit{#1}}
-\newcommand{\Qt}[2]{\textit{#1} “#2”}
 
 \usepackage[capitalise]{cleveref}
 
@@ -258,6 +371,17 @@
   %\listoffigures
 
   %\listoftables
+
+  % \section{List of Glossing Abbreviations}
+  % \label{sec:preface/abbreviations}
+  %
+  % The following abbreviations are used throughout glosses in this document:
+
+  \chapter*{Abbreviations}
+
+  \begin{multicols}{2}
+    \printglossary[style=glossdef,type=\leipzigtype,nonumberlist]
+  \end{multicols}
 
   \subfile{preface}
 

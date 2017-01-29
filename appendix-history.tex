@@ -160,8 +160,8 @@ plosives instead of aspirated plosives as in the Eastern branch:
   \item /*kʼ/ > /*k/ > /*kʰ/  
 \end{itemize}
 
-\subsubsection{First Palatalisation}
-\label{sssec:history:east:first_palatalisation}
+\subsubsection{Palatalisation}
+\label{sssec:history:east:palatalisation}
 
 The next stage in the development of the Eastern Teranean languages was the
 first palatalisation, though this is somewhat of a misnomer as the end result
@@ -210,35 +210,66 @@ plosives had become affricates instead of plain fricatives by this point.  As th
 % syllable-initial and eliding when syllable-final, inducing lengthening of the
 % previous vowel.
 
+
 \subsubsection{Environment-Driven Vowel Shifts}
 \label{sssec:history:east:vowel_shifts}
 
-Short vowels in open syllables underwent the following shift:
+The modern six-vowel system in Qevesa developed through a complex series of
+environment-driven vowel shifts.  Listed here are the most common and
+influential types.
 
-\begin{itemize}
-  \item /e/ > /i/
-  \item /o/ > /u/
-\end{itemize}
+\begin{description} 
+  \item[Pharyngeal Lowering:] The two former pharyngeal consonants *ħ and *ʕ
+    often induce lowering of neighboring front vowels, with the changes *i → e
+    and *e → a; this is especially true if the pharyngeal closed a syllable.
+    In the case of word-final pharyngeals, which later regularly became /h/,
+    the consonant was later lost and the preceding vowel lengthened in
+    compensation.
 
-Short vowels in closed syllables were unaffected, and long vowels in both open
-and closed syllables retained the original quality but lost the length
-distinction.
+  \item[Open syllable raising:] Short vowels in open syllables not adjacent to
+    pharyngeals were raised or fronted, resulting in the six vowel system
+    present in modern Qevesa:
 
-Later reduction and simplification of the diphthongs inherited from
-Proto-Teranean resulted in the  Long vowels reappearance of phonemic length
-distinction in vowels with the monophthongisation of the original diphthongs.
+    \begin{itemize}
+      \item /*a/ > /ə/ 
+      \item /*e/ > /i/
+      \item /*o/ > /u/
+      \item /*u/ > /y/
+    \end{itemize}
 
-\begin{itemize}
-  \item /*aj/ > /*ai/ > /eː/
-  \item /*aw/ > /*ɔu/ > /oː/
-  \item /*ej/ > /*ei/ > /iː/
-  \item /*ew/ > /*eu/ > /uː/
-  \item /*oj/ > /*oi/ > /*ui/ > /*yi/ > /yː/
-  \item /*ow/ > /*ou/ > /uː/
-\end{itemize}
+    Short vowels in closed syllables were unaffected, and long vowels in both
+    open and closed syllables retained the original quality but lost the length
+    distinction.  The laxing of /*a/ to /*ə/ only occurred when the /*a/
+    word-final, and was subsequently lost.  
 
-This vowel shift took place over the course of approximately two centuries, and was
-largely complete by the time the first palatalisation began to occur.
+  \item[Palatal raising:] Vowels preceded by a palatal approximant were raised
+    due to its influence, and the approximant itself also had an effect on
+    adjacent consonants:
+
+    \begin{itemize}
+      \item /*ja/ > /je/
+      \item /*je/ > /ji/ > /iː/
+      \item /*jo/ > /je/
+      \item /*ju/ > /jy/
+    \end{itemize}
+
+    The effect on adjacent consonants is described in
+    \cref{sssec:history:east:palatalisation}.
+
+  \item[Simplification of diphthongs:] The Proto-Teranean closing diphthongs,
+    which were quite common, simplified and monophthongised, resulting in the
+    reappearance of long vowels:  
+
+    \begin{itemize}
+      \item /*aj/ > /*ai/ > /eː/
+      \item /*aw/ > /*ɔu/ > /oː/
+      \item /*ej/ > /*ei/ > /iː/
+      \item /*ew/ > /*ey/ > /yː/
+      \item /*oj/ > /*oi/ > /*ui/ > /*yi/ > /yː/
+      \item /*ow/ > /*ou/ > /uː/
+    \end{itemize}
+
+\end{description}
 
 \Tbw
 
@@ -246,8 +277,10 @@ largely complete by the time the first palatalisation began to occur.
 \label{sssec:history:east:glide_shifts}
 
 Word-initial \conlang{*w} has generally been unstable in the Eastern Teranean
-languages.  In Qevesa, all initial /*w/ were converted to /v/, including
-prefixes and clitics.
+languages.  In Qevesa, all initial and intervocalic /*w/ were converted to /v/,
+including prefixes and clitics.  Coda /*w/ were treated as the offglide to
+diphthongs, and assimilated as per the previous
+\lcnamecref{sssec:history:east:vowel_shifts}.
 
 \Tbw
  
@@ -323,6 +356,22 @@ Those with \conlang{*o} were often transitive, and those with \conlang{*e} were
 usually intransitive or stative in nature.  Verbs with \conlang{*a} were less
 common, and were also usually intransitive as well.
 
+Certain combinations of consonants in the roots led to irregular formations in
+daughter languages.  There are too many divergent forms across the entire
+family to list in this document; however, common to most languages include the
+following:
+
+\begin{itemize}
+  \item roots with a \conlang{*w} as one of the consonants: \conlang{*wCC},
+    \conlang{*CwC}, \conlang{*CCw}
+  \item roots with a \conlang{*y} as one of the consonants: \conlang{*yCC},
+    \conlang{*CyC}, \conlang{*CCy}
+  \item roots with a glottal or pharyngeal consonant.
+\end{itemize}
+
+Each of these consonants tended to assimilate surrounding vowels in one form or
+another.
+
 
 \subsubsection{Personal Affixes}
 \label{sssec:history:pt:vm:subject_agreement}
@@ -341,20 +390,20 @@ the final suffix added to the conjugated verb stem.
   \begin{tabular}{BFc -c -c -c}
     \toprule
     \rowstyle{\bfseries} Person & \multicolumn{2}{-c}{Prefix} & Suffix \\
-    \rowstyle{\scshape} & \acs{perf}, \acs{subj} & \acs{ipfv} & \\
+    \rowstyle{\scshape} & {\Perf}, {\Subj} & {\Ipfv} & \\
     \midrule
-    \acs{1sg}           & ma-     & m-     & -∅ \\
-    \acs{2sg}           & to-     & t-     & -∅ \\
-    \acs{3sg}           & i-, ∅-  & ∅-     & -∅ \\
+    {\Fsg}         & ma-     & m-     & -∅ \\
+    {\Ssg}         & to-     & t-     & -∅ \\
+    {\Tsg}         & i-, ∅-  & ∅-     & -∅ \\
     \midrule
-    \acs{1du}           & we-     & w-     & -i \\
-    \acs{2du}           & tē-     & t-     & -a \\
-    \acs{3du}           & yē-, ∅- & y-, ∅- & -a \\
+    {\Fdu}         & we-     & w-     & -i \\
+    {\Sdu}         & tē-     & t-     & -a \\
+    {\Tdu}         & yē-, ∅- & y-, ∅- & -a \\
     \midrule
-    \acs{1pl};\acs{inc} & sē-     & s-     & -is \\
-    \acs{1pl};\acs{exc} & dye-    & dy-    & -is \\
-    \acs{2pl}           & kyo-    & ky-    & -as \\
-    \acs{3pl}           & ya-, ∅- & y-     & -as, -os \\
+    {\Fpl};{\Incl} & sē-     & s-     & -is \\
+    {\Fpl};{\Excl} & dye-    & dy-    & -is \\
+    {\Spl}         & kyo-    & ky-    & -as \\
+    {\Tpl}         & ya-, ∅- & y-     & -as, -os \\
     \bottomrule
   \end{tabular}
   \caption{Proto-Teranean person affixes\label{tab:history:pt:verb_person}}
@@ -371,41 +420,46 @@ passive to resultative to descriptive.  The perfective or past stem was used to
 indicate completed actions occurring in the past, and developed into a range of
 past tenses in daughter languages.  The imperfective or non-past stem was used
 to indicate ongoing or future actions, and developed into various non-past
-tenses in daughter languages.  The Eastern languages have retained the original
-aspectual distinction, whereas Western languages primarily indicate tense
-instead of aspect.
+tenses in daughter languages.  An example conjugation of a ‘sound’, that is,
+regular verb (\conlangt{pʼōrok}{cut [wood, etc]}) is given in
+\cref{tab:history:pt:verb_conjugation_porok}.
+
+The Eastern languages have retained the original aspectual distinction, whereas
+Western languages primarily indicate tense instead of aspect.
 
 \begin{table}[h!]\small\capstart
   \begin{tabular}{BFc -c -c -c -c}
     \toprule
     \rowstyle{\bfseries} Stem Class & Stative & Perfective & Imperfective & Subjunctive \\
     \midrule
-    B-o & ne-pʼorek & pʼōrok-a & a-pʼrōk-e-y & pʼōrk-o-w \\  % cut wood
-    B-e & ne-lebeń  & lēboń-a  & a-lbēń-e-y  & lēbń-o-w  \\  % get up, stand
-    B-a & ne-ħapeṡ  & ħāpoṡ-a  & a-ħpāṡ-e-y  & ħāpṡ-o-w  \\  % come close, bring close
+    B-o & ne-pʼorek & pʼōrok-a & a-pʼrōk-e-y & pʼork-o-w \\  % cut wood
+    B-e & ne-lebeń  & lēboń-a  & a-lbēń-e-y  & lebń-o-w  \\  % get up, stand
+    B-a & ne-ħapeṡ  & ħāpoṡ-a  & a-ħpāṡ-e-y  & ħapṡ-o-w  \\  % come close, bring close
     \bottomrule
   \end{tabular}
   \caption{Proto-Teranean verb stems\label{tab:history:pt:verb_stems}}
 \end{table}
 
+Biliteral roots generally only added the suffixes to the basic root.
+
 \begin{table}[h!]\small\capstart
   \begin{tabular}{KFl -c -c -c}
     \toprule
     \rowstyle{\bfseries} & Perfective  & Imperfective & Subjunctive  \\
-    \rowstyle{\scshape}  & \acs{perf}  & \acs{ipfv}   & \acs{subj}  \\
+    \rowstyle{\scshape}  & {\Perf}     & {\Ipfv}      & {\Subj}  \\
     \midrule
-    \acs{1sg}            & mapʼōroka   & mapʼrōkey    & mapʼōrkow    \\
-    \acs{2sg}            & topʼōroka   & tapʼrōkey    & topʼōrkow    \\
-    \acs{3sg}            & pʼōroka     & apʼrōkey     & pʼōrkow      \\
-    \acs{1du}            & wepʼōroki   & wapʼrōkey    & wepʼōrkew    \\
-    \acs{2du}            & tēpʼōroka   & tapʼrōkay    & tēpʼōrkaw    \\
-    \acs{3du}            & yepʼōroka   & yapʼrōkay    & yepʼōrkaw    \\
-    \acs{1pl};\acs{inc}  & sēpʼōrokis  & sapʼrōkeys   & sēpʼōrkews   \\
-    \acs{1pl};\acs{exc}  & dyepʼōrokis & dyapʼrōkeys  & dyepʼōrkews  \\
-    \acs{2pl}            & kyopʼōrokas & kyapʼrōkays  & kyopʼōrkaws   \\
-    \acs{3pl}            & yapʼōrokas  & yapʼrōkays   & yapʼōrkaws   \\
+    {\Fsg}               & mapʼōroka   & mapʼrōkey   & mapʼorkow    \\
+    {\Ssg}               & topʼōroka   & tapʼrōkey   & topʼorkow    \\
+    {\Tsg}               & pʼōroka     & apʼrōkey     & pʼorkow      \\
+    {\Fdu}               & wepʼōroki   & wapʼrōkey    & wepʼorkew    \\
+    {\Sdu}               & tēpʼōroka   & tapʼrōkay    & tēpʼorkaw    \\
+    {\Tdu}               & yepʼōroka   & yapʼrōkay    & yepʼorkaw    \\
+    {\Fpl};{\Incl}       & sēpʼōrokis  & sapʼrōkeys   & sēpʼorkews   \\
+    {\Fpl};{\Excl}       & dyepʼōrokis & dyapʼrōkeys  & dyepʼorkews  \\
+    {\Spl}               & kyopʼōrokas & kyapʼrōkays  & kyopʼorkaws   \\
+    {\Tpl}               & yapʼōrokas  & yapʼrōkays   & yapʼorkaws   \\
     \midrule
-    \acs{inanim}         & pʼōroko     & apʼrōkoys    & apʼōrkows   \\
+    {\Inan}              & pʼōroko     & apʼrōkost    & apʼorkows   \\
     \bottomrule
   \end{tabular}
   \caption{Proto-Teranean verb conjugation for \conlang{pʼōrok} (to cut [wood, etc])\label{tab:history:pt:verb_conjugation_porok}}
@@ -422,13 +476,13 @@ subjects showed a split-S alignment loosely based around volition, with some
 verbs marked as voluntary, or agentive, and others as involuntary, or
 patientive.  
 
-This split was also indicated by the verbal morphology, with separate
-conjugation classes for both transitive and intransitive verbs.  A number of
-regular derived stems expanded upon the basic, usually intransitive meaning,
-producing a variety of verbal patterns that expressed changes in the valency
-(passive, causative) or other properties in the verbal scenario (intensive,
-frequentative, benefactive).  Each of these stem patterns is labelled using a
-mnemonic characteristic of the derivational pattern.
+This split was also indicated by the verbal morphology. 
+%, with separate conjugation classes for both transitive and intransitive verbs.
+A number of regular derived stems expanded upon the basic, usually
+intransitive meaning, producing a variety of verbal patterns that expressed
+changes in the valency (passive, causative) or other properties in the verbal
+scenario (intensive, frequentative, benefactive).  Each of these stem patterns
+is labelled using a mnemonic characteristic of the derivational pattern.
 
 \begin{description}
   \item[B-Stem] This is the basic, underived and simplest pattern.  Most verbs
@@ -466,14 +520,24 @@ mnemonic characteristic of the derivational pattern.
     % the T-stem could be combined with the D-, L-, N-, and S-Stems, resulting in
 \end{description}
 
-In addition to the derivational patterns, valency-changing operations may also
-be have been marked with suffixes on the verb that occurred after the tense and
-aspect marking.  The three most common suffixes are \conlang{-n}, \conlang{-ṡ},
-and \conlang{-k}, which indicate active, passive, and mediopassive voices.
-This marking is considerably rarer, and doesn't occur at all in daughter
-languages in the Western branches, leading to some speculation that it is a
-later innovation in the Eastern branches developing after lexicalisation of the
-prefix derived patterns.
+The verb stems without personal subject prefixes were also the basis for some
+derived verbal forms:
+
+\begin{itemize}
+  \item \conlang{*CVCēC} was the most common verbal noun, though there were a
+    large number of variations on this pattern.
+  \item \conlang{*ēCaCeC} was the active participle
+  \item \conlang{*neCCēCu} was the passive participle
+\end{itemize}
+
+% In addition to the derivational patterns, valency-changing operations may also
+% be have been marked with suffixes on the verb that occurred after the tense and
+% aspect marking.  The three most common suffixes are \conlang{-n}, \conlang{-ṡ},
+% and \conlang{-k}, which indicate active, passive, and mediopassive voices.
+% This marking is considerably rarer, and doesn't occur at all in daughter
+% languages in the Western branches, leading to some speculation that it is a
+% later innovation in the Eastern branches developing after lexicalisation of the
+% prefix derived patterns.
 
 \subsection{Nominal Morphology}
 \label{ssec:history:pt:nominal_morphology}
@@ -531,15 +595,15 @@ are listed in \cref{tab:history:pt:case_suffixes}.
   \begin{tabular}{BFl -Kc -l -l -l -l}
     \toprule
     \multicolumn{2}{Fc}{\rowstyle{\bfseries}Noun Case} & \multicolumn{2}{-c}{Suffixes} \\
-    \rowstyle{\scshape} & & {\acs{sg}} & {\acs{du}, \acs{pl}} \\
+    \rowstyle{\scshape} & & {{\Sg}} & {{\Du}, {\Pl}} \\
     \midrule
-    Absolutive   & \acs{abs} & -∅   & -e \\
-    Ergative     & \acs{erg} & -ma  & -ema \\
-    Dative       & \acs{dat} & -ṡa  & -eṡa \\
-    Instrumental & \acs{ins} & -at  & -et \\
-    Genitive     & \acs{gen} & -ak  & -ek \\
-    Adverbial    & \acs{adv} & -da  & -eda \\
-    Vocative     & \acs{voc} & -o   & -∅ \\
+    Absolutive   & {\Abs} & -∅   & -e \\
+    Ergative     & {\Erg} & -ma  & -ema \\
+    Dative       & {\Dat} & -ṡa  & -eṡa \\
+    Instrumental & {\Ins} & -at  & -et \\
+    Genitive     & {\Gen} & -ak  & -ek \\
+    Adverbial    & {\Adv} & -da  & -eda \\
+    Vocative     & {\Voc} & -o   & -∅ \\
     \bottomrule
   \end{tabular}
   \caption{Proto-Teranean noun cases\label{tab:history:pt:case_suffixes}}
